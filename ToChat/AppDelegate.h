@@ -20,6 +20,10 @@
 - (void)saveContext;
 - (NSURL *)applicationDocumentsDirectory;
 
-
+/**
+ *  注册推送
+ */
+- (void)registerPush;
 @end
+
 
