@@ -35,7 +35,7 @@
         self.tapAction(self);
     }
 }
-- (void)addTapBlock:(void(^)(id obj))tapAction{
+- (void)setTapBlock:(void(^)(id obj))tapAction{
     self.tapAction = tapAction;
     if (![self gestureRecognizers]) {
         self.userInteractionEnabled = YES;
@@ -46,7 +46,7 @@
 
 -(void)setImageWithUrl:(NSURL *)imgUrl placeholderImage:(UIImage *)placeholderImage tapBlock:(void(^)(id obj))tapAction{
     [self sd_setImageWithURL:imgUrl placeholderImage:placeholderImage];
-    [self addTapBlock:tapAction];
+    [self setTapBlock:tapAction];
 }
 
 @end

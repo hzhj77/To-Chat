@@ -15,12 +15,15 @@
 
 +(instancetype)fakeInit{
     Tweet * tweet = [[Tweet alloc]init];
+    tweet.userID = [[NSNumber alloc]initWithInt:1];
     tweet.user = [User fakeUser];
     tweet.time = [[NSDate alloc]initWithTimeIntervalSinceNow:100];
-    tweet.content = @"这是假装加载的假的数据，由于服务器没有搭建，所以暂时使用假的数据测试显示效果，测试完成后需要删除";
+    tweet.location = @"WHU";
+    tweet.device = @"iPhone6 plus";
+    tweet.content = @"这是假装加载的假的数据\n由于服务器没有搭建\n所以暂时使用假的数据测试显示效果，测试完成后需要删除";
     tweet.like_users = [[NSMutableArray alloc]initWithArray:@[[User fakeUser]]];
     
-    tweet.comment_list = [[NSMutableArray alloc]initWithArray:@[[Comment fakeComment]]];
+    tweet.comment_list = [[NSMutableArray alloc]initWithArray:@[[Comment fakeComment],[Comment fakeComment],[Comment fakeComment]]];
     tweet.htmlMedia = [[HtmlMedia alloc]initWithString:@"<p><a href=\"https://dn-coding-net-production-pp.qbox.me/eea1e241-3f52-4396-9873-6ae2561c7467.png\" target=\"_blank\" class=\"bubble-markdown-image-link\" rel=\"nofollow\"><img src=\"https://dn-coding-net-production-pp.qbox.me/eea1e241-3f52-4396-9873-6ae2561c7467.png\" alt=\"图片\" class=\" bubble-markdown-image\"></a></p>" showType:MediaShowTypeNone];
     return tweet;
 }

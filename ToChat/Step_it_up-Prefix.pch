@@ -45,11 +45,14 @@
 #import "UIImageView+WebCache.h"
 #import "UIImageView+Common.h"
 #import "UITableView+Common.h"
+#import <BlocksKit/BlocksKit+UIKit.h>
+#import "UIActionSheet+Common.h"
 #import "UIScrollView+APParallaxHeader.h"
 #import "UIButton+Bootstrap.h"
 #import "UILabel+Common.h"
 #import "UIViewController+Swizzle.h"
 #import "BaseNavigationController.h"
+
 
 #import "Masonry.h"
 #import "LKAlarmMamager.h"
@@ -65,6 +68,7 @@
 #import "JFMacros.h"
 #import "SIUMacros.h"
 
+#import <RongIMKit/RongIMKit.h>
 
 #endif
 
@@ -120,6 +124,7 @@
 #define kImage999 [UIImage imageWithColor:kColor999]
 
 #define kPlaceholderMonkeyRoundWidth(_width_) [UIImage imageNamed:[NSString stringWithFormat:@"placeholder_monkey_round_%.0f", _width_]]
+// 返回一个和 view大小相同的猴子图片（保存在本地资源中）
 #define kPlaceholderMonkeyRoundView(_view_) [UIImage imageNamed:[NSString stringWithFormat:@"placeholder_monkey_round_%.0f", CGRectGetWidth(_view_.frame)]]
 
 #define kPlaceholderCodingSquareWidth(_width_) [UIImage imageNamed:[NSString stringWithFormat:@"placeholder_coding_square_%.0f", _width_]]

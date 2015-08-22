@@ -10,8 +10,7 @@ pod 'AFNetworking', '~> 2.5.4'
 pod 'RegexKitLite-NoWarning', '~> 1.1.0'
 pod 'hpple', '0.2.0'
 pod 'TPKeyboardAvoiding', '1.2.4'
-pod 'BlocksKit', '2.2.5'
-pod 'ReactiveCocoa', '2.3.1'
+pod 'ReactiveCocoa'
 pod 'MMMarkdown', '0.3'
 pod 'APParallaxHeader'
 pod 'iVersion', '~> 1.11.4'
@@ -40,4 +39,6 @@ pod 'RDVTabBarController', '~> 1.1.9'
 pod 'JazzHands', '~> 2.0.0'
 #push
 pod 'XGPush', '~> 2.3'
+#融云
+pod 'RongCloudIMKit'
 

@@ -233,15 +233,13 @@
 }
 - (void)updateFonts
 {
-    self.userNameLabel.font = [UIFont systemFontOfSize :25.28f];
+    self.userNameLabel.font = [UIFont systemFontOfSize :18.f];
+    self.actionLabel.font = [UIFont systemFontOfSize:16.0f];
     
-    //[UIFont fontWithName:@"STHeitiSC-Light" size:20.0f];
-    self.actionLabel.font = [UIFont systemFontOfSize:18.0f];
-    
-    self.contentLabel.font = [UIFont systemFontOfSize:25.0f];
-    self.todoTimeLabel.font = [UIFont systemFontOfSize:18.0f];
-    self.todoLocationLabel.font = [UIFont systemFontOfSize:18.0f];
-    self.publishTimeLabel.font = [UIFont systemFontOfSize:18.0f];
+    self.contentLabel.font = [UIFont systemFontOfSize:18.0f];
+    self.todoTimeLabel.font = [UIFont systemFontOfSize:13.0f];
+    self.todoLocationLabel.font = [UIFont systemFontOfSize:13.0f];
+    self.publishTimeLabel.font = [UIFont systemFontOfSize:13.0f];
     [self fakeLoadData];
 }
 

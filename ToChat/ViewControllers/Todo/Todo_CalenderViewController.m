@@ -54,7 +54,7 @@
     
     //初始化数据
     self.offscreenCells = [NSMutableDictionary dictionary];
-    
+    self.tabBarController.title = @"按日历查看";
     
     self.calendar = [JTCalendar new];
     self.tableView = [[UITableView alloc]initWithFrame:CGRectZero];

@@ -118,7 +118,7 @@
     if (!_userIconView) {
         _userIconView = [[UITapImageView alloc] init];
         _userIconView.backgroundColor = kColorTableBG;
-        [_userIconView addTapBlock:^(id obj) {
+        [_userIconView setTapBlock:^(id obj) {
             if (weakSelf.userIconClicked) {
                 weakSelf.userIconClicked();
             }

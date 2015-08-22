@@ -5,7 +5,9 @@
 //  Copyright (c) 2013年 itcast. All rights reserved.
 
 #import <Foundation/Foundation.h>
-
+/**
+    用来展示图片使用的数据源
+ */
 @interface MJPhoto : NSObject
 @property (nonatomic, strong) NSURL *url;
 @property (nonatomic, strong) UIImage *image; // 完整的图片
