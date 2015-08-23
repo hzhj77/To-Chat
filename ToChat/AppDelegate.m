@@ -43,7 +43,8 @@
 #pragma mark - application
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
-    
+    [self connectToRongCloud];
+    [self registerPush];
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
@@ -56,7 +57,7 @@
     [[UIApplication sharedApplication]setStatusBarStyle:UIStatusBarStyleLightContent];
     
     
-    _isLogin = YES;
+    _isLogin = true;
     
     if (_isLogin) {
         [self setupTabViewController];
@@ -69,15 +70,15 @@
     
     [self.window makeKeyAndVisible];
     
-    EaseStartView *startView = [EaseStartView startView];
-    @weakify(self);
-    [startView startAnimationWithCompletionBlock:^(EaseStartView *easeStartView) {
-        @strongify(self);
-        [self completionStartAnimationWithOptions:launchOptions];
-    }];
+//    EaseStartView *startView = [EaseStartView startView];
+//    @weakify(self);
+//    [startView startAnimationWithCompletionBlock:^(EaseStartView *easeStartView) {
+//        @strongify(self);
+//        [self completionStartAnimationWithOptions:launchOptions];
+//    }];
     
     
-    [self registerPush];
+    
     
     return YES;
 }
@@ -258,6 +259,22 @@
     }
     [navigationBarAppearance setBackgroundImage:[UIImage imageWithColor:[UIColor colorWithHexString:@"0x28303b"]] forBarMetrics:UIBarMetricsDefault];
     [navigationBarAppearance setTitleTextAttributes:textAttributes];
+}
+
+-(void)connectToRongCloud{
+    //初始化融云SDK
+    [[RCIM sharedRCIM] initWithAppKey:RONGCLOUD_IM_APPKEY];
+    // 快速集成第二步，连接融云服务器
+//    [[RCIM sharedRCIM] connectWithToken:RONGCLOUD_IM_USER_TOKEN success:^(NSString *userId){
+//        NSLog(@"Connect 成功") ;
+//        
+//    }
+//                                  error:^(RCConnectErrorCode status) {
+//                                      NSLog(@"Connect 失败");
+//                                  }
+//                         tokenIncorrect:^() {
+//                              NSLog(@"Connect 失败");
+//                         }];
 }
 
 #pragma mark - ViewController

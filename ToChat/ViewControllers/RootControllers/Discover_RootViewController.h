@@ -14,9 +14,9 @@
 #import "DiscoverCell.h"
 
 #import "RDVTabBarController.h"
-#import "Tweet_RootViewController.h"
+#import "TweetViewController.h"
 #import "RKSwipeBetweenViewControllers.h"
-#import "DynamicTodo_RootViewController.h"
+#import "DynamicTodoViewController.h"
 
 @interface Discover_RootViewController : BaseViewController
 

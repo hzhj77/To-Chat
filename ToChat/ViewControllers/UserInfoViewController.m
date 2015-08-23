@@ -12,6 +12,7 @@
 #import "UserInfoIconCell.h"
 #import "MJPhotoBrowser.h"
 #import "RDVTabBarController.h"
+#import "ChatListViewController.h"
 
 @interface UserInfoViewController ()<UITableViewDelegate , UITableViewDataSource>
 @property (strong, nonatomic) UITableView *myTableView;
@@ -58,16 +59,17 @@
     _headerView.followsCountBtnClicked = ^(){
         [weakSelf followsCountBtnClicked];
     };
-//    _headerView.followBtnClicked = ^(){
-//        [weakSelf followBtnClicked];
-//    };
+    _headerView.followBtnClicked = ^(){
+        [weakSelf followBtnClicked];
+    };
     [_myTableView addParallaxWithView:_headerView andHeight:CGRectGetHeight(_headerView.frame)];
-    //_myTableView.tableFooterView = [self footerV];
+    _myTableView.tableFooterView = [self footerV];
     
     
     _refreshControl = [[ODRefreshControl alloc] initInScrollView:self.myTableView];
     [_refreshControl addTarget:self action:@selector(refresh) forControlEvents:UIControlEventValueChanged];
 
+    [self refresh];
 }
 - (void)refresh{
 //    __weak typeof(self) weakSelf = self;
@@ -108,7 +110,7 @@
 //    [self.navigationController pushViewController:vc animated:YES];
 }
 - (void)followsCountBtnClicked{
-    NSLog(@"fansCountBtnClicked\n");
+    NSLog(@"followsCountBtnClicked\n");
 //    if (_curUser.id.integerValue == 93) {//Coding官方账号
 //        return;
 //    }
@@ -129,7 +131,8 @@
     browser.photos = [NSArray arrayWithObject:photo];
     [browser show];
 }
-//- (void)followBtnClicked{
+- (void)followBtnClicked{
+    NSLog(@"followBtnClicked");
 //    __weak typeof(self) weakSelf = self;
 //    [[Coding_NetAPIManager sharedManager] request_FollowedOrNot_WithObj:_curUser andBlock:^(id data, NSError *error) {
 //        if (data) {
@@ -140,7 +143,13 @@
 //            }
 //        }
 //    }];
-//}
+}
+- (void)messageBtnClicked{
+    NSLog(@"messageBtnClicked");
+//    ConversationViewController *vc = [[ConversationViewController alloc] init];
+//    vc.myPriMsgs = [PrivateMessages priMsgsWithUser:_curUser];
+//    [self.navigationController pushViewController:vc animated:YES];
+}
 
 
 #pragma mark Table M
@@ -189,6 +198,12 @@
 }
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    if (indexPath.section == 1 && indexPath.row == 0) {
+        NSArray *conversationTypes = @[@(ConversationType_PRIVATE),@(ConversationType_DISCUSSION), @(ConversationType_APPSERVICE), @(ConversationType_PUBLICSERVICE),@(ConversationType_GROUP)];
+        ChatListViewController * chat=[[ChatListViewController alloc]initWithDisplayConversationTypes:conversationTypes collectionConversationType:conversationTypes];
+        
+        [self.navigationController pushViewController:chat animated:YES];
+    }
 }
 
 - (void)didReceiveMemoryWarning {
@@ -199,6 +214,7 @@
     return user;
 }
 
+
 #pragma mark TabBar
 - (void)tabBarItemClicked{
     [super tabBarItemClicked];
@@ -206,7 +222,7 @@
         [_myTableView setContentOffset:CGPointZero animated:YES];
     }else if (!self.refreshControl.refreshing){
         [self.refreshControl beginRefreshing];
-        [self.myTableView setContentOffset:CGPointMake(0, -44)];
+        //[self.myTableView setContentOffset:CGPointMake(0, -44)];
         [self refresh];
     }
 }

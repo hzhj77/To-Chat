@@ -12,6 +12,7 @@ let kPaddingLeftWidth :CGFloat  = 15.0
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.tabBarController?.title = "按列表查看";
         tableView.registerClass(TodoCell.self, forCellReuseIdentifier: JF_TodoCell_ReuseIdentifier)
         tableView.backgroundColor = UIColor.whiteColor()
 

@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "09AC5AA5F6D83E5A5E6F92D8"
+               BlueprintIdentifier = "C7BD5E93783698BACCB36121"
                BuildableName = "hpple.framework"
                BlueprintName = "hpple"
                ReferencedContainer = "container:Pods.xcodeproj">

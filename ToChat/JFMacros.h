@@ -11,7 +11,7 @@
 #define JFMacros_h
 
 
-//Tweet Cell
+//  Tweet Cell
 #define kTweetCell_PadingLeft 50.0
 #define kTweetCell_PadingTop 45.0
 #define kTweetCell_PadingBottom 10.0
@@ -35,12 +35,20 @@
 #define kTweetCommentCell_ContentWidth (kScreen_Width -50 - kPaddingLeftWidth - 2*kTweetCommentCell_LeftOrRightPading)
 #define kTweetCommentCell_ContentMaxHeight 105.0
 
-//Tweet Collection Cell
+//  Tweet Collection Cell
 
 #define kTweetMediaItemCCellSingle_Width (0.4 *kScreen_Width)
 #define kTweetMediaItemCCellSingle_WidthMonkey ((kScreen_Width - 80.0)/3.0)
 #define kTweetMediaItemCCellSingle_MaxHeight (0.4 *kScreen_Height)
 
 #define kTweetMediaItemCCell_Width ((kScreen_Width - 80.0)/3.0)
+
+
+//  融云 相关宏定义
+#define RONGCLOUD_IM_APPKEY @"kj7swf8o7c792" // online key
+#define RONGCLOUD_IM_USER_TOKEN @"b93Rq9V8CKNl2JTyCqazPfnUb62EjziWRZ7lkw0dKo7eX7ldSJ02Isck40X5CkAEGsCP8kg4bp8="
+#define RONGCLOUD_IM_USER_ID @"1"
+#define RONGCLOUD_IM_USER_Name @"JFT0M"
+
 
 #endif /* JFMacros_h */

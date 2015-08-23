@@ -90,6 +90,7 @@ public class MenuView: StickyHeaderView {
 }
 
 extension MenuView {
+    /// 返回 index 对应 Item 在 collectionView 的坐标 (这个坐标指的是可视范围内的）
     public func frameOfItemAtIndex(index: Int) -> CGRect {
         let indexPath = NSIndexPath(forItem: index, inSection: 0)
         let layoutAttributes = collectionLayout.layoutAttributesForItemAtIndexPath(indexPath)

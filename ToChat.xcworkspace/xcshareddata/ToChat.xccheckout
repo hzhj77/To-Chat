@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>91C6790B-8979-404A-8AD2-BD3E86E7E162</string>
+	<key>IDESourceControlProjectName</key>
+	<string>ToChat</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>6E4D8FBF9D7F06F338768949E1C6B7904DAD86BB</key>
+		<string>https://github.com/bottotl/ToChat.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>ToChat.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>6E4D8FBF9D7F06F338768949E1C6B7904DAD86BB</key>
+		<string>..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/bottotl/ToChat.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>6E4D8FBF9D7F06F338768949E1C6B7904DAD86BB</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>6E4D8FBF9D7F06F338768949E1C6B7904DAD86BB</string>
+			<key>IDESourceControlWCCName</key>
+			<string>ToChat</string>
+		</dict>
+	</array>
+</dict>
+</plist>

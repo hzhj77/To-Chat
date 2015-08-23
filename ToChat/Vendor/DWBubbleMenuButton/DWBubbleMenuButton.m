@@ -5,6 +5,7 @@
 //  Created by Derrick Walker on 10/8/14.
 //  Copyright (c) 2014 Derrick Walker. All rights reserved.
 //
+//  Modifild by JFT0M on 8/17/15
 
 #import "DWBubbleMenuButton.h"
 
@@ -13,7 +14,9 @@
 @interface DWBubbleMenuButton ()
 
 @property (nonatomic, strong) UITapGestureRecognizer *tapGestureRecognizer;
+/// 存储了子按钮
 @property (nonatomic, strong) NSMutableArray *buttonContainer;
+/// 初始位置
 @property (nonatomic, assign) CGRect originFrame;
 
 @end
@@ -312,6 +315,7 @@
     }
 }
 
+/// 计算展开后的总高度
 - (float)_combinedButtonHeight {
     float height = 0;
     for (UIButton *button in _buttonContainer) {
@@ -321,6 +325,7 @@
     return height;
 }
 
+/// 计算展开后的总宽度
 - (float)_combinedButtonWidth {
     float width = 0;
     for (UIButton *button in _buttonContainer) {
@@ -330,6 +335,7 @@
     return width;
 }
 
+/// 在这里对 self.frame 进行了调整（请在使用展开动画前调用）
 - (void)_prepareForButtonExpansion {
     float buttonHeight = [self _combinedButtonHeight];
     float buttonWidth = [self _combinedButtonWidth];
@@ -337,6 +343,7 @@
     switch (self.direction) {
         case DirectionUp:
         {
+            //设置（autoresize）自动布局
             self.homeButtonView.autoresizingMask = UIViewAutoresizingFlexibleTopMargin;
             
             CGRect frame = self.frame;
@@ -348,6 +355,7 @@
             
         case DirectionDown:
         {
+            //设置（autoresize）自动布局
             self.homeButtonView.autoresizingMask = UIViewAutoresizingFlexibleBottomMargin;
             
             CGRect frame = self.frame;
@@ -358,6 +366,7 @@
             
         case DirectionLeft:
         {
+            //设置（autoresize）自动布局
             self.homeButtonView.autoresizingMask = UIViewAutoresizingFlexibleLeftMargin;
             
             CGRect frame = self.frame;
@@ -369,6 +378,7 @@
             
         case DirectionRight:
         {
+            //设置（autoresize）自动布局
             self.homeButtonView.autoresizingMask = UIViewAutoresizingFlexibleRightMargin;
             
             CGRect frame = self.frame;
@@ -383,7 +393,13 @@
 }
 
 - (void)_finishCollapse {
-    self.frame = _originFrame;
+    if (_direction == DirectionDown) {
+        self.frame = CGRectMake(self.frame.origin.x, self.frame.origin.y, _originFrame.size.width, _originFrame.size.height);
+    }else{
+        self.frame = CGRectMake(self.frame.origin.x, CGRectGetMaxY(self.frame)-_originFrame.size.height, _originFrame.size.width, _originFrame.size.height);
+    }
+    
+    //self.frame = _originFrame;
 }
 
 - (UIView *)_subviewForPoint:(CGPoint)point {

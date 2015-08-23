@@ -21,6 +21,11 @@
 - (NSURL *)applicationDocumentsDirectory;
 
 /**
+ *  跳转到主界面
+ */
+- (void)setupTabViewController;
+
+/**
  *  注册推送
  */
 - (void)registerPush;

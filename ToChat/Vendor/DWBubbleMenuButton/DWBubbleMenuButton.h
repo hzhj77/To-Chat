@@ -5,6 +5,7 @@
 //  Created by Derrick Walker on 10/8/14.
 //  Copyright (c) 2014 Derrick Walker. All rights reserved.
 //
+//  Modifild by JFT0M on 8/17/15
 
 #import <UIKit/UIKit.h>
 
@@ -58,6 +59,8 @@ typedef NS_ENUM(NSUInteger, ExpansionDirection) {
 
 // Initializers
 - (id)initWithFrame:(CGRect)frame expansionDirection:(ExpansionDirection)direction;
+// 获取扩展后的按钮的高度
+- (float)_combinedButtonHeight;
 
 // Public Methods
 - (void)addButtons:(NSArray *)buttons;

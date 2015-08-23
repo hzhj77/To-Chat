@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "52F6E51A05A0BA83EF0BC865"
+               BlueprintIdentifier = "FF918865F7518C42D5D223D7"
                BuildableName = "JazzHands.framework"
                BlueprintName = "JazzHands"
                ReferencedContainer = "container:Pods.xcodeproj">

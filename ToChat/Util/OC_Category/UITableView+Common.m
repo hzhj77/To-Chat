@@ -188,7 +188,7 @@
     }
     headerLabel.text = headerStr;
     [headerView addSubview:headerLabel];
-    [headerView addTapBlock:tapAction];
+    [headerView setTapBlock:tapAction];
     return headerView;
 }
 @end

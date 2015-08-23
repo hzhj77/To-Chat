@@ -29,8 +29,6 @@
     CGFloat titleWidth = [self.titleLabel.text getWidthWithFont:font constrainedToSize:CGSizeMake(kScreen_Width, frame.size.height)];
     if (titleWidth > maxWidth) {
         titleWidth = maxWidth;
-        //        self.titleLabel.minimumScaleFactor = 0.5;
-        //        self.titleLabel.adjustsFontSizeToFitWidth = YES;
     }
     [self setWidth:titleWidth];
     [self.titleLabel setWidth:titleWidth];

@@ -12,7 +12,7 @@
 
 +(instancetype)fakeComment{
     Comment * comment = [[Comment alloc]init];
-    comment.content = @"@xdemo 233333 @刘峰 好无力";
+    comment.content = @"这是测试用的评论超长版本的~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~";
     comment.owner = [User fakeUser];
     comment.id = [[NSNumber alloc]initWithInt:141831];
     comment.owner_id = [[NSNumber alloc]initWithInt:5764];
