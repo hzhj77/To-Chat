@@ -21,6 +21,11 @@ PODS:
     - AFNetworking/NSURLConnection
     - AFNetworking/NSURLSession
   - APParallaxHeader (0.1.6)
+  - AVOSCloud (3.1.3.4)
+  - AVOSCloudIM (3.1.3.4):
+    - AVOSCloud
+  - AVOSCloudSNS (3.1.2.9):
+    - AVOSCloud
   - BlocksKit (2.2.5):
     - BlocksKit/All (= 2.2.5)
   - BlocksKit/All (2.2.5):
@@ -91,7 +96,6 @@ PODS:
     - SDWebImage/Core (= 3.7.3)
   - SDWebImage/Core (3.7.3)
   - SMPageControl (1.2)
-  - SnapKit (0.12.0)
   - SSKeychain (1.2.3)
   - SVPullToRefresh (0.4.1)
   - TPKeyboardAvoiding (1.2.4)
@@ -105,6 +109,9 @@ PODS:
 DEPENDENCIES:
   - AFNetworking (~> 2.5.4)
   - APParallaxHeader
+  - AVOSCloud
+  - AVOSCloudIM
+  - AVOSCloudSNS
   - BlocksKit (~> 2.2.5)
   - hpple (= 0.2.0)
   - iVersion (~> 1.11.4)
@@ -125,7 +132,6 @@ DEPENDENCIES:
   - SDCAlertView (~> 2.4.1)
   - SDWebImage (~> 3.7.3)
   - SMPageControl (~> 1.2)
-  - SnapKit (~> 0.12.0)
   - SSKeychain (~> 1.2.3)
   - SVPullToRefresh (~> 0.4.1)
   - TPKeyboardAvoiding (= 1.2.4)
@@ -137,6 +143,9 @@ DEPENDENCIES:
 SPEC CHECKSUMS:
   AFNetworking: 05edc0ac4c4c8cf57bcf4b84be5b0744b6d8e71e
   APParallaxHeader: 854bc48a2487ca12c702f8a236fec0d89cdac5c3
+  AVOSCloud: d98195a7b15becc540cf30276480e9f510c4e1e4
+  AVOSCloudIM: 0e6ae5878b7a47787e8350cbc30850a1a27ceb39
+  AVOSCloudSNS: 4f9f1df8663fc7bfa76b9b38578ac535d275ee8f
   BlocksKit: 7f422b971407001178d181a43b99014ea2591fe6
   FontAwesome+iOS: 9070b682a9255ca0fdc34bcfb129ad0ba2b73b87
   hpple: 3b765f96fc2cd56ad1a49aef6f7be5cb2aa64b57
@@ -161,7 +170,6 @@ SPEC CHECKSUMS:
   SDCAutoLayout: e6885bb39ab8e2ec2ff84d158f38035f025f7420
   SDWebImage: 1d2b1a1efda1ade1b00b6f8498865f8ddedc8a84
   SMPageControl: 922892813001cfaf059e86e6801f46a967e9ee29
-  SnapKit: 00c388aa3bf1944c1b55472f31e841f75bd83882
   SSKeychain: 3f42991739c6c60a9cf1bbd4dff6c0d3694bcf3d
   SVPullToRefresh: ba2e718695a43253d8bea6852d2960097dc15d8c
   TPKeyboardAvoiding: 0a40dfbb0af7c8bdae1dd457496dccfd217d85f6
@@ -170,4 +178,4 @@ SPEC CHECKSUMS:
   XGPush: fa2e9fce1895ea238bcd92dd0a5189a5452e15f2
   ZXingObjC: bf15b3814f7a105b6d99f47da2333c93a063650a
 
-COCOAPODS: 0.38.2
+COCOAPODS: 0.36.0

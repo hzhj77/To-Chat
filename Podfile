@@ -1,8 +1,4 @@
 source 'https://github.com/CocoaPods/Specs.git'
-platform :ios, '8.0'
-use_frameworks!
-
-pod 'SnapKit', '~> 0.12.0'
 #Framework
 pod 'SVPullToRefresh', '~> 0.4.1'
 pod 'JDStatusBarNotification', '~> 1.5.2'
@@ -41,4 +37,7 @@ pod 'JazzHands', '~> 2.0.0'
 pod 'XGPush', '~> 2.3'
 #融云
 pod 'RongCloudIMKit'
-
+#leancloud云存储
+pod 'AVOSCloud'
+pod 'AVOSCloudIM'
+pod 'AVOSCloudSNS'

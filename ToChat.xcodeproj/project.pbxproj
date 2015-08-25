@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		22DFCC88F7AD6AE2EFD13DA5 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F78AF8A0B01BEAE2B97F8B96 /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		3000BAE51B8466AA00C3939E /* UITableView+FDTemplateLayoutCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3000BAE41B8466AA00C3939E /* UITableView+FDTemplateLayoutCell.m */; };
 		3000BAE81B8467CF00C3939E /* DiscoverTodoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3000BAE71B8467CF00C3939E /* DiscoverTodoCell.m */; };
 		3000BAEF1B8469E200C3939E /* DiscoverTodoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3000BAEE1B8469E200C3939E /* DiscoverTodoViewController.m */; };
@@ -19,6 +18,7 @@
 		302710051B7F760300A412DA /* UIMessageInputView_Media.m in Sources */ = {isa = PBXBuildFile; fileRef = 302710011B7F760300A412DA /* UIMessageInputView_Media.m */; };
 		302907EA1B79CF5F00B0D96B /* ChatListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 302907E91B79CF5F00B0D96B /* ChatListViewController.m */; };
 		302C50E61B8014FF001F72DC /* UIActionSheet+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = 302C50E51B8014FF001F72DC /* UIActionSheet+Common.m */; };
+		30351AC41B8CC19D00FDEBFD /* Todo_AllViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30351AC31B8CC19D00FDEBFD /* Todo_AllViewController.m */; };
 		303A429B1B81BFAE00117F71 /* JFTodoCreateSelectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 303A429A1B81BFAE00117F71 /* JFTodoCreateSelectionCell.m */; };
 		303A42B11B81C01900117F71 /* AbstractActionSheetPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 303A42A11B81C01900117F71 /* AbstractActionSheetPicker.m */; };
 		303A42B21B81C01900117F71 /* ActionSheetCustomPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 303A42A31B81C01900117F71 /* ActionSheetCustomPicker.m */; };
@@ -50,6 +50,7 @@
 		306B62941B79998F00167CB3 /* EaseInputTipsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 306B62931B79998F00167CB3 /* EaseInputTipsView.m */; };
 		306B62981B799B8700167CB3 /* Input_OnlyText_Cell.m in Sources */ = {isa = PBXBuildFile; fileRef = 306B62961B799B8700167CB3 /* Input_OnlyText_Cell.m */; };
 		306B62991B799B8700167CB3 /* Input_OnlyText_Cell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 306B62971B799B8700167CB3 /* Input_OnlyText_Cell.xib */; };
+		3081F6BA1B8C6FE900E068D1 /* TodoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3081F6B91B8C6FE900E068D1 /* TodoCell.m */; };
 		30875F991B78E7CB00C50534 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 30875F981B78E7CB00C50534 /* main.m */; };
 		30875F9C1B78E7CB00C50534 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 30875F9B1B78E7CB00C50534 /* AppDelegate.m */; };
 		30875F9F1B78E7CB00C50534 /* ToChat.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 30875F9D1B78E7CB00C50534 /* ToChat.xcdatamodeld */; };
@@ -450,17 +451,6 @@
 		308CCBCE1B78EC8900E11188 /* README.textile in Resources */ = {isa = PBXBuildFile; fileRef = 308CC9CD1B78EC8900E11188 /* README.textile */; };
 		308CCBCF1B78EC8900E11188 /* NSString+Emojize.m in Sources */ = {isa = PBXBuildFile; fileRef = 308CC9D11B78EC8900E11188 /* NSString+Emojize.m */; };
 		308CCBD01B78EC8900E11188 /* ObjcRuntime.m in Sources */ = {isa = PBXBuildFile; fileRef = 308CC9D41B78EC8900E11188 /* ObjcRuntime.m */; };
-		308CCBD11B78EC8900E11188 /* CGRect+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 308CC9D61B78EC8900E11188 /* CGRect+Extension.swift */; };
-		308CCBD21B78EC8900E11188 /* CircularRevealTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 308CC9D71B78EC8900E11188 /* CircularRevealTransition.swift */; };
-		308CCBD31B78EC8900E11188 /* ContentType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 308CC9D81B78EC8900E11188 /* ContentType.swift */; };
-		308CCBD41B78EC8900E11188 /* HeaderShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 308CC9DA1B78EC8900E11188 /* HeaderShadowView.swift */; };
-		308CCBD51B78EC8900E11188 /* StickyHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 308CC9DB1B78EC8900E11188 /* StickyHeaderView.swift */; };
-		308CCBD61B78EC8900E11188 /* UIEdgeInsets+Equatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 308CC9DD1B78EC8900E11188 /* UIEdgeInsets+Equatable.swift */; };
-		308CCBD71B78EC8900E11188 /* UIScrollView+NormalizedContentOffset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 308CC9DE1B78EC8900E11188 /* UIScrollView+NormalizedContentOffset.swift */; };
-		308CCBD81B78EC8900E11188 /* MenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 308CC9E01B78EC8900E11188 /* MenuCell.swift */; };
-		308CCBD91B78EC8900E11188 /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 308CC9E11B78EC8900E11188 /* MenuItem.swift */; };
-		308CCBDA1B78EC8900E11188 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 308CC9E21B78EC8900E11188 /* MenuView.swift */; };
-		308CCBDB1B78EC8900E11188 /* MenuViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 308CC9E31B78EC8900E11188 /* MenuViewDelegate.swift */; };
 		308CCBDC1B78EC8900E11188 /* EasePageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 308CC9E61B78EC8900E11188 /* EasePageViewController.m */; };
 		308CCBDD1B78EC8900E11188 /* RKSwipeBetweenViewControllers.m in Sources */ = {isa = PBXBuildFile; fileRef = 308CC9E81B78EC8900E11188 /* RKSwipeBetweenViewControllers.m */; };
 		308CCBDE1B78EC8900E11188 /* XHPopMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 308CC9EB1B78EC8900E11188 /* XHPopMenu.m */; };
@@ -482,7 +472,6 @@
 		308CCBF01B78EC8900E11188 /* Me_RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 308CCA141B78EC8900E11188 /* Me_RootViewController.m */; };
 		308CCBF11B78EC8900E11188 /* RootTabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 308CCA161B78EC8900E11188 /* RootTabViewController.m */; };
 		308CCBF21B78EC8900E11188 /* Todo_RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 308CCA181B78EC8900E11188 /* Todo_RootViewController.m */; };
-		308CCBF31B78EC8900E11188 /* Todo_AllViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 308CCA1A1B78EC8900E11188 /* Todo_AllViewController.swift */; };
 		308CCBF41B78EC8900E11188 /* Todo_CalenderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 308CCA1C1B78EC8900E11188 /* Todo_CalenderViewController.m */; };
 		308CCBF61B78EC8900E11188 /* UserInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 308CCA201B78EC8900E11188 /* UserInfoViewController.m */; };
 		308CCBF71B78EC8900E11188 /* BaseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 308CCA241B78EC8900E11188 /* BaseCell.m */; };
@@ -491,7 +480,6 @@
 		308CCBFA1B78EC8900E11188 /* ScheduleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 308CCA2A1B78EC8900E11188 /* ScheduleCell.m */; };
 		308CCBFB1B78EC8900E11188 /* ScheduleFootCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 308CCA2C1B78EC8900E11188 /* ScheduleFootCell.m */; };
 		308CCBFC1B78EC8900E11188 /* ScheduleHeadCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 308CCA2E1B78EC8900E11188 /* ScheduleHeadCell.m */; };
-		308CCBFD1B78EC8900E11188 /* TodoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 308CCA2F1B78EC8900E11188 /* TodoCell.swift */; };
 		308CCBFE1B78EC8900E11188 /* TweetCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 308CCA311B78EC8900E11188 /* TweetCell.m */; };
 		308CCBFF1B78EC8900E11188 /* TweetCommentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 308CCA331B78EC8900E11188 /* TweetCommentCell.m */; };
 		308CCC001B78EC8900E11188 /* TweetCommentMoreCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 308CCA351B78EC8900E11188 /* TweetCommentMoreCell.m */; };
@@ -515,6 +503,7 @@
 		30A72E1C1B83015C009C7CD7 /* XLButtonBarViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 30A72E131B83015C009C7CD7 /* XLButtonBarViewCell.m */; };
 		30A72E1F1B83025A009C7CD7 /* Todo_TypeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30A72E1E1B83025A009C7CD7 /* Todo_TypeViewController.m */; };
 		30A72E221B830455009C7CD7 /* JFTodoTypeTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 30A72E211B830455009C7CD7 /* JFTodoTypeTableView.m */; };
+		81321FA23AABD97375720AF0 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FF7EE33D1F22C37423642791 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -563,6 +552,8 @@
 		302907E91B79CF5F00B0D96B /* ChatListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatListViewController.m; sourceTree = "<group>"; };
 		302C50E41B8014FF001F72DC /* UIActionSheet+Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIActionSheet+Common.h"; sourceTree = "<group>"; };
 		302C50E51B8014FF001F72DC /* UIActionSheet+Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIActionSheet+Common.m"; sourceTree = "<group>"; };
+		30351AC21B8CC19D00FDEBFD /* Todo_AllViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Todo_AllViewController.h; sourceTree = "<group>"; };
+		30351AC31B8CC19D00FDEBFD /* Todo_AllViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Todo_AllViewController.m; sourceTree = "<group>"; };
 		303A42991B81BFAE00117F71 /* JFTodoCreateSelectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFTodoCreateSelectionCell.h; sourceTree = "<group>"; };
 		303A429A1B81BFAE00117F71 /* JFTodoCreateSelectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFTodoCreateSelectionCell.m; sourceTree = "<group>"; };
 		303A42A01B81C01900117F71 /* AbstractActionSheetPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AbstractActionSheetPicker.h; sourceTree = "<group>"; };
@@ -621,6 +612,8 @@
 		306B62951B799B8700167CB3 /* Input_OnlyText_Cell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Input_OnlyText_Cell.h; sourceTree = "<group>"; };
 		306B62961B799B8700167CB3 /* Input_OnlyText_Cell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Input_OnlyText_Cell.m; sourceTree = "<group>"; };
 		306B62971B799B8700167CB3 /* Input_OnlyText_Cell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Input_OnlyText_Cell.xib; sourceTree = "<group>"; };
+		3081F6B81B8C6FE900E068D1 /* TodoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TodoCell.h; sourceTree = "<group>"; };
+		3081F6B91B8C6FE900E068D1 /* TodoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TodoCell.m; sourceTree = "<group>"; };
 		30875F931B78E7CB00C50534 /* ToChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		30875F971B78E7CB00C50534 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		30875F981B78E7CB00C50534 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -1096,17 +1089,6 @@
 		308CC9D11B78EC8900E11188 /* NSString+Emojize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Emojize.m"; sourceTree = "<group>"; };
 		308CC9D31B78EC8900E11188 /* ObjcRuntime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjcRuntime.h; sourceTree = "<group>"; };
 		308CC9D41B78EC8900E11188 /* ObjcRuntime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ObjcRuntime.m; sourceTree = "<group>"; };
-		308CC9D61B78EC8900E11188 /* CGRect+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGRect+Extension.swift"; sourceTree = "<group>"; };
-		308CC9D71B78EC8900E11188 /* CircularRevealTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircularRevealTransition.swift; sourceTree = "<group>"; };
-		308CC9D81B78EC8900E11188 /* ContentType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentType.swift; sourceTree = "<group>"; };
-		308CC9DA1B78EC8900E11188 /* HeaderShadowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderShadowView.swift; sourceTree = "<group>"; };
-		308CC9DB1B78EC8900E11188 /* StickyHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StickyHeaderView.swift; sourceTree = "<group>"; };
-		308CC9DD1B78EC8900E11188 /* UIEdgeInsets+Equatable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIEdgeInsets+Equatable.swift"; sourceTree = "<group>"; };
-		308CC9DE1B78EC8900E11188 /* UIScrollView+NormalizedContentOffset.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIScrollView+NormalizedContentOffset.swift"; sourceTree = "<group>"; };
-		308CC9E01B78EC8900E11188 /* MenuCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuCell.swift; sourceTree = "<group>"; };
-		308CC9E11B78EC8900E11188 /* MenuItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuItem.swift; sourceTree = "<group>"; };
-		308CC9E21B78EC8900E11188 /* MenuView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
-		308CC9E31B78EC8900E11188 /* MenuViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewDelegate.swift; sourceTree = "<group>"; };
 		308CC9E51B78EC8900E11188 /* EasePageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EasePageViewController.h; sourceTree = "<group>"; };
 		308CC9E61B78EC8900E11188 /* EasePageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EasePageViewController.m; sourceTree = "<group>"; };
 		308CC9E71B78EC8900E11188 /* RKSwipeBetweenViewControllers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RKSwipeBetweenViewControllers.h; sourceTree = "<group>"; };
@@ -1149,7 +1131,6 @@
 		308CCA161B78EC8900E11188 /* RootTabViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootTabViewController.m; sourceTree = "<group>"; };
 		308CCA171B78EC8900E11188 /* Todo_RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Todo_RootViewController.h; sourceTree = "<group>"; };
 		308CCA181B78EC8900E11188 /* Todo_RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Todo_RootViewController.m; sourceTree = "<group>"; };
-		308CCA1A1B78EC8900E11188 /* Todo_AllViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Todo_AllViewController.swift; sourceTree = "<group>"; };
 		308CCA1B1B78EC8900E11188 /* Todo_CalenderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Todo_CalenderViewController.h; sourceTree = "<group>"; };
 		308CCA1C1B78EC8900E11188 /* Todo_CalenderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Todo_CalenderViewController.m; sourceTree = "<group>"; };
 		308CCA1F1B78EC8900E11188 /* UserInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserInfoViewController.h; sourceTree = "<group>"; };
@@ -1166,7 +1147,6 @@
 		308CCA2C1B78EC8900E11188 /* ScheduleFootCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScheduleFootCell.m; sourceTree = "<group>"; };
 		308CCA2D1B78EC8900E11188 /* ScheduleHeadCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScheduleHeadCell.h; sourceTree = "<group>"; };
 		308CCA2E1B78EC8900E11188 /* ScheduleHeadCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScheduleHeadCell.m; sourceTree = "<group>"; };
-		308CCA2F1B78EC8900E11188 /* TodoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodoCell.swift; sourceTree = "<group>"; };
 		308CCA301B78EC8900E11188 /* TweetCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TweetCell.h; sourceTree = "<group>"; };
 		308CCA311B78EC8900E11188 /* TweetCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TweetCell.m; sourceTree = "<group>"; };
 		308CCA321B78EC8900E11188 /* TweetCommentCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TweetCommentCell.h; sourceTree = "<group>"; };
@@ -1216,7 +1196,7 @@
 		30A72E211B830455009C7CD7 /* JFTodoTypeTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFTodoTypeTableView.m; sourceTree = "<group>"; };
 		85D9888B17E94E7F2832D035 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		F266A674F1CC57F71F5F6237 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
-		F78AF8A0B01BEAE2B97F8B96 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF7EE33D1F22C37423642791 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1225,7 +1205,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				303C167D1B7F875E00FC8828 /* AssetsLibrary.framework in Frameworks */,
-				22DFCC88F7AD6AE2EFD13DA5 /* Pods.framework in Frameworks */,
+				81321FA23AABD97375720AF0 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2090,7 +2070,6 @@
 				308CC9CA1B78EC8900E11188 /* NSDate+Helper */,
 				308CC9CE1B78EC8900E11188 /* NSStringEmojize */,
 				308CC9D21B78EC8900E11188 /* ObjcRuntime */,
-				308CC9D51B78EC8900E11188 /* Persei */,
 				308CC9E41B78EC8900E11188 /* RKSwipeBetweenViewControllers */,
 				308CC9E91B78EC8900E11188 /* XHPopMenu */,
 				308CC9F01B78EC8900E11188 /* YLGIFImage */,
@@ -2262,48 +2241,6 @@
 			path = ObjcRuntime;
 			sourceTree = "<group>";
 		};
-		308CC9D51B78EC8900E11188 /* Persei */ = {
-			isa = PBXGroup;
-			children = (
-				308CC9D61B78EC8900E11188 /* CGRect+Extension.swift */,
-				308CC9D71B78EC8900E11188 /* CircularRevealTransition.swift */,
-				308CC9D81B78EC8900E11188 /* ContentType.swift */,
-				308CC9D91B78EC8900E11188 /* Core */,
-				308CC9DC1B78EC8900E11188 /* Extension */,
-				308CC9DF1B78EC8900E11188 /* Menu */,
-			);
-			path = Persei;
-			sourceTree = "<group>";
-		};
-		308CC9D91B78EC8900E11188 /* Core */ = {
-			isa = PBXGroup;
-			children = (
-				308CC9DA1B78EC8900E11188 /* HeaderShadowView.swift */,
-				308CC9DB1B78EC8900E11188 /* StickyHeaderView.swift */,
-			);
-			path = Core;
-			sourceTree = "<group>";
-		};
-		308CC9DC1B78EC8900E11188 /* Extension */ = {
-			isa = PBXGroup;
-			children = (
-				308CC9DD1B78EC8900E11188 /* UIEdgeInsets+Equatable.swift */,
-				308CC9DE1B78EC8900E11188 /* UIScrollView+NormalizedContentOffset.swift */,
-			);
-			path = Extension;
-			sourceTree = "<group>";
-		};
-		308CC9DF1B78EC8900E11188 /* Menu */ = {
-			isa = PBXGroup;
-			children = (
-				308CC9E01B78EC8900E11188 /* MenuCell.swift */,
-				308CC9E11B78EC8900E11188 /* MenuItem.swift */,
-				308CC9E21B78EC8900E11188 /* MenuView.swift */,
-				308CC9E31B78EC8900E11188 /* MenuViewDelegate.swift */,
-			);
-			path = Menu;
-			sourceTree = "<group>";
-		};
 		308CC9E41B78EC8900E11188 /* RKSwipeBetweenViewControllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -2411,13 +2348,14 @@
 			children = (
 				30A72E1D1B83025A009C7CD7 /* Todo_TypeViewController.h */,
 				30A72E1E1B83025A009C7CD7 /* Todo_TypeViewController.m */,
-				308CCA1A1B78EC8900E11188 /* Todo_AllViewController.swift */,
 				308CCA1B1B78EC8900E11188 /* Todo_CalenderViewController.h */,
 				308CCA1C1B78EC8900E11188 /* Todo_CalenderViewController.m */,
 				303A42B91B81C0C900117F71 /* JFCreateTodoViewController.h */,
 				303A42BA1B81C0C900117F71 /* JFCreateTodoViewController.m */,
 				30A72E201B830455009C7CD7 /* JFTodoTypeTableView.h */,
 				30A72E211B830455009C7CD7 /* JFTodoTypeTableView.m */,
+				30351AC21B8CC19D00FDEBFD /* Todo_AllViewController.h */,
+				30351AC31B8CC19D00FDEBFD /* Todo_AllViewController.m */,
 			);
 			path = Todo;
 			sourceTree = "<group>";
@@ -2460,7 +2398,8 @@
 				308CCA2C1B78EC8900E11188 /* ScheduleFootCell.m */,
 				308CCA2D1B78EC8900E11188 /* ScheduleHeadCell.h */,
 				308CCA2E1B78EC8900E11188 /* ScheduleHeadCell.m */,
-				308CCA2F1B78EC8900E11188 /* TodoCell.swift */,
+				3081F6B81B8C6FE900E068D1 /* TodoCell.h */,
+				3081F6B91B8C6FE900E068D1 /* TodoCell.m */,
 				301AFF4F1B7B10C600D0EA11 /* MomentCell.h */,
 				301AFF501B7B10C600D0EA11 /* MomentCell.m */,
 				308CCA301B78EC8900E11188 /* TweetCell.h */,
@@ -2547,7 +2486,7 @@
 			isa = PBXGroup;
 			children = (
 				303C167C1B7F875E00FC8828 /* AssetsLibrary.framework */,
-				F78AF8A0B01BEAE2B97F8B96 /* Pods.framework */,
+				FF7EE33D1F22C37423642791 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -2574,7 +2513,6 @@
 				30875F911B78E7CA00C50534 /* Resources */,
 				130626A953E14EBDD440F19C /* Copy Pods Resources */,
 				308CCC0B1B78ED0A00E11188 /* Copy Frameworks */,
-				16F7AA9DF862EA03B929D25B /* Embed Pods Frameworks */,
 				300175341B7904AE00AE464D /* ShellScript */,
 			);
 			buildRules = (
@@ -3011,21 +2949,6 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		16F7AA9DF862EA03B929D25B /* Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		300175341B7904AE00AE464D /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -3072,12 +2995,10 @@
 				308CCBE01B78EC8900E11188 /* XHPopMenuItemView.m in Sources */,
 				303C16571B7F81CF00FC8828 /* UIPlaceHolderTextView.m in Sources */,
 				302710031B7F760300A412DA /* UIMessageInputView_Add.m in Sources */,
-				308CCBD51B78EC8900E11188 /* StickyHeaderView.swift in Sources */,
 				308CCBF01B78EC8900E11188 /* Me_RootViewController.m in Sources */,
+				30351AC41B8CC19D00FDEBFD /* Todo_AllViewController.m in Sources */,
 				308CCC041B78EC8900E11188 /* TweetLikeUserCCell.m in Sources */,
 				308CCBCC1B78EC8900E11188 /* UIImageView+MJWebCache.m in Sources */,
-				308CCBD21B78EC8900E11188 /* CircularRevealTransition.swift in Sources */,
-				308CCBDA1B78EC8900E11188 /* MenuView.swift in Sources */,
 				303A42B21B81C01900117F71 /* ActionSheetCustomPicker.m in Sources */,
 				302907EA1B79CF5F00B0D96B /* ChatListViewController.m in Sources */,
 				303C166E1B7F82D400FC8828 /* QBAssetsCollectionCheckmarkView.m in Sources */,
@@ -3089,7 +3010,6 @@
 				306B62981B799B8700167CB3 /* Input_OnlyText_Cell.m in Sources */,
 				30A72E171B83015C009C7CD7 /* XLSegmentedPagerTabStripViewController.m in Sources */,
 				308CCBAA1B78EC8900E11188 /* UIViewController+Swizzle.m in Sources */,
-				308CCBF31B78EC8900E11188 /* Todo_AllViewController.swift in Sources */,
 				308CCBEA1B78EC8900E11188 /* RegisterViewController.m in Sources */,
 				308CCBA91B78EC8900E11188 /* UIView+Common.m in Sources */,
 				308CCBBB1B78EC8900E11188 /* JTCircleView.m in Sources */,
@@ -3100,7 +3020,6 @@
 				306B62941B79998F00167CB3 /* EaseInputTipsView.m in Sources */,
 				308CCA4C1B78EC8900E11188 /* TodoItem.swift in Sources */,
 				30A72E191B83015C009C7CD7 /* FXPageControl.m in Sources */,
-				308CCBD11B78EC8900E11188 /* CGRect+Extension.swift in Sources */,
 				303C16741B7F82D400FC8828 /* QBAssetsCollectionViewLayout.m in Sources */,
 				30A72E1C1B83015C009C7CD7 /* XLButtonBarViewCell.m in Sources */,
 				308CCC051B78EC8900E11188 /* TweetMediaItemCCell.m in Sources */,
@@ -3122,19 +3041,16 @@
 				30A72E1B1B83015C009C7CD7 /* XLButtonBarView.m in Sources */,
 				30875F9F1B78E7CB00C50534 /* ToChat.xcdatamodeld in Sources */,
 				308CCC061B78EC8900E11188 /* TweetMediaItemSingleCCell.m in Sources */,
-				308CCBD31B78EC8900E11188 /* ContentType.swift in Sources */,
 				308CCBA61B78EC8900E11188 /* UIImageView+Common.m in Sources */,
 				308CCBF71B78EC8900E11188 /* BaseCell.m in Sources */,
 				308CCBA01B78EC8900E11188 /* NSURL+Common.m in Sources */,
 				30A72E181B83015C009C7CD7 /* XLTwitterPagerTabStripViewController.m in Sources */,
-				308CCBD41B78EC8900E11188 /* HeaderShadowView.swift in Sources */,
 				308CCA4B1B78EC8900E11188 /* Login.m in Sources */,
 				308CCBEB1B78EC8900E11188 /* BaseNavigationController.m in Sources */,
 				308CCC011B78EC8900E11188 /* TweetTodoCell.m in Sources */,
 				3000BAEF1B8469E200C3939E /* DiscoverTodoViewController.m in Sources */,
 				308CCBC11B78EC8900E11188 /* NSObject+LKDBHelper.m in Sources */,
 				308CCB9B1B78EC8900E11188 /* ImageSizeManager.m in Sources */,
-				308CCBDB1B78EC8900E11188 /* MenuViewDelegate.swift in Sources */,
 				308CCBE11B78EC8900E11188 /* YLGIFImage.m in Sources */,
 				303C16781B7F82D400FC8828 /* QBImagePickerThumbnailView.m in Sources */,
 				30A72E221B830455009C7CD7 /* JFTodoTypeTableView.m in Sources */,
@@ -3147,7 +3063,6 @@
 				308CCBFE1B78EC8900E11188 /* TweetCell.m in Sources */,
 				303A42B61B81C01900117F71 /* ActionSheetStringPicker.m in Sources */,
 				30A72E141B83015C009C7CD7 /* XLBarPagerTabStripViewController.m in Sources */,
-				308CCBD91B78EC8900E11188 /* MenuItem.swift in Sources */,
 				303C167B1B7F831200FC8828 /* Helper.m in Sources */,
 				308CCBAF1B78EC8900E11188 /* FMDatabaseQueue.m in Sources */,
 				308CCBB51B78EC8900E11188 /* JTCalendarDayView.m in Sources */,
@@ -3155,7 +3070,6 @@
 				308CCBC41B78EC8900E11188 /* MJPhoto.m in Sources */,
 				3000BAE51B8466AA00C3939E /* UITableView+FDTemplateLayoutCell.m in Sources */,
 				308CCBA71B78EC8900E11188 /* UILabel+Common.m in Sources */,
-				308CCBD71B78EC8900E11188 /* UIScrollView+NormalizedContentOffset.swift in Sources */,
 				308CCA501B78EC8900E11188 /* User.m in Sources */,
 				308CCB9D1B78EC8900E11188 /* NSObject+Common.m in Sources */,
 				308CCBC81B78EC8900E11188 /* MJPhotoProgressView.m in Sources */,
@@ -3183,7 +3097,6 @@
 				30A72E151B83015C009C7CD7 /* XLButtonBarPagerTabStripViewController.m in Sources */,
 				308CCC071B78EC8900E11188 /* EaseStartView.m in Sources */,
 				308CCB971B78EC8900E11188 /* UIBadgeView.m in Sources */,
-				308CCBFD1B78EC8900E11188 /* TodoCell.swift in Sources */,
 				308CCBE31B78EC8900E11188 /* DynamicTodoViewController.m in Sources */,
 				308CCBA81B78EC8900E11188 /* UITableView+Common.m in Sources */,
 				308CCBC91B78EC8900E11188 /* MJPhotoToolbar.m in Sources */,
@@ -3196,6 +3109,7 @@
 				308CCBB41B78EC8900E11188 /* JTCalendarDataCache.m in Sources */,
 				308CCA4F1B78EC8900E11188 /* Tweets.m in Sources */,
 				308CCBFC1B78EC8900E11188 /* ScheduleHeadCell.m in Sources */,
+				3081F6BA1B8C6FE900E068D1 /* TodoCell.m in Sources */,
 				308CCBA21B78EC8900E11188 /* UIButton+Bootstrap.m in Sources */,
 				308CCBEC1B78EC8900E11188 /* BaseViewController.m in Sources */,
 				308CCBB61B78EC8900E11188 /* JTCalendarMenuMonthView.m in Sources */,
@@ -3213,7 +3127,6 @@
 				308CCBB21B78EC8900E11188 /* JTCalendarAppearance.m in Sources */,
 				308CCBAE1B78EC8900E11188 /* FMDatabasePool.m in Sources */,
 				308CCBA31B78EC8900E11188 /* UIButton+User.m in Sources */,
-				308CCBD61B78EC8900E11188 /* UIEdgeInsets+Equatable.swift in Sources */,
 				301AFF511B7B10C600D0EA11 /* MomentCell.m in Sources */,
 				308CCBFB1B78EC8900E11188 /* ScheduleFootCell.m in Sources */,
 				308CCBE81B78EC8900E11188 /* IntroductionViewController.m in Sources */,
@@ -3222,7 +3135,6 @@
 				308CCA4A1B78EC8900E11188 /* HtmlMedia.m in Sources */,
 				308CCBB81B78EC8900E11188 /* JTCalendarMonthView.m in Sources */,
 				303A42B11B81C01900117F71 /* AbstractActionSheetPicker.m in Sources */,
-				308CCBD81B78EC8900E11188 /* MenuCell.swift in Sources */,
 				308CCBB71B78EC8900E11188 /* JTCalendarMenuView.m in Sources */,
 				308CCBC71B78EC8900E11188 /* MJPhotoLoadingView.m in Sources */,
 				308CCC091B78EC8900E11188 /* EaseUserHeaderView.m in Sources */,
