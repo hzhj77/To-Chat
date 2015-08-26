@@ -124,20 +124,20 @@ static User *curLoginUser;
     }
     return nil;
 }
-
-+ (void)setXGAccountWithCurUser{
-    if ([self isLogin]) {
-        User *user = [Login curLoginUser];
-        if (user && user.global_key.length > 0) {
-            NSString *global_key = user.global_key;
-            //[XGPush setAccount:global_key];
-            [(AppDelegate *)[UIApplication sharedApplication].delegate registerPush];
-        }
-    }else{
-       // [XGPush setAccount:nil];
-        //[XGPush unRegisterDevice];
-    }
-}
+//
+//+ (void)setXGAccountWithCurUser{
+//    if ([self isLogin]) {
+//        User *user = [Login curLoginUser];
+//        if (user && user.global_key.length > 0) {
+//            NSString *global_key = user.global_key;
+//            //[XGPush setAccount:global_key];
+//            [(AppDelegate *)[UIApplication sharedApplication].delegate registerPush];
+//        }
+//    }else{
+//       // [XGPush setAccount:nil];
+//        //[XGPush unRegisterDevice];
+//    }
+//}
 
 + (void)doLogout{
     [UIApplication sharedApplication].applicationIconBadgeNumber = 0;

@@ -16,7 +16,6 @@
 		302710031B7F760300A412DA /* UIMessageInputView_Add.m in Sources */ = {isa = PBXBuildFile; fileRef = 30270FFD1B7F760300A412DA /* UIMessageInputView_Add.m */; };
 		302710041B7F760300A412DA /* UIMessageInputView_CCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 30270FFF1B7F760300A412DA /* UIMessageInputView_CCell.m */; };
 		302710051B7F760300A412DA /* UIMessageInputView_Media.m in Sources */ = {isa = PBXBuildFile; fileRef = 302710011B7F760300A412DA /* UIMessageInputView_Media.m */; };
-		302907EA1B79CF5F00B0D96B /* ChatListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 302907E91B79CF5F00B0D96B /* ChatListViewController.m */; };
 		302C50E61B8014FF001F72DC /* UIActionSheet+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = 302C50E51B8014FF001F72DC /* UIActionSheet+Common.m */; };
 		30351AC41B8CC19D00FDEBFD /* Todo_AllViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30351AC31B8CC19D00FDEBFD /* Todo_AllViewController.m */; };
 		303A429B1B81BFAE00117F71 /* JFTodoCreateSelectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 303A429A1B81BFAE00117F71 /* JFTodoCreateSelectionCell.m */; };
@@ -503,6 +502,8 @@
 		30A72E1C1B83015C009C7CD7 /* XLButtonBarViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 30A72E131B83015C009C7CD7 /* XLButtonBarViewCell.m */; };
 		30A72E1F1B83025A009C7CD7 /* Todo_TypeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30A72E1E1B83025A009C7CD7 /* Todo_TypeViewController.m */; };
 		30A72E221B830455009C7CD7 /* JFTodoTypeTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 30A72E211B830455009C7CD7 /* JFTodoTypeTableView.m */; };
+		30A84FB81B8DDF3A00429DF6 /* LoginManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 30A84FB71B8DDF3A00429DF6 /* LoginManager.m */; };
+		30A84FBB1B8DF0E600429DF6 /* JFUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 30A84FBA1B8DF0E600429DF6 /* JFUser.m */; };
 		81321FA23AABD97375720AF0 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FF7EE33D1F22C37423642791 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -548,8 +549,6 @@
 		30270FFF1B7F760300A412DA /* UIMessageInputView_CCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIMessageInputView_CCell.m; sourceTree = "<group>"; };
 		302710001B7F760300A412DA /* UIMessageInputView_Media.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIMessageInputView_Media.h; sourceTree = "<group>"; };
 		302710011B7F760300A412DA /* UIMessageInputView_Media.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIMessageInputView_Media.m; sourceTree = "<group>"; };
-		302907E81B79CF5F00B0D96B /* ChatListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatListViewController.h; sourceTree = "<group>"; };
-		302907E91B79CF5F00B0D96B /* ChatListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatListViewController.m; sourceTree = "<group>"; };
 		302C50E41B8014FF001F72DC /* UIActionSheet+Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIActionSheet+Common.h"; sourceTree = "<group>"; };
 		302C50E51B8014FF001F72DC /* UIActionSheet+Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIActionSheet+Common.m"; sourceTree = "<group>"; };
 		30351AC21B8CC19D00FDEBFD /* Todo_AllViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Todo_AllViewController.h; sourceTree = "<group>"; };
@@ -1194,6 +1193,10 @@
 		30A72E1E1B83025A009C7CD7 /* Todo_TypeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Todo_TypeViewController.m; sourceTree = "<group>"; };
 		30A72E201B830455009C7CD7 /* JFTodoTypeTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFTodoTypeTableView.h; sourceTree = "<group>"; };
 		30A72E211B830455009C7CD7 /* JFTodoTypeTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFTodoTypeTableView.m; sourceTree = "<group>"; };
+		30A84FB61B8DDF3A00429DF6 /* LoginManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginManager.h; sourceTree = "<group>"; };
+		30A84FB71B8DDF3A00429DF6 /* LoginManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginManager.m; sourceTree = "<group>"; };
+		30A84FB91B8DF0E600429DF6 /* JFUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFUser.h; sourceTree = "<group>"; };
+		30A84FBA1B8DF0E600429DF6 /* JFUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFUser.m; sourceTree = "<group>"; };
 		85D9888B17E94E7F2832D035 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		F266A674F1CC57F71F5F6237 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		FF7EE33D1F22C37423642791 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -1246,8 +1249,6 @@
 		302907E71B79CEE600B0D96B /* Me */ = {
 			isa = PBXGroup;
 			children = (
-				302907E81B79CF5F00B0D96B /* ChatListViewController.h */,
-				302907E91B79CF5F00B0D96B /* ChatListViewController.m */,
 			);
 			path = Me;
 			sourceTree = "<group>";
@@ -1407,6 +1408,10 @@
 				308CC7E81B78EC8800E11188 /* Tweets.m */,
 				308CC7E91B78EC8800E11188 /* User.h */,
 				308CC7EA1B78EC8800E11188 /* User.m */,
+				30A84FB61B8DDF3A00429DF6 /* LoginManager.h */,
+				30A84FB71B8DDF3A00429DF6 /* LoginManager.m */,
+				30A84FB91B8DF0E600429DF6 /* JFUser.h */,
+				30A84FBA1B8DF0E600429DF6 /* JFUser.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -2984,6 +2989,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				30A84FB81B8DDF3A00429DF6 /* LoginManager.m in Sources */,
 				308CCBBF1B78EC8900E11188 /* LKDBHelper.m in Sources */,
 				308CCBCF1B78EC8900E11188 /* NSString+Emojize.m in Sources */,
 				308CCA4E1B78EC8900E11188 /* Tweet.m in Sources */,
@@ -3000,7 +3006,6 @@
 				308CCC041B78EC8900E11188 /* TweetLikeUserCCell.m in Sources */,
 				308CCBCC1B78EC8900E11188 /* UIImageView+MJWebCache.m in Sources */,
 				303A42B21B81C01900117F71 /* ActionSheetCustomPicker.m in Sources */,
-				302907EA1B79CF5F00B0D96B /* ChatListViewController.m in Sources */,
 				303C166E1B7F82D400FC8828 /* QBAssetsCollectionCheckmarkView.m in Sources */,
 				308CCBC61B78EC8900E11188 /* MJPhotoBrowser.m in Sources */,
 				308CCBB11B78EC8900E11188 /* JTCalendar.m in Sources */,
@@ -3097,6 +3102,7 @@
 				30A72E151B83015C009C7CD7 /* XLButtonBarPagerTabStripViewController.m in Sources */,
 				308CCC071B78EC8900E11188 /* EaseStartView.m in Sources */,
 				308CCB971B78EC8900E11188 /* UIBadgeView.m in Sources */,
+				30A84FBB1B8DF0E600429DF6 /* JFUser.m in Sources */,
 				308CCBE31B78EC8900E11188 /* DynamicTodoViewController.m in Sources */,
 				308CCBA81B78EC8900E11188 /* UITableView+Common.m in Sources */,
 				308CCBC91B78EC8900E11188 /* MJPhotoToolbar.m in Sources */,

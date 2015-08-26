@@ -25,10 +25,6 @@
  */
 - (void)setupTabViewController;
 
-/**
- *  注册推送
- */
-- (void)registerPush;
 @end
 
 

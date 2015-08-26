@@ -12,7 +12,6 @@
 #import "UserInfoIconCell.h"
 #import "MJPhotoBrowser.h"
 #import "RDVTabBarController.h"
-#import "ChatListViewController.h"
 
 @interface UserInfoViewController ()<UITableViewDelegate , UITableViewDataSource>
 @property (strong, nonatomic) UITableView *myTableView;
@@ -198,12 +197,6 @@
 }
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
-    if (indexPath.section == 1 && indexPath.row == 0) {
-        NSArray *conversationTypes = @[@(ConversationType_PRIVATE),@(ConversationType_DISCUSSION), @(ConversationType_APPSERVICE), @(ConversationType_PUBLICSERVICE),@(ConversationType_GROUP)];
-        ChatListViewController * chat=[[ChatListViewController alloc]initWithDisplayConversationTypes:conversationTypes collectionConversationType:conversationTypes];
-        
-        [self.navigationController pushViewController:chat animated:YES];
-    }
 }
 
 - (void)didReceiveMemoryWarning {

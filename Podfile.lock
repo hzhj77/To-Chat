@@ -87,7 +87,6 @@ PODS:
   - ReactiveCocoa/UI (2.5):
     - ReactiveCocoa/Core
   - RegexKitLite-NoWarning (1.1.0)
-  - RongCloudIMKit (2.2.7)
   - SDCAlertView (2.4.2):
     - RBBAnimation (~> 0.3)
     - SDCAutoLayout (~> 2.0)
@@ -128,7 +127,6 @@ DEPENDENCIES:
   - RDVTabBarController (~> 1.1.9)
   - ReactiveCocoa
   - RegexKitLite-NoWarning (~> 1.1.0)
-  - RongCloudIMKit
   - SDCAlertView (~> 2.4.1)
   - SDWebImage (~> 3.7.3)
   - SMPageControl (~> 1.2)
@@ -165,7 +163,6 @@ SPEC CHECKSUMS:
   RDVTabBarController: 67794f7a7a37f8e32f046f85ac67d06ab92d624a
   ReactiveCocoa: e2db045570aa97c695e7aa97c2bcab222ae51f4a
   RegexKitLite-NoWarning: 365d208f8187997e33d9de8baeddfc00728596d8
-  RongCloudIMKit: 81aa574b10e066eaefeb325b775fa596d1a13942
   SDCAlertView: 486468bfba6a8cf1190b0f98552a19ae71b4c059
   SDCAutoLayout: e6885bb39ab8e2ec2ff84d158f38035f025f7420
   SDWebImage: 1d2b1a1efda1ade1b00b6f8498865f8ddedc8a84
@@ -178,4 +175,4 @@ SPEC CHECKSUMS:
   XGPush: fa2e9fce1895ea238bcd92dd0a5189a5452e15f2
   ZXingObjC: bf15b3814f7a105b6d99f47da2333c93a063650a
 
-COCOAPODS: 0.36.0
+COCOAPODS: 0.38.2

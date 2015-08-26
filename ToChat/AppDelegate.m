@@ -6,6 +6,9 @@
 //  Copyright (c) 2015年 JFT0M. All rights reserved.
 //
 
+#define AVOSCloudAppID @"lOTtjcligkQMyXiPiPIaCnTo"
+#define AVOSCloudAppKey @"jlbrJ8T5bDQRybu8od7vJku3"
+
 #import "AppDelegate.h"
 #import "EaseStartView.h"
 
@@ -13,18 +16,15 @@
 #import "IntroductionViewController.h"
 #import "BaseViewController.h"
 
+#import "LoginManager.h"
+#import "JFUser.h"
 
 
 @interface AppDelegate ()
-#warning isLogin为前期测试界面用的，后期需要扩展
-@property (assign,nonatomic)bool isLogin;
 
 @end
 
 @implementation AppDelegate
-
-
-#pragma mark XGPush
 - (void)registerPush{
     float sysVer = [[[UIDevice currentDevice] systemVersion] floatValue];
     if(sysVer < 8){
@@ -40,11 +40,47 @@
     }
 }
 
+
 #pragma mark - application
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
-    [self connectToRongCloud];
+    /* 重要! 注册子类 App生命周期内 只需要执行一次即可*/
+    [JFUser registerSubclass];
+    
+    //设置AVOSCloud
+    [AVOSCloud setApplicationId:AVOSCloudAppID
+                      clientKey:AVOSCloudAppKey];
+    //统计应用启动情况
+    [AVAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
+    
+    /**可选 统计应用崩溃数据
+     *
+     * 其他可用方法:
+     *
+     * * 捕获异常, 并询问用户是否忽略, 可以使应用保持在运行状态而不闪退.
+     * [AVAnalytics setCrashReportEnabled:(BOOL) andIgnore:(BOOL)]
+     *
+     * * 功能同上, 但是可以自定义询问用户的文字
+     * [AVAnalytics setCrashReportEnabled:(BOOL) withIgnoreAlertTitle:(NSString *)
+     *    andMessage:(NSString *) andQuitTitle:(NSString *) andContinueTitle:(NSString *)]
+     */
+    //[AVAnalytics setCrashReportEnabled:YES];
+    
+    //可选 打开推送功能 因为推送只支持真机上, 我们可以加个编译时判断
+    //同样会防止在模拟器运行时得到`didFailToRegisterForRemoteNotificationsWithError`的错误提醒
+    
+#if !TARGET_IPHONE_SIMULATOR
     [self registerPush];
+#endif
+    
+    // 输出内部日志，发布时记得关闭
+#ifdef DEBUG
+    [AVOSCloud setVerbosePolicy:kAVVerboseShow];
+    [AVLogger addLoggerDomain:AVLoggerDomainIM];
+    [AVLogger addLoggerDomain:AVLoggerDomainCURL];
+    [AVLogger setLoggerLevelMask:AVLoggerLevelAll];
+#endif
+
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
@@ -56,62 +92,28 @@
     [[UIApplication sharedApplication] setStatusBarHidden:NO withAnimation:UIStatusBarAnimationNone];
     [[UIApplication sharedApplication]setStatusBarStyle:UIStatusBarStyleLightContent];
     
-    
-    _isLogin = true;
-    
-    if (_isLogin) {
+    //LoginManager * loginManager = [LoginManager sharedInstance];
+    if ([AVUser currentUser]) {
         [self setupTabViewController];
     }else{
         [UIApplication sharedApplication].applicationIconBadgeNumber = 0;
         [self setupIntroductionViewController];
     }
     
-    
-    
     [self.window makeKeyAndVisible];
     
-//    EaseStartView *startView = [EaseStartView startView];
-//    @weakify(self);
-//    [startView startAnimationWithCompletionBlock:^(EaseStartView *easeStartView) {
-//        @strongify(self);
-//        [self completionStartAnimationWithOptions:launchOptions];
-//    }];
-    
-    
-    
+    EaseStartView *startView = [EaseStartView startView];
+    @weakify(self);
+    [startView startAnimationWithCompletionBlock:^(EaseStartView *easeStartView) {
+        @strongify(self);
+        [self completionStartAnimationWithOptions:launchOptions];
+        [[UIApplication sharedApplication]setStatusBarStyle:UIStatusBarStyleDefault];
+    }];
     
     return YES;
 }
 
 - (void)completionStartAnimationWithOptions:(NSDictionary *)launchOptions{
-    //推送注册
-    //
-    //    if (_isLogin) {
-    //        NSDictionary *remoteNotification = [launchOptions valueForKey:UIApplicationLaunchOptionsRemoteNotificationKey];
-    //        if (remoteNotification) {
-    //            [BaseViewController handleNotificationInfo:remoteNotification applicationState:UIApplicationStateInactive];
-    //        }
-    //    }
-    //
-    //
-    //    //    信鸽推送
-    //    [XGPush startApp:kXGPush_Id appKey:kXGPush_Key];
-    //    [Login setXGAccountWithCurUser];
-    //    //注销之后需要再次注册前的准备
-    //    @weakify(self);
-    //    void (^successCallback)(void) = ^(void){
-    //        //如果变成需要注册状态
-    //        if(![XGPush isUnRegisterStatus] && [Login isLogin]){
-    //            @strongify(self);
-    //            [self registerPush];
-    //        }
-    //    };
-    //    [XGPush initForReregister:successCallback];
-    //
-    //    [XGPush registerPush];  //注册Push服务，注册后才能收到推送
-    //
-    //    推送反馈(app不在前台运行时，点击推送激活时。统计而已)
-    //    [XGPush handleLaunching:launchOptions];
     
 }
 
@@ -261,21 +263,6 @@
     [navigationBarAppearance setTitleTextAttributes:textAttributes];
 }
 
--(void)connectToRongCloud{
-    //初始化融云SDK
-    [[RCIM sharedRCIM] initWithAppKey:RONGCLOUD_IM_APPKEY];
-    // 快速集成第二步，连接融云服务器
-//    [[RCIM sharedRCIM] connectWithToken:RONGCLOUD_IM_USER_TOKEN success:^(NSString *userId){
-//        NSLog(@"Connect 成功") ;
-//        
-//    }
-//                                  error:^(RCConnectErrorCode status) {
-//                                      NSLog(@"Connect 失败");
-//                                  }
-//                         tokenIncorrect:^() {
-//                              NSLog(@"Connect 失败");
-//                         }];
-}
 
 #pragma mark - ViewController
 

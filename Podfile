@@ -35,8 +35,6 @@ pod 'RDVTabBarController', '~> 1.1.9'
 pod 'JazzHands', '~> 2.0.0'
 #push
 pod 'XGPush', '~> 2.3'
-#融云
-pod 'RongCloudIMKit'
 #leancloud云存储
 pod 'AVOSCloud'
 pod 'AVOSCloudIM'

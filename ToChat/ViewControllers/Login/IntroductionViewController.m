@@ -293,7 +293,7 @@
 
 - (void)loginBtnClicked{
     LoginViewController *vc = [[LoginViewController alloc] init];
-    //vc.showDismissButton = YES;
+    vc.showDismissButton = YES;
     UINavigationController *nav = [[BaseNavigationController alloc] initWithRootViewController:vc];
     [self presentViewController:nav animated:YES completion:nil];
 }
