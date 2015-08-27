@@ -1,0 +1,6 @@
+framework module RegexKitLite_NoWarning {
+  umbrella header "Pods-RegexKitLite-NoWarning-umbrella.h"
+
+  export *
+  module * { export * }
+}

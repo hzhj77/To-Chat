@@ -5,13 +5,13 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>91C6790B-8979-404A-8AD2-BD3E86E7E162</string>
+	<string>73D3CC41-B3B4-4BE3-BCB6-108AFF987B85</string>
 	<key>IDESourceControlProjectName</key>
 	<string>ToChat</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>6E4D8FBF9D7F06F338768949E1C6B7904DAD86BB</key>
-		<string>https://github.com/bottotl/ToChat.git</string>
+		<string>https://github.com/bottotl/To-Chat.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>ToChat.xcworkspace</string>
@@ -21,7 +21,7 @@
 		<string>..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/bottotl/ToChat.git</string>
+	<string>https://github.com/bottotl/To-Chat.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
@@ -34,7 +34,7 @@
 			<key>IDESourceControlWCCIdentifierKey</key>
 			<string>6E4D8FBF9D7F06F338768949E1C6B7904DAD86BB</string>
 			<key>IDESourceControlWCCName</key>
-			<string>ToChat</string>
+			<string>To-Chat</string>
 		</dict>
 	</array>
 </dict>

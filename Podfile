@@ -1,4 +1,7 @@
-source 'https://github.com/CocoaPods/Specs.git'
+platform :ios, '7.0'
+
+use_frameworks!
+
 #Framework
 pod 'SVPullToRefresh', '~> 0.4.1'
 pod 'JDStatusBarNotification', '~> 1.5.2'
@@ -11,7 +14,6 @@ pod 'MMMarkdown', '0.3'
 pod 'APParallaxHeader'
 pod 'iVersion', '~> 1.11.4'
 pod 'SSKeychain', '~> 1.2.3'
-pod 'ZXingObjC', '~> 3.1.0'
 pod 'BlocksKit', '~> 2.2.5'
 
 #刷新头
@@ -34,8 +36,5 @@ pod 'MBProgressHUD', '0.9'
 pod 'RDVTabBarController', '~> 1.1.9'
 pod 'JazzHands', '~> 2.0.0'
 #push
-pod 'XGPush', '~> 2.3'
 #leancloud云存储
 pod 'AVOSCloud'
-pod 'AVOSCloudIM'
-pod 'AVOSCloudSNS'
