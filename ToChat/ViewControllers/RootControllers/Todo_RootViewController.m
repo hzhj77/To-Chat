@@ -38,8 +38,8 @@
     //Todo_CalenderViewController * calender = [[Todo_CalenderViewController alloc]init];
     _calenderVC =[[Todo_CalenderViewController alloc]init];
     _allVC = [[Todo_AllViewController alloc]init];
-    //_typeVC = [[Todo_TypeViewController alloc]init];
-    _typeVC = [[UIStoryboard storyboardWithName:@"Main" bundle:nil]instantiateViewControllerWithIdentifier:@"Todo_TypeViewController"];
+    _typeVC = [[Todo_TypeViewController alloc]init];
+    //_typeVC = [[UIStoryboard storyboardWithName:@"Main" bundle:nil]instantiateViewControllerWithIdentifier:@"Todo_TypeViewController"];
     
    self.viewControllers = @[_calenderVC,_allVC,_typeVC];
 

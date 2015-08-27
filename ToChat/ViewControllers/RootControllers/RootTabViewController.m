@@ -97,18 +97,6 @@
         BaseViewController *rootVC = (BaseViewController *)nav.topViewController;
         [rootVC tabBarItemClicked];
     }
-//    if ([nav isKindOfClass:[RKSwipeBetweenViewControllers class]]) {
-//        RKSwipeBetweenViewControllers *swipeVC = (RKSwipeBetweenViewControllers *)nav;
-//        if ([[swipeVC curViewController] isKindOfClass:[BaseViewController class]]) {
-//            BaseViewController *rootVC = (BaseViewController *)[swipeVC curViewController];
-//            [rootVC tabBarItemClicked];
-//        }
-//    }else{
-//        if ([nav.topViewController isKindOfClass:[BaseViewController class]]) {
-//            BaseViewController *rootVC = (BaseViewController *)nav.topViewController;
-//            [rootVC tabBarItemClicked];
-//        }
-//    }
     return YES;
 }
 @end

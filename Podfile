@@ -1,7 +1,5 @@
 platform :ios, '7.0'
 
-use_frameworks!
-
 #Framework
 pod 'SVPullToRefresh', '~> 0.4.1'
 pod 'JDStatusBarNotification', '~> 1.5.2'

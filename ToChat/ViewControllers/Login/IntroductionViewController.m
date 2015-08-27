@@ -46,13 +46,6 @@
                        @"6_image" : @"intro_tip_5",
                        } mutableCopy];
         
-        //        _iconsDict = [NSMutableDictionary new];
-        //        _tipsDict = [NSMutableDictionary new];
-        //        for (int i = 0; i < self.numberOfPages; i++) {
-        //            NSString *imageKey = [self imageKeyForIndex:i];
-        //            [_iconsDict setObject:[NSString stringWithFormat:@"intro_icon_%d", i] forKey:imageKey];
-        //            [_tipsDict setObject:[NSString stringWithFormat:@"intro_tip_%d", i] forKey:imageKey];
-        //        }
     }
     
     return self;

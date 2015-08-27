@@ -268,12 +268,12 @@
 
 
 - (void)setupIntroductionViewController{
-    IntroductionViewController *introductionVC = [[IntroductionViewController alloc] init];
+    IntroductionViewController *introductionVC = [[UIStoryboard storyboardWithName:@"Main" bundle:nil]instantiateViewControllerWithIdentifier:@"IntroductionViewController"];
     [self.window setRootViewController:introductionVC];
 }
 
 - (void)setupTabViewController{
-    RootTabViewController *rootVC = [[RootTabViewController alloc] init];
+    RootTabViewController *rootVC = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"RootTabViewController"];
     rootVC.tabBar.translucent = YES;
     
     [self.window setRootViewController:rootVC];
