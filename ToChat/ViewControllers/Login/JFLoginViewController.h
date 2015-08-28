@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface JFLoginViewController : UIViewController
+@interface JFLoginViewController : UITableViewController
 
 @end

@@ -20,6 +20,7 @@
 		302C50E61B8014FF001F72DC /* UIActionSheet+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = 302C50E51B8014FF001F72DC /* UIActionSheet+Common.m */; };
 		302F36CA1B8F254B00BE0D76 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 302F36C91B8F254B00BE0D76 /* Main.storyboard */; };
 		302F36FF1B8F4B9900BE0D76 /* JFRoundUIButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 302F36FE1B8F4B9900BE0D76 /* JFRoundUIButton.m */; };
+		3031D2B91B8FE0B5007660AB /* ToChatMain.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3031D2B81B8FE0B5007660AB /* ToChatMain.storyboard */; };
 		30351AC41B8CC19D00FDEBFD /* Todo_AllViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30351AC31B8CC19D00FDEBFD /* Todo_AllViewController.m */; };
 		303A429B1B81BFAE00117F71 /* JFTodoCreateSelectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 303A429A1B81BFAE00117F71 /* JFTodoCreateSelectionCell.m */; };
 		303A42B11B81C01900117F71 /* AbstractActionSheetPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 303A42A11B81C01900117F71 /* AbstractActionSheetPicker.m */; };
@@ -68,14 +69,6 @@
 		308CCA4E1B78EC8900E11188 /* Tweet.m in Sources */ = {isa = PBXBuildFile; fileRef = 308CC7E61B78EC8800E11188 /* Tweet.m */; };
 		308CCA4F1B78EC8900E11188 /* Tweets.m in Sources */ = {isa = PBXBuildFile; fileRef = 308CC7E81B78EC8800E11188 /* Tweets.m */; };
 		308CCA501B78EC8900E11188 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 308CC7EA1B78EC8800E11188 /* User.m */; };
-		308CCA511B78EC8900E11188 /* content_films-667h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 308CC7ED1B78EC8800E11188 /* content_films-667h@2x.png */; };
-		308CCA521B78EC8900E11188 /* content_films.png in Resources */ = {isa = PBXBuildFile; fileRef = 308CC7EE1B78EC8800E11188 /* content_films.png */; };
-		308CCA531B78EC8900E11188 /* content_films@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 308CC7EF1B78EC8800E11188 /* content_films@2x.png */; };
-		308CCA541B78EC8900E11188 /* content_films@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 308CC7F01B78EC8800E11188 /* content_films@3x.png */; };
-		308CCA551B78EC8900E11188 /* content_music@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 308CC7F11B78EC8800E11188 /* content_music@3x.png */; };
-		308CCA561B78EC8900E11188 /* content_music-667h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 308CC7F21B78EC8800E11188 /* content_music-667h@2x.png */; };
-		308CCA571B78EC8900E11188 /* content_music.png in Resources */ = {isa = PBXBuildFile; fileRef = 308CC7F31B78EC8800E11188 /* content_music.png */; };
-		308CCA581B78EC8900E11188 /* content_music@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 308CC7F41B78EC8800E11188 /* content_music@2x.png */; };
 		308CCA591B78EC8900E11188 /* TrendSansOne.otf in Resources */ = {isa = PBXBuildFile; fileRef = 308CC7F61B78EC8800E11188 /* TrendSansOne.otf */; };
 		308CCA5A1B78EC8900E11188 /* add_user_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 308CC7F81B78EC8800E11188 /* add_user_icon@2x.png */; };
 		308CCA5B1B78EC8900E11188 /* addPictureBgImage@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 308CC7F91B78EC8800E11188 /* addPictureBgImage@2x.png */; };
@@ -507,7 +500,16 @@
 		30A84FB81B8DDF3A00429DF6 /* LoginManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 30A84FB71B8DDF3A00429DF6 /* LoginManager.m */; };
 		30A84FBB1B8DF0E600429DF6 /* JFUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 30A84FBA1B8DF0E600429DF6 /* JFUser.m */; };
 		30BE9D211B8E9E5000C10098 /* JFLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30BE9D201B8E9E5000C10098 /* JFLoginViewController.m */; };
-		46683A68BB382AEEDEB4FE25 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ED564BA347EB04F61697770F /* libPods.a */; };
+		30E6588B1B8FFD09008AFE1A /* JFBackgroundImageTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 30E6588A1B8FFD09008AFE1A /* JFBackgroundImageTableView.m */; settings = {ASSET_TAGS = (); }; };
+		30E658911B90138E008AFE1A /* JFLoginContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30E658901B90138E008AFE1A /* JFLoginContainerViewController.m */; settings = {ASSET_TAGS = (); }; };
+		30E658941B902D19008AFE1A /* JFSettingTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30E658931B902D19008AFE1A /* JFSettingTableViewController.m */; settings = {ASSET_TAGS = (); }; };
+		30E658971B90325F008AFE1A /* JFToChatMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30E658961B90325F008AFE1A /* JFToChatMainViewController.m */; settings = {ASSET_TAGS = (); }; };
+		30E658991B9033AF008AFE1A /* Me.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30E658981B9033AF008AFE1A /* Me.storyboard */; settings = {ASSET_TAGS = (); }; };
+		30E658D51B909257008AFE1A /* JFUITabBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 30E658D41B909257008AFE1A /* JFUITabBarItem.m */; settings = {ASSET_TAGS = (); }; };
+		30E658D81B90995B008AFE1A /* JFToDoContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30E658D71B90995B008AFE1A /* JFToDoContainerViewController.m */; settings = {ASSET_TAGS = (); }; };
+		30E658DA1B909A2A008AFE1A /* ToDo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30E658D91B909A2A008AFE1A /* ToDo.storyboard */; settings = {ASSET_TAGS = (); }; };
+		30E658DC1B909B62008AFE1A /* Discover.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30E658DB1B909B62008AFE1A /* Discover.storyboard */; settings = {ASSET_TAGS = (); }; };
+		EBC71B6E3C6DDAEFAFF1CF6B /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0F4494D4066B50BCBD575A0 /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -559,6 +561,7 @@
 		302F36C91B8F254B00BE0D76 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		302F36FD1B8F4B9900BE0D76 /* JFRoundUIButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFRoundUIButton.h; sourceTree = "<group>"; };
 		302F36FE1B8F4B9900BE0D76 /* JFRoundUIButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFRoundUIButton.m; sourceTree = "<group>"; };
+		3031D2B81B8FE0B5007660AB /* ToChatMain.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ToChatMain.storyboard; sourceTree = "<group>"; };
 		30351AC21B8CC19D00FDEBFD /* Todo_AllViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Todo_AllViewController.h; sourceTree = "<group>"; };
 		30351AC31B8CC19D00FDEBFD /* Todo_AllViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Todo_AllViewController.m; sourceTree = "<group>"; };
 		303A42991B81BFAE00117F71 /* JFTodoCreateSelectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFTodoCreateSelectionCell.h; sourceTree = "<group>"; };
@@ -652,14 +655,6 @@
 		308CC7E81B78EC8800E11188 /* Tweets.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tweets.m; sourceTree = "<group>"; };
 		308CC7E91B78EC8800E11188 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
 		308CC7EA1B78EC8800E11188 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
-		308CC7ED1B78EC8800E11188 /* content_films-667h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "content_films-667h@2x.png"; sourceTree = "<group>"; };
-		308CC7EE1B78EC8800E11188 /* content_films.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = content_films.png; sourceTree = "<group>"; };
-		308CC7EF1B78EC8800E11188 /* content_films@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "content_films@2x.png"; sourceTree = "<group>"; };
-		308CC7F01B78EC8800E11188 /* content_films@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "content_films@3x.png"; sourceTree = "<group>"; };
-		308CC7F11B78EC8800E11188 /* content_music@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "content_music@3x.png"; sourceTree = "<group>"; };
-		308CC7F21B78EC8800E11188 /* content_music-667h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "content_music-667h@2x.png"; sourceTree = "<group>"; };
-		308CC7F31B78EC8800E11188 /* content_music.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = content_music.png; sourceTree = "<group>"; };
-		308CC7F41B78EC8800E11188 /* content_music@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "content_music@2x.png"; sourceTree = "<group>"; };
 		308CC7F61B78EC8800E11188 /* TrendSansOne.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = TrendSansOne.otf; sourceTree = "<group>"; };
 		308CC7F81B78EC8800E11188 /* add_user_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "add_user_icon@2x.png"; sourceTree = "<group>"; };
 		308CC7F91B78EC8800E11188 /* addPictureBgImage@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "addPictureBgImage@2x.png"; sourceTree = "<group>"; };
@@ -1206,8 +1201,23 @@
 		30A84FBA1B8DF0E600429DF6 /* JFUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFUser.m; sourceTree = "<group>"; };
 		30BE9D1F1B8E9E5000C10098 /* JFLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFLoginViewController.h; sourceTree = "<group>"; };
 		30BE9D201B8E9E5000C10098 /* JFLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFLoginViewController.m; sourceTree = "<group>"; };
+		30E658891B8FFD09008AFE1A /* JFBackgroundImageTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFBackgroundImageTableView.h; sourceTree = "<group>"; };
+		30E6588A1B8FFD09008AFE1A /* JFBackgroundImageTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFBackgroundImageTableView.m; sourceTree = "<group>"; };
+		30E6588F1B90138E008AFE1A /* JFLoginContainerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFLoginContainerViewController.h; sourceTree = "<group>"; };
+		30E658901B90138E008AFE1A /* JFLoginContainerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFLoginContainerViewController.m; sourceTree = "<group>"; };
+		30E658921B902D19008AFE1A /* JFSettingTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFSettingTableViewController.h; sourceTree = "<group>"; };
+		30E658931B902D19008AFE1A /* JFSettingTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFSettingTableViewController.m; sourceTree = "<group>"; };
+		30E658951B90325F008AFE1A /* JFToChatMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFToChatMainViewController.h; sourceTree = "<group>"; };
+		30E658961B90325F008AFE1A /* JFToChatMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFToChatMainViewController.m; sourceTree = "<group>"; };
+		30E658981B9033AF008AFE1A /* Me.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Me.storyboard; sourceTree = "<group>"; };
+		30E658D31B909257008AFE1A /* JFUITabBarItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFUITabBarItem.h; sourceTree = "<group>"; };
+		30E658D41B909257008AFE1A /* JFUITabBarItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFUITabBarItem.m; sourceTree = "<group>"; };
+		30E658D61B90995B008AFE1A /* JFToDoContainerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFToDoContainerViewController.h; sourceTree = "<group>"; };
+		30E658D71B90995B008AFE1A /* JFToDoContainerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFToDoContainerViewController.m; sourceTree = "<group>"; };
+		30E658D91B909A2A008AFE1A /* ToDo.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ToDo.storyboard; sourceTree = "<group>"; };
+		30E658DB1B909B62008AFE1A /* Discover.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Discover.storyboard; sourceTree = "<group>"; };
 		85D9888B17E94E7F2832D035 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
-		ED564BA347EB04F61697770F /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		B0F4494D4066B50BCBD575A0 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F266A674F1CC57F71F5F6237 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -1217,7 +1227,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				303C167D1B7F875E00FC8828 /* AssetsLibrary.framework in Frameworks */,
-				46683A68BB382AEEDEB4FE25 /* libPods.a in Frameworks */,
+				EBC71B6E3C6DDAEFAFF1CF6B /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1259,6 +1269,10 @@
 			isa = PBXGroup;
 			children = (
 				302F36C91B8F254B00BE0D76 /* Main.storyboard */,
+				3031D2B81B8FE0B5007660AB /* ToChatMain.storyboard */,
+				30E658981B9033AF008AFE1A /* Me.storyboard */,
+				30E658D91B909A2A008AFE1A /* ToDo.storyboard */,
+				30E658DB1B909B62008AFE1A /* Discover.storyboard */,
 			);
 			path = StoryBoard;
 			sourceTree = "<group>";
@@ -1266,6 +1280,8 @@
 		302907E71B79CEE600B0D96B /* Me */ = {
 			isa = PBXGroup;
 			children = (
+				30E658921B902D19008AFE1A /* JFSettingTableViewController.h */,
+				30E658931B902D19008AFE1A /* JFSettingTableViewController.m */,
 			);
 			path = Me;
 			sourceTree = "<group>";
@@ -1436,26 +1452,10 @@
 		308CC7EB1B78EC8800E11188 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				308CC7EC1B78EC8800E11188 /* Content Images */,
-				308CC7F21B78EC8800E11188 /* content_music-667h@2x.png */,
-				308CC7F31B78EC8800E11188 /* content_music.png */,
-				308CC7F41B78EC8800E11188 /* content_music@2x.png */,
 				308CC7F51B78EC8800E11188 /* Fonts */,
 				308CC7F71B78EC8800E11188 /* Images */,
 			);
 			path = Resources;
-			sourceTree = "<group>";
-		};
-		308CC7EC1B78EC8800E11188 /* Content Images */ = {
-			isa = PBXGroup;
-			children = (
-				308CC7ED1B78EC8800E11188 /* content_films-667h@2x.png */,
-				308CC7EE1B78EC8800E11188 /* content_films.png */,
-				308CC7EF1B78EC8800E11188 /* content_films@2x.png */,
-				308CC7F01B78EC8800E11188 /* content_films@3x.png */,
-				308CC7F11B78EC8800E11188 /* content_music@3x.png */,
-			);
-			path = "Content Images";
 			sourceTree = "<group>";
 		};
 		308CC7F51B78EC8800E11188 /* Fonts */ = {
@@ -2021,12 +2021,16 @@
 				308CC9541B78EC8800E11188 /* UICustomCollectionView.m */,
 				308CC9551B78EC8800E11188 /* UITapImageView.h */,
 				308CC9561B78EC8800E11188 /* UITapImageView.m */,
+				30E658D31B909257008AFE1A /* JFUITabBarItem.h */,
+				30E658D41B909257008AFE1A /* JFUITabBarItem.m */,
 				308CC9571B78EC8800E11188 /* UITTTAttributedLabel.h */,
 				308CC9581B78EC8800E11188 /* UITTTAttributedLabel.m */,
 				30288A191B8E9A3000946E0B /* JFRoundImageView.h */,
 				30288A1A1B8E9A3000946E0B /* JFRoundImageView.m */,
 				302F36FD1B8F4B9900BE0D76 /* JFRoundUIButton.h */,
 				302F36FE1B8F4B9900BE0D76 /* JFRoundUIButton.m */,
+				30E658891B8FFD09008AFE1A /* JFBackgroundImageTableView.h */,
+				30E6588A1B8FFD09008AFE1A /* JFBackgroundImageTableView.m */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -2346,6 +2350,8 @@
 				308CCA071B78EC8900E11188 /* RegisterViewController.m */,
 				30BE9D1F1B8E9E5000C10098 /* JFLoginViewController.h */,
 				30BE9D201B8E9E5000C10098 /* JFLoginViewController.m */,
+				30E6588F1B90138E008AFE1A /* JFLoginContainerViewController.h */,
+				30E658901B90138E008AFE1A /* JFLoginContainerViewController.m */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -2367,6 +2373,10 @@
 				308CCA161B78EC8900E11188 /* RootTabViewController.m */,
 				308CCA171B78EC8900E11188 /* Todo_RootViewController.h */,
 				308CCA181B78EC8900E11188 /* Todo_RootViewController.m */,
+				30E658951B90325F008AFE1A /* JFToChatMainViewController.h */,
+				30E658961B90325F008AFE1A /* JFToChatMainViewController.m */,
+				30E658D61B90995B008AFE1A /* JFToDoContainerViewController.h */,
+				30E658D71B90995B008AFE1A /* JFToDoContainerViewController.m */,
 			);
 			path = RootControllers;
 			sourceTree = "<group>";
@@ -2514,7 +2524,7 @@
 			isa = PBXGroup;
 			children = (
 				303C167C1B7F875E00FC8828 /* AssetsLibrary.framework */,
-				ED564BA347EB04F61697770F /* libPods.a */,
+				B0F4494D4066B50BCBD575A0 /* Pods.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -2541,7 +2551,7 @@
 				30875F911B78E7CA00C50534 /* Resources */,
 				130626A953E14EBDD440F19C /* Copy Pods Resources */,
 				308CCC0B1B78ED0A00E11188 /* Copy Frameworks */,
-				30D738BB1B8F1D5D002F02BB /* ShellScript */,
+				ADC6AB001AF84621AB19E0F5 /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -2582,6 +2592,7 @@
 				TargetAttributes = {
 					30875F921B78E7CA00C50534 = {
 						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = 57HWCM983X;
 					};
 					30875FAE1B78E7CB00C50534 = {
 						CreatedOnToolsVersion = 6.4;
@@ -2642,8 +2653,10 @@
 				308CCB251B78EC8900E11188 /* nav_tweet_all@2x.png in Resources */,
 				308CCA5F1B78EC8900E11188 /* blankpage_image_Sleep@2x.png in Resources */,
 				308CCA721B78EC8900E11188 /* btn_privateMsg_friend@2x.png in Resources */,
+				3031D2B91B8FE0B5007660AB /* ToChatMain.storyboard in Resources */,
 				308CCAB91B78EC8900E11188 /* icon_file_md@2x.png in Resources */,
 				308CCAA51B78EC8900E11188 /* coding_emoji_42@2x.png in Resources */,
+				30E658991B9033AF008AFE1A /* Me.storyboard in Resources */,
 				308CCA601B78EC8900E11188 /* btn_delete_tweetimage@2x.png in Resources */,
 				308CCB5F1B78EC8900E11188 /* taskPriority1_small@2x.png in Resources */,
 				308CCAC51B78EC8900E11188 /* icon_file_cell_rename@2x.png in Resources */,
@@ -2690,7 +2703,6 @@
 				308CCB831B78EC8900E11188 /* tipIcon_Tweet@2x.png in Resources */,
 				308CCAFF1B78EC8900E11188 /* loading_loop@2x.png in Resources */,
 				308CCB1B1B78EC8900E11188 /* settingBtn_Nav@2x.png in Resources */,
-				308CCA571B78EC8900E11188 /* content_music.png in Resources */,
 				308CCAF61B78EC8900E11188 /* keyboard_at@2x.png in Resources */,
 				308CCAE41B78EC8900E11188 /* intro_icon_5@3x.png in Resources */,
 				308CCB1D1B78EC8900E11188 /* tweetBtn_Nav@2x.png in Resources */,
@@ -2795,13 +2807,13 @@
 				308CCB651B78EC8900E11188 /* taskProgress@2x.png in Resources */,
 				308CCAE11B78EC8900E11188 /* intro_icon_4@2x.png in Resources */,
 				308CCAFE1B78EC8900E11188 /* keyboard_photo@2x.png in Resources */,
-				308CCA531B78EC8900E11188 /* content_films@2x.png in Resources */,
 				308CCAC91B78EC8900E11188 /* icon_file_state_goon@2x.png in Resources */,
 				308CCAD21B78EC8900E11188 /* icon_triangle@2x.png in Resources */,
 				308CCA6A1B78EC8900E11188 /* button_file_move_enable@2x.png in Resources */,
 				308CCAF31B78EC8900E11188 /* keyboard_add@2x.png in Resources */,
 				308CCB8E1B78EC8900E11188 /* n_btn_followed_not@2x.png in Resources */,
 				308CCAC31B78EC8900E11188 /* icon_file_cell_delete@2x.png in Resources */,
+				30E658DC1B909B62008AFE1A /* Discover.storyboard in Resources */,
 				308CCA941B78EC8900E11188 /* coding_emoji_24@2x.png in Resources */,
 				308CCA821B78EC8900E11188 /* coding_emoji_06@2x.png in Resources */,
 				308CCB3A1B78EC8900E11188 /* placeholder_monkey_round_50@2x.png in Resources */,
@@ -2812,7 +2824,6 @@
 				308CCB961B78EC8900E11188 /* xtsegment_bordor_right@2x.png in Resources */,
 				308CCA811B78EC8900E11188 /* coding_emoji_05@2x.png in Resources */,
 				308CC7D61B78EC1800E11188 /* Podfile in Resources */,
-				308CCA511B78EC8900E11188 /* content_films-667h@2x.png in Resources */,
 				308CCAE31B78EC8900E11188 /* intro_icon_5@2x.png in Resources */,
 				308CCB161B78EC8900E11188 /* addUserBtn_Nav@2x.png in Resources */,
 				308CCAA31B78EC8900E11188 /* coding_emoji_40@2x.png in Resources */,
@@ -2847,7 +2858,6 @@
 				308CCAD81B78EC8900E11188 /* intro_dot_unselected@3x.png in Resources */,
 				308CCAD91B78EC8900E11188 /* intro_icon_0@2x.png in Resources */,
 				308CCAAE1B78EC8900E11188 /* git_icon_star@2x.png in Resources */,
-				308CCA551B78EC8900E11188 /* content_music@3x.png in Resources */,
 				308CCA681B78EC8900E11188 /* button_file_download_enable@2x.png in Resources */,
 				308CCB231B78EC8900E11188 /* nav_project_task@2x.png in Resources */,
 				308CCB6C1B78EC8900E11188 /* task_activity_icon_update@2x.png in Resources */,
@@ -2880,6 +2890,7 @@
 				308CCB2C1B78EC8900E11188 /* project_item_code@2x.png in Resources */,
 				308CCB421B78EC8900E11188 /* project_tag_btn@2x.png in Resources */,
 				308CCB411B78EC8900E11188 /* pop_User@2x.png in Resources */,
+				30E658DA1B909A2A008AFE1A /* ToDo.storyboard in Resources */,
 				308CCB721B78EC8900E11188 /* time_clock_icon@2x.png in Resources */,
 				308CCB431B78EC8900E11188 /* project_tag_icon@2x.png in Resources */,
 				308CCAA61B78EC8900E11188 /* coding_emoji_43@2x.png in Resources */,
@@ -2900,7 +2911,6 @@
 				308CCB641B78EC8900E11188 /* taskPriority@2x.png in Resources */,
 				308CCA9D1B78EC8900E11188 /* coding_emoji_33@2x.png in Resources */,
 				308CCAEA1B78EC8900E11188 /* intro_tip_1@3x.png in Resources */,
-				308CCA581B78EC8900E11188 /* content_music@2x.png in Resources */,
 				308CCB921B78EC8900E11188 /* user_info_detail@2x.png in Resources */,
 				308CCA7C1B78EC8900E11188 /* dot_line@2x.png in Resources */,
 				308CCAF71B78EC8900E11188 /* keyboard_emotion@2x.png in Resources */,
@@ -2921,13 +2931,11 @@
 				308CCABD1B78EC8900E11188 /* icon_file_ppt@2x.png in Resources */,
 				308CCB801B78EC8900E11188 /* tipIcon_QcTask@2x.png in Resources */,
 				308CCADD1B78EC8900E11188 /* intro_icon_2@2x.png in Resources */,
-				308CCA561B78EC8900E11188 /* content_music-667h@2x.png in Resources */,
 				308CCADC1B78EC8900E11188 /* intro_icon_1@3x.png in Resources */,
 				308CCB0A1B78EC8900E11188 /* messageComment@2x.png in Resources */,
 				308CCB1A1B78EC8900E11188 /* search_Nav@2x.png in Resources */,
 				308CCB2E1B78EC8900E11188 /* project_item_member@2x.png in Resources */,
 				308CCB321B78EC8900E11188 /* project_item_topic@2x.png in Resources */,
-				308CCA521B78EC8900E11188 /* content_films.png in Resources */,
 				302F36CA1B8F254B00BE0D76 /* Main.storyboard in Resources */,
 				308CCA881B78EC8900E11188 /* coding_emoji_12@2x.png in Resources */,
 				308CCAC81B78EC8900E11188 /* icon_file_state_download@2x.png in Resources */,
@@ -2939,7 +2947,6 @@
 				308CCB671B78EC8900E11188 /* task_activity_icon_commit_refer@2x.png in Resources */,
 				308CCACE1B78EC8900E11188 /* icon_project_cell_nopin@2x.png in Resources */,
 				308CCB551B78EC8900E11188 /* tweet_selected@2x.png in Resources */,
-				308CCA541B78EC8900E11188 /* content_films@3x.png in Resources */,
 				308CCB191B78EC8900E11188 /* moreBtn_Nav@2x.png in Resources */,
 				308CCB181B78EC8900E11188 /* info_Nav@2x.png in Resources */,
 				308CCB581B78EC8900E11188 /* checkbox_unchecked@2x.png in Resources */,
@@ -2977,19 +2984,6 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		30D738BB1B8F1D5D002F02BB /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "export CODESIGN_ALLOCATE=/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/codesign_allocate\nif [ \"${PLATFORM_NAME}\" == \"iphoneos\" ] || [ \"${PLATFORM_NAME}\" == \"ipados\" ]; then\n/Applications/Xcode.app/Contents/Developer/iphoneentitlements/gen_entitlements.py \"my.company.${PROJECT_NAME}\" \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/${PROJECT_NAME}.xcent\";\ncodesign -f -s \"iPhone Developer\" --entitlements \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/${PROJECT_NAME}.xcent\" \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/\"\nfi";
-		};
 		735B9E8F330B66826557402A /* Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -3003,6 +2997,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		ADC6AB001AF84621AB19E0F5 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -3020,6 +3029,7 @@
 				308CCBEF1B78EC8900E11188 /* Group_RootViewController.m in Sources */,
 				308CCBF61B78EC8900E11188 /* UserInfoViewController.m in Sources */,
 				302710021B7F760300A412DA /* UIMessageInputView.m in Sources */,
+				30E658971B90325F008AFE1A /* JFToChatMainViewController.m in Sources */,
 				308CCBF21B78EC8900E11188 /* Todo_RootViewController.m in Sources */,
 				308CCBE01B78EC8900E11188 /* XHPopMenuItemView.m in Sources */,
 				303C16571B7F81CF00FC8828 /* UIPlaceHolderTextView.m in Sources */,
@@ -3056,6 +3066,7 @@
 				308CCBB91B78EC8900E11188 /* JTCalendarMonthWeekDaysView.m in Sources */,
 				308CCBDF1B78EC8900E11188 /* XHPopMenuItem.m in Sources */,
 				303A42B41B81C01900117F71 /* ActionSheetDistancePicker.m in Sources */,
+				30E658911B90138E008AFE1A /* JFLoginContainerViewController.m in Sources */,
 				30875F991B78E7CB00C50534 /* main.m in Sources */,
 				308CCB9F1B78EC8900E11188 /* NSString+Common.m in Sources */,
 				308CCBAB1B78EC8900E11188 /* DWBubbleMenuButton.m in Sources */,
@@ -3079,6 +3090,7 @@
 				308CCBEB1B78EC8900E11188 /* BaseNavigationController.m in Sources */,
 				308CCC011B78EC8900E11188 /* TweetTodoCell.m in Sources */,
 				3000BAEF1B8469E200C3939E /* DiscoverTodoViewController.m in Sources */,
+				30E658941B902D19008AFE1A /* JFSettingTableViewController.m in Sources */,
 				308CCBC11B78EC8900E11188 /* NSObject+LKDBHelper.m in Sources */,
 				308CCB9B1B78EC8900E11188 /* ImageSizeManager.m in Sources */,
 				308CCBE11B78EC8900E11188 /* YLGIFImage.m in Sources */,
@@ -3128,6 +3140,7 @@
 				30A72E151B83015C009C7CD7 /* XLButtonBarPagerTabStripViewController.m in Sources */,
 				308CCC071B78EC8900E11188 /* EaseStartView.m in Sources */,
 				308CCB971B78EC8900E11188 /* UIBadgeView.m in Sources */,
+				30E658D51B909257008AFE1A /* JFUITabBarItem.m in Sources */,
 				30A84FBB1B8DF0E600429DF6 /* JFUser.m in Sources */,
 				308CCBE31B78EC8900E11188 /* DynamicTodoViewController.m in Sources */,
 				308CCBA81B78EC8900E11188 /* UITableView+Common.m in Sources */,
@@ -3146,6 +3159,7 @@
 				308CCBEC1B78EC8900E11188 /* BaseViewController.m in Sources */,
 				308CCBB61B78EC8900E11188 /* JTCalendarMenuMonthView.m in Sources */,
 				308CCBBC1B78EC8900E11188 /* LKAlarmEvent.m in Sources */,
+				30E658D81B90995B008AFE1A /* JFToDoContainerViewController.m in Sources */,
 				308CCC031B78EC8900E11188 /* TodoTypeCCell.m in Sources */,
 				303C16521B7F808800FC8828 /* AGEmojiPageView.m in Sources */,
 				303A42B31B81C01900117F71 /* ActionSheetDatePicker.m in Sources */,
@@ -3156,6 +3170,7 @@
 				308CCBA51B78EC8900E11188 /* UIImage+Common.m in Sources */,
 				308CCA4D1B78EC8900E11188 /* Tweet+Size.m in Sources */,
 				308CCBFF1B78EC8900E11188 /* TweetCommentCell.m in Sources */,
+				30E6588B1B8FFD09008AFE1A /* JFBackgroundImageTableView.m in Sources */,
 				308CCBB21B78EC8900E11188 /* JTCalendarAppearance.m in Sources */,
 				308CCBAE1B78EC8900E11188 /* FMDatabasePool.m in Sources */,
 				308CCBA31B78EC8900E11188 /* UIButton+User.m in Sources */,
@@ -3224,8 +3239,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -3268,7 +3283,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -3294,8 +3309,9 @@
 			baseConfigurationReference = F266A674F1CC57F71F5F6237 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/ToChat/Framework",
@@ -3316,8 +3332,9 @@
 			baseConfigurationReference = 85D9888B17E94E7F2832D035 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/ToChat/Framework",

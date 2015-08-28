@@ -133,39 +133,6 @@
     _loginBtn.enabled = NO;
     [weakSelf.activityIndicator stopAnimating];
     [((AppDelegate *)[UIApplication sharedApplication].delegate) setupTabViewController];
-    
-//    if (self.is2FAUI) {
-//        [[Coding_NetAPIManager sharedManager] request_Login_With2FA:self.otpCode andBlock:^(id data, NSError *error) {
-//            weakSelf.loginBtn.enabled = YES;
-//            [weakSelf.activityIndicator stopAnimating];
-//            if (data) {
-//                [Login setPreUserEmail:self.myLogin.email];//记住登录账号
-//                [((AppDelegate *)[UIApplication sharedApplication].delegate) setupTabViewController];
-//            }else{
-//                NSString *status_expired = error.userInfo[@"msg"][@"user_login_status_expired"];
-//                if (status_expired.length > 0) {
-//                    [weakSelf changeUITo2FAWithGK:nil];
-//                }
-//            }
-//        }];
-//    }else{
-//        [[Coding_NetAPIManager sharedManager] request_Login_WithParams:[self.myLogin toParams] andBlock:^(id data, NSError *error) {
-//            weakSelf.loginBtn.enabled = YES;
-//            [weakSelf.activityIndicator stopAnimating];
-//            if (data) {
-//                [Login setPreUserEmail:self.myLogin.email];//记住登录账号
-//                [((AppDelegate *)[UIApplication sharedApplication].delegate) setupTabViewController];
-//            }else{
-//                NSString *global_key = error.userInfo[@"msg"][@"two_factor_auth_code_not_empty"];
-//                if (global_key.length > 0) {
-//                    [weakSelf changeUITo2FAWithGK:global_key];
-//                }else{
-//                    [self showError:error];
-//                    [weakSelf refreshCaptchaNeeded];
-//                }
-//            }
-//        }];
-//    }
 }
 
 
@@ -285,7 +252,6 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     return 2;
-    //return _is2FAUI? 2: _captchaNeeded? 3: 2;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -325,5 +291,10 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
 }
+
+-(void)viewWillAppear:(BOOL)animated{
+    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent animated:YES];
+}
+
 
 @end

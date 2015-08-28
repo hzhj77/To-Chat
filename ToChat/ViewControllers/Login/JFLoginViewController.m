@@ -9,6 +9,8 @@
 #import "JFLoginViewController.h"
 
 @interface JFLoginViewController ()
+@property (weak, nonatomic) IBOutlet UITextField *userName;
+@property (weak, nonatomic) IBOutlet UITextField *password;
 
 @end
 
@@ -16,22 +18,23 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+}
+- (IBAction)loginButtonClicked:(id)sender {
+    NSString *my_user_name = self.userName.text;
+    NSString *my_password = self.password.text;
+    [AVUser logInWithUsernameInBackground:my_user_name password:my_password block:^(AVUser *user, NSError *error) {
+        if (user != nil) {
+            [self performSegueWithIdentifier:@"goRootView" sender:self];
+        } else {
+            NSLog(@"登陆失败");
+        }
+    }];
 }
 
-/*
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

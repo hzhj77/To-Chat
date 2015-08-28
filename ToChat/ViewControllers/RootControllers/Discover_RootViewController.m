@@ -154,8 +154,7 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     if (indexPath.section == 0 ) {
-        TweetViewController * tweetVC = [[TweetViewController alloc]init];
-        [self.navigationController pushViewController:tweetVC animated:YES];
+        [self.navigationController pushViewController:[[UIStoryboard storyboardWithName:@"Discover" bundle:nil]instantiateViewControllerWithIdentifier:@"TweetViewController"] animated:YES];
         
 //        [_nav_tweet setModalTransitionStyle:UIModalTransitionStyleFlipHorizontal];
 //        [self.navigationController presentModalViewController:_nav_tweet animated:YES];
@@ -164,18 +163,17 @@
     }else if (indexPath.section == 1){
         switch (indexPath.row) {
             case 0:{
-                DynamicTodoViewController * tweetVC = [[DynamicTodoViewController alloc]init];
-                [self.navigationController pushViewController:tweetVC animated:YES];
+                //DynamicTodoViewController * tweetVC = [[DynamicTodoViewController alloc]init];
+                
+                [self.navigationController pushViewController:[[UIStoryboard storyboardWithName:@"Discover" bundle:nil]instantiateViewControllerWithIdentifier:@"TweetViewController"] animated:YES];
             }
                 break;
             case 1:{
-                TweetViewController * tweetVC = [[TweetViewController alloc]init];
-                [self.navigationController pushViewController:tweetVC animated:YES];
+                [self.navigationController pushViewController:[[UIStoryboard storyboardWithName:@"Discover" bundle:nil]instantiateViewControllerWithIdentifier:@"DynamicTodoViewController"] animated:YES];
             }
                 break;
             case 2:{
-                DiscoverTodoViewController * tweetVC = [[DiscoverTodoViewController alloc]init];
-                [self.navigationController pushViewController:tweetVC animated:YES];
+                [self.navigationController pushViewController:[[UIStoryboard storyboardWithName:@"Discover" bundle:nil]instantiateViewControllerWithIdentifier:@"DynamicTodoViewController"] animated:YES];
             }
                 break;
             default:
@@ -183,8 +181,7 @@
         }
         
     }else if (indexPath.section == 2){
-        TweetViewController * tweetVC = [[TweetViewController alloc]init];
-        [self.navigationController pushViewController:tweetVC animated:YES];
+        [self.navigationController pushViewController:[[UIStoryboard storyboardWithName:@"Discover" bundle:nil]instantiateViewControllerWithIdentifier:@"DynamicTodoViewController"] animated:YES];
     }
 
 }

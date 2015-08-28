@@ -38,8 +38,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    
-     _myTweets.tweets = [self fakeTweets];
+    _myTweets = [[Tweets alloc]init];
+    _myTweets.tweets = [self fakeTweets];
     
     //    添加myTableView
     _myTableView = ({
@@ -95,7 +95,7 @@
 
 #pragma mark - TabBar
 - (void)tabBarItemClicked{
-    [super tabBarItemClicked];
+    //[super tabBarItemClicked];
     if (_myTableView.contentOffset.y > 0) {
         [_myTableView setContentOffset:CGPointZero animated:YES];
     }else if (!self.refreshControl.refreshing){

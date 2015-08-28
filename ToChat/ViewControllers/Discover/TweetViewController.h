@@ -21,7 +21,7 @@
 
 
 
-@interface TweetViewController : BaseViewController
+@interface TweetViewController : UIViewController
 
 /// 展示Tweet（动态）用的
 @property (nonatomic, strong) UITableView *myTableView;

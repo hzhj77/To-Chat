@@ -14,8 +14,8 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "FE98F024ADFC4CB2B2A55977"
-               BuildableName = "libRegexKitLite-NoWarning.a"
+               BlueprintIdentifier = "867137EB6D0746A6546FE28E"
+               BuildableName = "RegexKitLite_NoWarning.framework"
                BlueprintName = "RegexKitLite-NoWarning"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>

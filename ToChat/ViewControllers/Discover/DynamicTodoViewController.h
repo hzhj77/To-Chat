@@ -6,7 +6,6 @@
 //  Copyright © 2015年 JFT0M. All rights reserved.
 //
 
-#import "BaseViewController.h"
-@interface DynamicTodoViewController : BaseViewController
+@interface DynamicTodoViewController : UIViewController
 
 @end

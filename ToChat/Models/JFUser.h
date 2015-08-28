@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <AVOSCloud/AVOSCloud.h>
+#import "AVOSCloud/AVOSCloud.h"
 
 static NSString *const JFUserKeyAvatar = @"avatar";
 static NSString *const JFUserKeyUserID = @"userID";

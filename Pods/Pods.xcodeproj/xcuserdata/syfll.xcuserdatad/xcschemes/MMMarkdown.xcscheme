@@ -14,8 +14,8 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "8950C96665F07FEEE5A9DBC1"
-               BuildableName = "libMMMarkdown.a"
+               BlueprintIdentifier = "7A5D70F9482359B49552B6B1"
+               BuildableName = "MMMarkdown.framework"
                BlueprintName = "MMMarkdown"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>

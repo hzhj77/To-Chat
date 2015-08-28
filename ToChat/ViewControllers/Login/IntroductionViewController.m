@@ -73,14 +73,7 @@
     [self configureAnimations];
 }
 
-- (void)viewWillAppear:(BOOL)animated{
-    [super viewWillAppear:animated];
-    //[[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent animated:YES];
-}
 
-- (void)viewWillDisappear:(BOOL)animated{
-    [super viewWillDisappear:animated];
-}
 
 #pragma mark - Orientations
 - (BOOL)shouldAutorotate{
@@ -279,17 +272,23 @@
 
 #pragma mark Action
 - (void)registerBtnClicked{
-    RegisterViewController *vc = [[RegisterViewController alloc] init];
-    UINavigationController *nav = [[BaseNavigationController alloc] initWithRootViewController:vc];
-    [self presentViewController:nav animated:YES completion:nil];
+//    RegisterViewController *vc = [[RegisterViewController alloc] init];
+//    UINavigationController *nav = [[BaseNavigationController alloc] initWithRootViewController:vc];
+//    [self presentViewController:nav animated:YES completion:nil];
+    
 }
 
 - (void)loginBtnClicked{
-    LoginViewController *vc = [[LoginViewController alloc] init];
-    vc.showDismissButton = YES;
-    UINavigationController *nav = [[BaseNavigationController alloc] initWithRootViewController:vc];
-    [self presentViewController:nav animated:YES completion:nil];
+//    LoginViewController *vc = [[LoginViewController alloc] init];
+//    vc.showDismissButton = YES;
+//    UINavigationController *nav = [[BaseNavigationController alloc] initWithRootViewController:vc];
+//    [self presentViewController:nav animated:YES completion:nil];
+    [self performSegueWithIdentifier:@"goLogin" sender:self];
 }
 
-
+#pragma mark - LyfeCycle
+- (void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleDefault animated:YES];
+}
 @end

@@ -17,22 +17,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 }
--(void)viewWillAppear:(BOOL)animated{
-    [super viewWillAppear:animated];
-    NSLog(@"viewWillAppear");
-    UIBarButtonItem *setting = [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemEdit target:self action:@selector(goSetting)];
-    [self.navigationItem setRightBarButtonItem:setting];
-    
-}
--(void)viewWillDisappear:(BOOL)animated{
-    [super viewWillDisappear:animated];
-    NSLog(@"viewWillDisappear");
-}
-
--(void)goSetting{
-    UIViewController *settingVC = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"SettingViewController"];
-    [self.navigationController pushViewController:settingVC animated:YES];
-}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
 }

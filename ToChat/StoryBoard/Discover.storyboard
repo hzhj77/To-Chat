@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8187.4" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8151.3"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="VnF-AL-uId">
+            <objects>
+                <viewController storyboardIdentifier="TweetViewController" hidesBottomBarWhenPushed="YES" id="Noj-6P-vBn" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="77S-Iy-0Ve"/>
+                        <viewControllerLayoutGuide type="bottom" id="FMs-vA-cvO"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="71f-om-Xj1">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zau-5U-mRL">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <connections>
+                                    <segue destination="KLN-ZW-ReC" kind="embed" id="cVC-iS-Plc"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="zau-5U-mRL" secondAttribute="bottom" id="69O-UV-6eX"/>
+                            <constraint firstItem="zau-5U-mRL" firstAttribute="top" secondItem="77S-Iy-0Ve" secondAttribute="bottom" id="F02-SQ-Ny7"/>
+                            <constraint firstAttribute="trailing" secondItem="zau-5U-mRL" secondAttribute="trailing" id="JzV-Wt-MzL"/>
+                            <constraint firstItem="zau-5U-mRL" firstAttribute="leading" secondItem="71f-om-Xj1" secondAttribute="leading" id="SfU-Wc-nmj"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="zau-5U-mRL"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="69O-UV-6eX"/>
+                                <exclude reference="F02-SQ-Ny7"/>
+                                <exclude reference="JzV-Wt-MzL"/>
+                                <exclude reference="SfU-Wc-nmj"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="zau-5U-mRL"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="69O-UV-6eX"/>
+                                <include reference="F02-SQ-Ny7"/>
+                                <include reference="JzV-Wt-MzL"/>
+                                <include reference="SfU-Wc-nmj"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1AG-2d-Sd6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1198.5" y="327"/>
+        </scene>
+        <!--Tweet View Controller-->
+        <scene sceneID="4nO-9D-1M5">
+            <objects>
+                <viewController useStoryboardIdentifierAsRestorationIdentifier="YES" id="KLN-ZW-ReC" customClass="TweetViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Fzu-WW-Azq"/>
+                        <viewControllerLayoutGuide type="bottom" id="V8f-v1-BS9"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="a1B-Xu-X2p">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0mp-3d-x6O" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-469.5" y="327"/>
+        </scene>
+        <!--Discover Todo View Controller-->
+        <scene sceneID="qLO-iF-P05">
+            <objects>
+                <tableViewController storyboardIdentifier="DynamicTodoViewController" hidesBottomBarWhenPushed="YES" id="Hwm-ku-OAX" customClass="DiscoverTodoViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="bMX-T7-2Qb">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="ux3-p8-YHY">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ux3-p8-YHY" id="Uil-MP-4XB">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Hwm-ku-OAX" id="eXB-hp-pQv"/>
+                            <outlet property="delegate" destination="Hwm-ku-OAX" id="Etx-wk-UGx"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5gU-w8-OTe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-732" y="1006.5"/>
+        </scene>
+    </scenes>
+</document>

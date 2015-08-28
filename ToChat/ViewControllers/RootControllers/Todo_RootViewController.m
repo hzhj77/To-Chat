@@ -13,12 +13,11 @@
 #import "Todo_TypeViewController.h"
 #import "Todo_AllViewController.h"
 #import "DWBubbleMenuButton.h"
-#import "XHPopMenu.h"
 #import "LKAlarmEvent.h"
 
 @interface Todo_RootViewController ()<UIGestureRecognizerDelegate>
 
-@property (nonatomic, strong) XHPopMenu *popMenu;
+
 @property (nonatomic, strong) DWBubbleMenuButton *upMenuView;
 
 @property (nonatomic, strong) Todo_CalenderViewController* calenderVC;
@@ -34,12 +33,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.tabBar.hidden = YES;
-    [self.navigationItem setRightBarButtonItem:[[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(showMenuOnView:)]];
-    //Todo_CalenderViewController * calender = [[Todo_CalenderViewController alloc]init];
     _calenderVC =[[Todo_CalenderViewController alloc]init];
     _allVC = [[Todo_AllViewController alloc]init];
     _typeVC = [[Todo_TypeViewController alloc]init];
-    //_typeVC = [[UIStoryboard storyboardWithName:@"Main" bundle:nil]instantiateViewControllerWithIdentifier:@"Todo_TypeViewController"];
     
    self.viewControllers = @[_calenderVC,_allVC,_typeVC];
 
@@ -57,93 +53,6 @@
     [super didReceiveMemoryWarning];
 }
 
-#pragma mark “添加按钮”回调
-
-- (void)showMenuOnView:(UIBarButtonItem *)buttonItem {
-    [self.popMenu showMenuOnView:self.navigationController.view atPoint:CGPointZero];
-}
-#pragma mark config popMenu
-- (XHPopMenu *)popMenu {
-    if (!_popMenu) {
-        NSMutableArray *popMenuItems = [[NSMutableArray alloc] initWithCapacity:3];
-        for (int i = 0; i < 2; i ++) {
-            NSString *imageName;
-            NSString *title;
-            switch (i) {
-                case 0: {
-                    imageName = @"contacts_add_newmessage";
-                    title = @"添加日程";
-                    break;
-                }
-                case 1: {
-                    imageName = @"contacts_add_friend";
-                    title = @"发表状态";
-                    break;
-                }
-                default:
-                    break;
-            }
-            XHPopMenuItem *popMenuItem = [[XHPopMenuItem alloc] initWithImage:[UIImage imageNamed:imageName] title:title];
-            [popMenuItems addObject:popMenuItem];
-        }
-        
-        WEAKSELF
-        _popMenu = [[XHPopMenu alloc] initWithMenus:popMenuItems];
-        _popMenu.popMenuDidSlectedCompled = ^(NSInteger index, XHPopMenuItem *popMenuItems) {
-            if (index == 1) {
-                printf("发表状态 index 1\n");
-                //[weakSelf enterQRCodeController];
-            }else if (index == 0 ) {
-                printf("添加日程 index 0\n");
-                [weakSelf enterCreateScheduleController];
-            }
-        };
-    }
-    return _popMenu;
-}
-- (void)enterCreateScheduleController {
-    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-    UIViewController * view = [storyboard instantiateViewControllerWithIdentifier:@"CreateTodoViewController"];
-    [self.navigationController pushViewController:view animated:YES];
-//    printf("我要创建日程辣 ：）\n");
-//    LKAlarmEvent * event = [LKAlarmEvent fakeLKAlarmEvent];
-//    
-//    
-//    ///增加推送声音 和 角标
-//    [event setOnCreatingLocalNotification:^(UILocalNotification * localNotification) {
-//        localNotification.soundName = UILocalNotificationDefaultSoundName;
-//        localNotification.applicationIconBadgeNumber = [UIApplication sharedApplication].applicationIconBadgeNumber + 1;
-//    }];
-//    
-//    [[LKAlarmMamager shareManager] addAlarmEvent:event];
-//    
-//    
-//    
-//    ///添加到日历
-//    
-//    ///会先尝试加入日历  如果日历没权限 会加入到本地提醒中
-//    [[LKAlarmMamager shareManager] addAlarmEvent:event callback:^(LKAlarmEvent *alarmEvent) {
-//        
-//        dispatch_async(dispatch_get_main_queue(), ^{
-//            
-//            if(alarmEvent.isJoinedCalendar)
-//            {
-//                NSLog(@"已加入日历");
-//            }
-//            else if(alarmEvent.isJoinedLocalNotify)
-//            {
-//                NSLog(@"已加入本地通知");
-//            }
-//            else
-//            {
-//                NSLog(@"加入通知失败");
-//            }
-//            
-//        });
-//        
-//    }];
-    
-}
 
 #pragma mark 分类弹出按钮
 -(void)createDWBubbleMenuButton{

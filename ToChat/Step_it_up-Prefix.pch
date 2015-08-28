@@ -64,7 +64,7 @@
 #import "UIImage+BlurredFrame/UIImage+BlurredFrame.h"
 #import <ReactiveCocoa/RACEXTScope.h>
 #import "ReactiveCocoa.h"
-#import <AVOSCloud/AVOSCloud.h>
+#import "AVOSCloud/AVOSCloud.h"
 
 #import "JFMacros.h"
 #import "SIUMacros.h"

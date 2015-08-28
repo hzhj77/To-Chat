@@ -73,6 +73,7 @@
     [self registerPush];
 #endif
     
+    
     // 输出内部日志，发布时记得关闭
 #ifdef DEBUG
     [AVOSCloud setVerbosePolicy:kAVVerboseShow];
@@ -92,7 +93,6 @@
     [[UIApplication sharedApplication] setStatusBarHidden:NO withAnimation:UIStatusBarAnimationNone];
     [[UIApplication sharedApplication]setStatusBarStyle:UIStatusBarStyleLightContent];
     
-    //LoginManager * loginManager = [LoginManager sharedInstance];
     if ([AVUser currentUser]) {
         [self setupTabViewController];
     }else{
@@ -102,13 +102,13 @@
     
     [self.window makeKeyAndVisible];
     
-    EaseStartView *startView = [EaseStartView startView];
-    @weakify(self);
-    [startView startAnimationWithCompletionBlock:^(EaseStartView *easeStartView) {
-        @strongify(self);
-        [self completionStartAnimationWithOptions:launchOptions];
-        [[UIApplication sharedApplication]setStatusBarStyle:UIStatusBarStyleDefault];
-    }];
+//    EaseStartView *startView = [EaseStartView startView];
+//    @weakify(self);
+//    [startView startAnimationWithCompletionBlock:^(EaseStartView *easeStartView) {
+//        @strongify(self);
+//        [self completionStartAnimationWithOptions:launchOptions];
+//        [[UIApplication sharedApplication]setStatusBarStyle:UIStatusBarStyleDefault];
+//    }];
     
     return YES;
 }
@@ -268,12 +268,12 @@
 
 
 - (void)setupIntroductionViewController{
-    IntroductionViewController *introductionVC = [[UIStoryboard storyboardWithName:@"Main" bundle:nil]instantiateViewControllerWithIdentifier:@"IntroductionViewController"];
+    IntroductionViewController *introductionVC = [[UIStoryboard storyboardWithName:@"Main" bundle:nil]instantiateViewControllerWithIdentifier:@"MainIntroductionViewController"];
     [self.window setRootViewController:introductionVC];
 }
 
 - (void)setupTabViewController{
-    RootTabViewController *rootVC = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"RootTabViewController"];
+    RootTabViewController *rootVC = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"MainRootTabViewController"];
     rootVC.tabBar.translucent = YES;
     
     [self.window setRootViewController:rootVC];

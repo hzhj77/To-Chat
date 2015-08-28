@@ -71,16 +71,6 @@
     [self refresh];
 }
 - (void)refresh{
-//    __weak typeof(self) weakSelf = self;
-//    [[Coding_NetAPIManager sharedManager] request_UserInfo_WithObj:_curUser andBlock:^(id data, NSError *error) {
-//        [weakSelf.refreshControl endRefreshing];
-//        if (data) {
-//            weakSelf.curUser = data;
-//            weakSelf.headerView.curUser = data;
-//            weakSelf.title = _isRoot? @"我": weakSelf.curUser.name;
-//            [weakSelf.myTableView reloadData];
-//        }
-//    }];
     self.headerView.curUser = _curUser;
     self.title = @"我";
     

@@ -1,5 +1,5 @@
 platform :ios, '7.0'
-
+use_frameworks!
 #Framework
 pod 'SVPullToRefresh', '~> 0.4.1'
 pod 'JDStatusBarNotification', '~> 1.5.2'
@@ -36,3 +36,4 @@ pod 'JazzHands', '~> 2.0.0'
 #push
 #leancloud云存储
 pod 'AVOSCloud'
+pod 'AVOSCloudIM', '3.1.2.9'
