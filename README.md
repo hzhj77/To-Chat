@@ -62,6 +62,6 @@ CocoaPods里面用到的第三方类库（不全）
 - [Navigaiton] 采用了阳神的 FDFullscreenPopGesture 项目 https://github.com/forkingdog/FDFullscreenPopGesture
 原理描述在http://blog.sunnyxx.com/2015/06/07/fullscreen-pop-gesture/
 
--整个项目准备依靠StoryBoard（原来全都是用代码写，后面发现一个动态渲染的机制很牛B）但是需要注意使用 Cocoapods 可能会导致错误，详情见我的博客 http://blog.csdn.net/u010873087/article/details/48025197
+- 整个项目准备依靠StoryBoard（原来全都是用代码写，后面发现一个动态渲染的机制很牛B）但是需要注意使用 Cocoapods 可能会导致错误，详情见我的博客 http://blog.csdn.net/u010873087/article/details/48025197
 
 
