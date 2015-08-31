@@ -55,7 +55,6 @@ cocoapods 版本请使用 0.36.3
 ####项目里面还有些需要注意的点
 
 - [导航栏隐藏]在Info.plist中添加"UIViewControllerBasedStatusBarAppearance = false" 使得允许自定义Status Bar 的样式 和隐藏
-- [tabBar隐藏]在UIViewController+Swizzle中对ViewController的文件名进行判断，判断是否需要隐藏
 
 - [leanCloud](https://leancloud.cn/)  对 cocoapod 高版本支持有问题。暂时使用了 leanCloud 的静态库（如果在 Podfile 需要使用 use_framework! 则需要使用他的动态库 https://leancloud.cn/docs/start.htm ）
 - [UITableView] 采用了[阳神](http://blog.sunnyxx.com)的[UITableView-FDTemplateLayoutCell](https://github.com/forkingdog/UITableView-FDTemplateLayoutCell)  项目 
