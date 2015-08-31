@@ -14,6 +14,7 @@
                         <viewControllerLayoutGuide type="bottom" id="FMs-vA-cvO"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="71f-om-Xj1">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zau-5U-mRL">
@@ -67,6 +68,7 @@
                         <viewControllerLayoutGuide type="bottom" id="V8f-v1-BS9"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="a1B-Xu-X2p">
+                        <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -80,12 +82,15 @@
             <objects>
                 <tableViewController storyboardIdentifier="DynamicTodoViewController" hidesBottomBarWhenPushed="YES" id="Hwm-ku-OAX" customClass="DiscoverTodoViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="bMX-T7-2Qb">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="ux3-p8-YHY">
+                                <rect key="frame" x="0.0" y="28" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ux3-p8-YHY" id="Uil-MP-4XB">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>

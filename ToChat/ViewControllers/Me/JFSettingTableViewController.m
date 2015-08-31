@@ -7,7 +7,7 @@
 //
 
 #import "JFSettingTableViewController.h"
-
+#import "AVOSCloud/AVUser.h"
 @interface JFSettingTableViewController ()
 
 @end
@@ -22,8 +22,9 @@
     
     [AVUser logOut];
     NSLog(@"已经注销用户");
-    [self performSegueWithIdentifier:@"goLogIn" sender:self];
     
+    UIViewController *logInVC= [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"JFLoginViewController"];
+    [[UIApplication sharedApplication].delegate.window setRootViewController:logInVC];
 }
 
 - (void)didReceiveMemoryWarning {

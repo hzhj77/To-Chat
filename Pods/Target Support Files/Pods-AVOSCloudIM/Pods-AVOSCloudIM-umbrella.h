@@ -1,0 +1,23 @@
+#import <UIKit/UIKit.h>
+
+#import "AVIMAudioMessage.h"
+#import "AVIMClient.h"
+#import "AVIMCommon.h"
+#import "AVIMConversation.h"
+#import "AVIMConversationQuery.h"
+#import "AVIMConversationUpdateBuilder.h"
+#import "AVIMFileMessage.h"
+#import "AVIMImageMessage.h"
+#import "AVIMKeyedConversation.h"
+#import "AVIMLocationMessage.h"
+#import "AVIMMessage.h"
+#import "AVIMSignature.h"
+#import "AVIMTextMessage.h"
+#import "AVIMTypedMessage.h"
+#import "AVIMUserOptions.h"
+#import "AVIMVideoMessage.h"
+#import "AVOSCloudIM.h"
+
+FOUNDATION_EXPORT double AVOSCloudIMVersionNumber;
+FOUNDATION_EXPORT const unsigned char AVOSCloudIMVersionString[];
+

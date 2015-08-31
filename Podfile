@@ -36,4 +36,7 @@ pod 'JazzHands', '~> 2.0.0'
 #push
 #leancloud云存储
 pod 'AVOSCloud'
-pod 'AVOSCloudIM', '3.1.2.9'
+pod 'AVOSCloudIM'
+
+pod 'AVOSCloudSNS'
+pod 'LeanChatLib'

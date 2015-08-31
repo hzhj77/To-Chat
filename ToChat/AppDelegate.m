@@ -90,8 +90,8 @@
     [self customizeInterface];
 #warning 第一个画面的Status Bar的样式在 General -> Deployment info -> Status Bar Style 中设置
     
-    [[UIApplication sharedApplication] setStatusBarHidden:NO withAnimation:UIStatusBarAnimationNone];
-    [[UIApplication sharedApplication]setStatusBarStyle:UIStatusBarStyleLightContent];
+//    [[UIApplication sharedApplication] setStatusBarHidden:NO withAnimation:UIStatusBarAnimationNone];
+//    [[UIApplication sharedApplication]setStatusBarStyle:UIStatusBarStyleLightContent];
     
     if ([AVUser currentUser]) {
         [self setupTabViewController];
@@ -269,11 +269,11 @@
 
 - (void)setupIntroductionViewController{
     IntroductionViewController *introductionVC = [[UIStoryboard storyboardWithName:@"Main" bundle:nil]instantiateViewControllerWithIdentifier:@"MainIntroductionViewController"];
-    [self.window setRootViewController:introductionVC];
+    [self.window setRootViewController:[[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateInitialViewController]];
 }
 
 - (void)setupTabViewController{
-    RootTabViewController *rootVC = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"MainRootTabViewController"];
+    RootTabViewController *rootVC = [[UIStoryboard storyboardWithName:@"ToChatMain" bundle:nil] instantiateViewControllerWithIdentifier:@"MainRootTabViewController"];
     rootVC.tabBar.translucent = YES;
     
     [self.window setRootViewController:rootVC];

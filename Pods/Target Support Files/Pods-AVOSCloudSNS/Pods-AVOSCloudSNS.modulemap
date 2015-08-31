@@ -1,0 +1,6 @@
+framework module AVOSCloudSNS {
+  umbrella header "Pods-AVOSCloudSNS-umbrella.h"
+
+  export *
+  module * { export * }
+}

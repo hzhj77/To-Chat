@@ -1,0 +1,6 @@
+framework module LeanChatLib {
+  umbrella header "Pods-LeanChatLib-umbrella.h"
+
+  export *
+  module * { export * }
+}
