@@ -1,6 +1,9 @@
 # To-Chat
 开发环境现在为 Xcode 6.4 GM ; iOS 7.0 + ;
-cocoapods 版本请使用 0.36.3 （ leanCloud (https://leancloud.cn/)  对 cocoapod 高版本支持有问题）
+cocoapods 版本请使用 0.36.3 
+
+leanCloud (https://leancloud.cn/)  对 cocoapod 高版本支持有问题
+
 暂时使用了 leanCloud 的静态库（如果在 Podfile 需要使用 use_framework! 则需要使用他的动态库 https://leancloud.cn/docs/start.htm ）
 
 项目中参考了大量的 Coding 客户端的代码 https://coding.net/u/coding/p/Coding-iOS/git
