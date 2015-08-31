@@ -4,7 +4,7 @@ cocoapods 版本请使用 0.36.3
 
 ####下面介绍一下文件的大概目录先：
     .
-    ├── Coding_iOS
+    ├── To-Chat
     │   ├── StoryBoard：存放了所有的StoryBoard
     │   │   ├── Main.storyboard：      注册页面、登陆、引导页面
     │   │   ├── ToChatMain.storyboard：程序的主逻辑页面（TabBar）
