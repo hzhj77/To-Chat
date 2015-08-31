@@ -59,7 +59,7 @@ cocoapods 版本请使用 0.36.3
 
 - [leanCloud](https://leancloud.cn/)  对 cocoapod 高版本支持有问题。暂时使用了 leanCloud 的静态库（如果在 Podfile 需要使用 use_framework! 则需要使用他的动态库 https://leancloud.cn/docs/start.htm ）
 - [UITableView] 采用了[阳神](http://blog.sunnyxx.com)的[UITableView-FDTemplateLayoutCell](https://github.com/forkingdog/UITableView-FDTemplateLayoutCell)  项目 
-点击查看原理(http://blog.sunnyxx.com/2015/05/17/cell-height-calculation/)
+[点击查看原理](http://blog.sunnyxx.com/2015/05/17/cell-height-calculation/)
 
 - [Navigaiton] 采用了阳神的 [FDFullscreenPopGesture](https://github.com/forkingdog/FDFullscreenPopGesture) 
 [点击查看原理](http://blog.sunnyxx.com/2015/06/07/fullscreen-pop-gesture/) 
