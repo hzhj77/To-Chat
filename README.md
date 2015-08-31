@@ -33,10 +33,12 @@ cocoapods 版本请使用 0.36.3
     │       ├── CollectionCell：所有的 UICollectionViewCell 都放在这里
     │       └── XXX：其它视图
     └── Pods：项目使用了[CocoaPods](http://code4app.com/article/cocoapods-install-usage)这个类库管理工具
+    
+####冗余代码提示
 
-StoryBoard：存放了所有的StoryBoard
+由于使用了经历了三次新旧项目合并，所以对于头文件的维护没有跟上，导致了 JFMacros.h, SIUMacros.h, Step_it_up-Prefix.pch, APIUrl.h 中有大量冗余的宏定义，后期如果有宏定义请放在 JFMacros.h 中。
 
-CocoaPods里面用到的第三方类库（不全）
+####CocoaPods里面用到的第三方类库（不全）
 
 - SDWebImage:图片加载
 - TTTAttributedLabel:富文本的label，可点击链接
@@ -55,7 +57,7 @@ CocoaPods里面用到的第三方类库（不全）
 - [导航栏隐藏]在Info.plist中添加"UIViewControllerBasedStatusBarAppearance = false" 使得允许自定义Status Bar 的样式 和隐藏
 - [tabBar隐藏]在UIViewController+Swizzle中对ViewController的文件名进行判断，判断是否需要隐藏
 
-- leanCloud (https://leancloud.cn/)  对 cocoapod 高版本支持有问题。暂时使用了 leanCloud 的静态库（如果在 Podfile 需要使用 use_framework! 则需要使用他的动态库 https://leancloud.cn/docs/start.htm ）
+- [leanCloud] (https://leancloud.cn/)  对 cocoapod 高版本支持有问题。暂时使用了 leanCloud 的静态库（如果在 Podfile 需要使用 use_framework! 则需要使用他的动态库 https://leancloud.cn/docs/start.htm ）
 - [UITableView] 采用了阳神（http://blog.sunnyxx.com）的 UITableView-FDTemplateLayoutCell 项目 https://github.com/forkingdog/UITableView-FDTemplateLayoutCell
 原理在 http://blog.sunnyxx.com/2015/05/17/cell-height-calculation/
 
