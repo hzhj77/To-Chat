@@ -62,21 +62,14 @@ static JFUserManager *userManager;
 
 #pragma mark -
 
-- (void)findUsersByPartname:(NSString *)partName followType:(NSArray *)followType withBlock:(void (^)(NSArray *objects, NSError *error))block {
-    __block NSMutableArray *tempfollowType;
+- (void)findUsersByPartname:(NSString *)partName withBlock:(void (^)(NSArray *objects, NSError *error))block {
     AVQuery *q = [AVUser query];
     [q setCachePolicy:kAVCachePolicyNetworkElseCache];
     [q whereKey:@"username" containsString:partName];
     AVUser *curUser = [AVUser currentUser];
     [q whereKey:@"objectId" notEqualTo:curUser.objectId];
     [q orderByDescending:@"updatedAt"];
-    [q findObjectsInBackgroundWithBlock:^(NSArray *objects ,NSError * error ){
-        for (id object in objects) {
-            [tempfollowType addObject:[[NSNumber alloc] initWithBool:[self isFollowerOfMine:object]]];
-        }
-        followType = tempfollowType.copy;
-    }];
-    
+    [q findObjectsInBackgroundWithBlock:block];
 }
 
 - (void)followUser:(AVUser *)user callback:(AVBooleanResultBlock)callback {

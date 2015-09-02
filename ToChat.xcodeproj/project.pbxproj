@@ -3367,7 +3367,7 @@
 				);
 				GCC_PREFIX_HEADER = "ToChat/Step_it_up-Prefix.pch";
 				INFOPLIST_FILE = ToChat/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "a5269742-7a10-4105-814f-3b3f3f85d03d";
@@ -3390,7 +3390,7 @@
 				);
 				GCC_PREFIX_HEADER = "ToChat/Step_it_up-Prefix.pch";
 				INFOPLIST_FILE = ToChat/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "a5269742-7a10-4105-814f-3b3f3f85d03d";

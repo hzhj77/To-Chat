@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <AVOSCloud/AVOSCloud.h>
 
-typedef void (^JFArrayResultBlock)(NSArray *followType, NSArray *objects, NSError *error);
+typedef void (^JFArrayResultBlock)(NSArray *objects, NSError *error);
 @interface JFUserManager : NSObject
 
 + (instancetype)manager;
