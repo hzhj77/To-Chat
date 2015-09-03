@@ -10,7 +10,7 @@
 #import "JFUser.h"
 #import "JFUserManager.h"
 
-@interface JFUserInfoViewController : UIViewController
+@interface JFUserInfoViewController : UITableViewController
 
 -(void)configUserInfo:(JFUser *)user;
 

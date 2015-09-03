@@ -31,8 +31,7 @@
     
     [[JFUserManager manager]signInWithUsernameInBackground:my_user_name Andpassword:my_password withBlock:^(JFUser *user, NSError *error) {
         if (user != nil) {
-            [self performSegueWithIdentifier:@"goRootView" sender:self];
-            [self presentViewController:[[UIStoryboard storyboardWithName:@"ToChatMain" bundle:nil]instantiateInitialViewController] animated:NO completion:nil];
+//            [self presentViewController:[[UIStoryboard storyboardWithName:@"ToChatMain" bundle:nil]instantiateInitialViewController] animated:NO completion:nil];
             [[UIApplication sharedApplication].delegate.window setRootViewController:[[UIStoryboard storyboardWithName:@"ToChatMain" bundle:nil]instantiateInitialViewController]];
         }else{
             NSLog(@"登陆失败");
