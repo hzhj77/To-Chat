@@ -12,7 +12,11 @@
 @dynamic avatar, userID,name ,pinyinName ,age ,gender;
 
 + (NSString *)parseClassName {
-    return @"JFUser";
+    return @"_User";
+}
+
+-(void)setAvatar:(AVFile *)avatar{
+    
 }
 
 @end

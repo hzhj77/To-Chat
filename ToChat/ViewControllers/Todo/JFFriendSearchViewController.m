@@ -1,30 +1,32 @@
 //
-//  JFAddFriendViewController.m
+//  JFFriendSearchViewController.m
 //  ToChat
 //
-//  Created by syfll on 15/8/29.
+//  Created by jft0m on 15/9/3.
 //  Copyright © 2015年 JFT0M. All rights reserved.
 //
 
-#import "JFAddFriendViewController.h"
 #import "JFUserManager.h"
 #import "JFLiteUserCell.h"
+#import "JFFriendSearchViewController.h"
+#import "UserInfoViewController.h"
 
-@interface JFAddFriendViewController ()<UISearchBarDelegate>
-@property (weak,  nonatomic) IBOutlet UITableView *tableView;
+@interface JFFriendSearchViewController ()
+
 @property (strong,nonatomic) NSArray *users;
-
 
 @end
 
-@implementation JFAddFriendViewController
+@implementation JFFriendSearchViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
 }
 
 #pragma mark - Table view data source
@@ -38,9 +40,9 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    JFLiteUserCell *cell = [tableView dequeueReusableCellWithIdentifier:JF_Lite_User_Cell forIndexPath:indexPath];
+    JFLiteUserCell *cell = [tableView dequeueReusableCellWithIdentifier:@"LiteUserCell" forIndexPath:indexPath];
     AVUser *user = self.users[indexPath.row];
-    [self ConfigeCell:cell user:user type:LiteUserStyleBothFollow];
+    [self ConfigeCell:cell user:user type:LiteUserStyleNoStyle];
     return cell;
 }
 
@@ -51,7 +53,6 @@
 
 -(void)ConfigeCell:(JFLiteUserCell *)cell user:(AVUser *)user type:(LiteUserStyle)type {
     UIImage *avator = [[JFUserManager manager]getAvatarImageOfUser:user];
-    
     [cell ConfigCell:user.username avator:avator followType:type];
 }
 - (void)searchUser:(NSString *)name {
@@ -60,7 +61,7 @@
             if (objects) {
                 self.users = objects;
                 NSLog(@"searched %lu objects",(unsigned long)objects.count);
-                [_tableView reloadData];
+                [self.tableView reloadData];
             }
         }
     }];
@@ -72,6 +73,9 @@
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
+    UserInfoViewController *userInfo = [segue destinationViewController];
+    userInfo.isRoot = false;
+    //userInfo.curUser =
 }
 
 

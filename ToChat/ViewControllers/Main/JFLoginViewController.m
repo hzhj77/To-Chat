@@ -8,6 +8,7 @@
 
 #import "JFLoginViewController.h"
 #import "AVOSCloud/AVUser.h"
+#import "JFUserManager.h"
 
 @interface JFLoginViewController ()
 @property (weak, nonatomic) IBOutlet UITextField *userName;
@@ -27,12 +28,13 @@
 - (IBAction)loginButtonClicked:(id)sender {
     NSString *my_user_name = self.userName.text;
     NSString *my_password = self.password.text;
-    [AVUser logInWithUsernameInBackground:my_user_name password:my_password block:^(AVUser *user, NSError *error) {
+    
+    [[JFUserManager manager]signInWithUsernameInBackground:my_user_name Andpassword:my_password withBlock:^(JFUser *user, NSError *error) {
         if (user != nil) {
-            //[self performSegueWithIdentifier:@"goRootView" sender:self];
+            [self performSegueWithIdentifier:@"goRootView" sender:self];
             [self presentViewController:[[UIStoryboard storyboardWithName:@"ToChatMain" bundle:nil]instantiateInitialViewController] animated:NO completion:nil];
-            //[[UIApplication sharedApplication].delegate.window setRootViewController:[[UIStoryboard storyboardWithName:@"ToChatMain" bundle:nil]instantiateInitialViewController]];
-        } else {
+            [[UIApplication sharedApplication].delegate.window setRootViewController:[[UIStoryboard storyboardWithName:@"ToChatMain" bundle:nil]instantiateInitialViewController]];
+        }else{
             NSLog(@"登陆失败");
         }
     }];
