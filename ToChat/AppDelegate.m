@@ -16,8 +16,8 @@
 #import "IntroductionViewController.h"
 #import "BaseViewController.h"
 
-#import "LoginManager.h"
-#import "JFUser.h"
+#import "AVOSCloud/AVOSCloud.h"
+#import "JFUserManager.h"
 
 
 @interface AppDelegate ()

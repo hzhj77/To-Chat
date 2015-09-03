@@ -9,8 +9,6 @@
 #import "JFUserManager.h"
 #import "LeanChatLib/UIImage+Icon.h"
 
-
-
 static JFUserManager *userManager;
 
 @implementation JFUserManager
@@ -23,9 +21,32 @@ static JFUserManager *userManager;
     return userManager;
 }
 
+- (JFUser *)getCurrentUser{
+    return [JFUser currentUser];
+}
+
+- (void)signUp:(JFUser *)user withBlock:(JFBoolResultBlock)block{
+    [user signUpInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
+        if ([self filterError:error]) {
+            [self log:@"用户注册成功 %@",user];
+            [self log:@"当前用户 %@",user.username];
+        }
+    }];
+
+}
+
+- (void)signInWithUsernameInBackground:(NSString *)username
+                           Andpassword:(NSString *)password
+                             withBlock:(JFUserResultBlock)block{
+    [JFUser logInWithUsernameInBackground:username password:password block:^(AVUser * user, NSError *error){
+        block(user ,error);
+    }];
+}
+
 - (UIImage *)defaultAvatarOfUser:(AVUser *)user {
     return [UIImage imageWithHashString:user.objectId displayString:[[user.username substringWithRange:NSMakeRange(0, 1)] capitalizedString]];
 }
+
 - (UIImage *)getAvatarImageOfUser:(AVUser *)user{
     __block UIImage *image ;
     AVFile *avatar = [user objectForKey:@"avatar"];
@@ -43,6 +64,7 @@ static JFUserManager *userManager;
     
     return image;
 }
+
 - (void)getAvatarImageOfUser:(AVUser *)user block:(void (^)(UIImage *image))block {
     AVFile *avatar = [user objectForKey:@"avatar"];
     if (avatar) {
@@ -104,5 +126,26 @@ static JFUserManager *userManager;
     AVUser *curUser = [AVUser currentUser];
     return [curUser followeeQuery];
 }
+
+-(BOOL)filterError:(NSError *)error{
+    if (error) {
+        [self log:[NSString stringWithFormat:@"%@", error]];
+        return NO;
+    } else {
+        return YES;
+    }
+}
+
+- (void)log:(NSString *)format, ... NS_FORMAT_FUNCTION(1,2){
+    va_list ap;
+    va_start(ap, format);
+    [self logMessage:[[NSString alloc] initWithFormat:format arguments:ap]];
+    va_end(ap);
+}
+
+-(void)logMessage:(NSString*)msg{
+    NSLog(@"%@",msg);
+}
+
 
 @end

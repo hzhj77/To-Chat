@@ -7,20 +7,39 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <AVOSCloud/AVOSCloud.h>
 
-typedef void (^JFArrayResultBlock)(NSArray *objects, NSError *error);
+#import "JFUser.h"
+
+typedef void (^JFBoolResultBlock  ) (BOOL succeeded, NSError *error);
+typedef void (^JFArrayResultBlock ) (NSArray *objects, NSError *error);
+typedef void (^JFUserResultBlock  ) (JFUser *user, NSError *error);
+
 @interface JFUserManager : NSObject
 
 + (instancetype)manager;
+
+/// 获取当前用户
+- (JFUser *)getCurrentUser;
+
 /// 获取用户头像
-- (UIImage*)getAvatarImageOfUser:(AVUser *)user;
+- (UIImage *)getAvatarImageOfUser:(JFUser *)user;
+
+/// 登陆
+- (void)signInWithUsernameInBackground:(NSString *)username
+                              Andpassword:(NSString *)password
+                             withBlock:(JFUserResultBlock)block;
+
+/// 注册
+- (void)signUp:(JFUser *)user withBlock:(JFBoolResultBlock)block;
+
 /// 通过用户名搜索用户
 - (void)findUsersByPartname:(NSString *)partName withBlock:(JFArrayResultBlock)block;
+
 /// 关注
-- (void)followUser:(AVUser *)user callback:(AVBooleanResultBlock)callback;
+- (void)followUser:(JFUser *)user callback:(AVBooleanResultBlock)callback;
+
 /// 取消关注
-- (void)unfollowFriend:(AVUser *)user callback:(AVBooleanResultBlock)callback;
+- (void)unfollowFriend:(JFUser *)user callback:(AVBooleanResultBlock)callback;
 
 
 @end

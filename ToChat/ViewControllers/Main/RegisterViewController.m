@@ -29,34 +29,6 @@
 
 
 -(void)demoUsernameRegister{
-    AVUser *user= [AVUser user];
-    user.username=@"JFT0M";
-    user.password=@"1";
-    [user signUpInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
-        if ([self filterError:error]) {
-            [self log:@"用户注册成功 %@",user];
-            [self log:@"当前用户 %@",user.username];
-        }
-    }];
-}
--(BOOL)filterError:(NSError *)error{
-    if (error) {
-        [self log:[NSString stringWithFormat:@"%@", error]];
-        return NO;
-    } else {
-        return YES;
-    }
-}
-
-- (void)log:(NSString *)format, ... NS_FORMAT_FUNCTION(1,2){
-    va_list ap;
-    va_start(ap, format);
-    [self logMessage:[[NSString alloc] initWithFormat:format arguments:ap]];
-    va_end(ap);
-}
-
--(void)logMessage:(NSString*)msg{
-    NSLog(@"%@",msg);
 }
 
 

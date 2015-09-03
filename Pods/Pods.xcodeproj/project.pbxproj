@@ -7229,6 +7229,20 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0510;
+				TargetAttributes = {
+					345EF96D3229B5290FE7F0EC = {
+						DevelopmentTeam = 2NCX2WCTH8;
+					};
+					45CA3C5CC45C68C241939722 = {
+						DevelopmentTeam = 2NCX2WCTH8;
+					};
+					8015E5D11335A76136587121 = {
+						DevelopmentTeam = 2NCX2WCTH8;
+					};
+					82A2A6A546009DDBB793290B = {
+						DevelopmentTeam = 2NCX2WCTH8;
+					};
+				};
 			};
 			buildConfigurationList = 503EDE7EFD2F0F7BBA493821 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -8489,6 +8503,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A74C96FE37B2F4BD0814FC65 /* Pods-APParallaxHeader-Private.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -8504,6 +8519,7 @@
 				MODULEMAP_FILE = "Target Support Files/Pods-APParallaxHeader/Pods-APParallaxHeader.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
 				PRODUCT_NAME = APParallaxHeader;
+				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -8651,12 +8667,14 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 55180B40336A587D1943383C /* Pods-AVOSCloud-Private.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/Pods-AVOSCloud/Pods-AVOSCloud-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/Pods-AVOSCloud/Info.plist";
@@ -8666,6 +8684,7 @@
 				MODULEMAP_FILE = "Target Support Files/Pods-AVOSCloud/Pods-AVOSCloud.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_NAME = AVOSCloud;
+				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -8684,6 +8703,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/Pods-AVOSCloudIM/Pods-AVOSCloudIM-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/Pods-AVOSCloudIM/Info.plist";
@@ -8825,6 +8845,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 57E1789CFBC339BDA52B0318 /* Pods-JDStatusBarNotification-Private.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -8840,6 +8861,7 @@
 				MODULEMAP_FILE = "Target Support Files/Pods-JDStatusBarNotification/Pods-JDStatusBarNotification.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
 				PRODUCT_NAME = JDStatusBarNotification;
+				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -8957,6 +8979,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A74C96FE37B2F4BD0814FC65 /* Pods-APParallaxHeader-Private.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -8972,6 +8995,7 @@
 				MODULEMAP_FILE = "Target Support Files/Pods-APParallaxHeader/Pods-APParallaxHeader.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_NAME = APParallaxHeader;
+				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -9449,6 +9473,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/Pods-AVOSCloudIM/Pods-AVOSCloudIM-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/Pods-AVOSCloudIM/Info.plist";
@@ -9559,6 +9584,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/Pods-AVOSCloudSNS/Pods-AVOSCloudSNS-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/Pods-AVOSCloudSNS/Info.plist";
@@ -9586,6 +9612,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/Pods-LeanChatLib/Pods-LeanChatLib-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/Pods-LeanChatLib/Info.plist";
@@ -9993,6 +10020,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/Pods-AVOSCloudSNS/Pods-AVOSCloudSNS-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/Pods-AVOSCloudSNS/Info.plist";
@@ -10068,6 +10096,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3DCA2D4496AD5996307E26EC /* Pods-FontAwesome+iOS-Private.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -10083,6 +10112,7 @@
 				MODULEMAP_FILE = "Target Support Files/Pods-FontAwesome+iOS/Pods-FontAwesome+iOS.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
 				PRODUCT_NAME = FontAwesome_iOS;
+				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -10135,6 +10165,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/Pods-LeanChatLib/Pods-LeanChatLib-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/Pods-LeanChatLib/Info.plist";
@@ -10183,6 +10214,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 57E1789CFBC339BDA52B0318 /* Pods-JDStatusBarNotification-Private.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -10198,6 +10230,7 @@
 				MODULEMAP_FILE = "Target Support Files/Pods-JDStatusBarNotification/Pods-JDStatusBarNotification.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_NAME = JDStatusBarNotification;
+				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -10291,6 +10324,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3DCA2D4496AD5996307E26EC /* Pods-FontAwesome+iOS-Private.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -10306,6 +10340,7 @@
 				MODULEMAP_FILE = "Target Support Files/Pods-FontAwesome+iOS/Pods-FontAwesome+iOS.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_NAME = FontAwesome_iOS;
+				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -10453,12 +10488,14 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 55180B40336A587D1943383C /* Pods-AVOSCloud-Private.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/Pods-AVOSCloud/Pods-AVOSCloud-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/Pods-AVOSCloud/Info.plist";
@@ -10468,6 +10505,7 @@
 				MODULEMAP_FILE = "Target Support Files/Pods-AVOSCloud/Pods-AVOSCloud.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
 				PRODUCT_NAME = AVOSCloud;
+				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";

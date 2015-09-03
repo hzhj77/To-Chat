@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		281BCC501B97F4960070833B /* JFUserCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 281BCC4F1B97F4960070833B /* JFUserCell.m */; };
+		281BCC781B97F6CB0070833B /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 281BCC771B97F6CB0070833B /* README.md */; };
+		281BCC7B1B97FF0D0070833B /* JFFriendSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 281BCC7A1B97FF0D0070833B /* JFFriendSearchViewController.m */; };
+		281BCC7E1B97FF550070833B /* JFTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 281BCC7D1B97FF550070833B /* JFTableViewController.m */; };
+		281BCC901B982AF60070833B /* JFUserInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 281BCC8F1B982AF60070833B /* JFUserInfoViewController.m */; };
 		3000BAE51B8466AA00C3939E /* UITableView+FDTemplateLayoutCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3000BAE41B8466AA00C3939E /* UITableView+FDTemplateLayoutCell.m */; };
 		3000BAE81B8467CF00C3939E /* DiscoverTodoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3000BAE71B8467CF00C3939E /* DiscoverTodoCell.m */; };
 		3000BAEF1B8469E200C3939E /* DiscoverTodoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3000BAEE1B8469E200C3939E /* DiscoverTodoViewController.m */; };
@@ -507,7 +512,6 @@
 		30DB39EE1B930B7E00872E16 /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30DB39EA1B930B7E00872E16 /* RegisterViewController.m */; };
 		30DB39F11B930BB000872E16 /* JFSignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30DB39F01B930BB000872E16 /* JFSignUpViewController.m */; };
 		30DB39F31B930DED00872E16 /* JFToDoContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30DB39F21B930DED00872E16 /* JFToDoContainerViewController.m */; };
-		30DB39F61B930EC400872E16 /* JFAddFriendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30DB39F51B930EC400872E16 /* JFAddFriendViewController.m */; };
 		30DB39F91B930F8A00872E16 /* JFLiteUserCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 30DB39F81B930F8A00872E16 /* JFLiteUserCell.m */; };
 		30E6588B1B8FFD09008AFE1A /* JFBackgroundImageTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 30E6588A1B8FFD09008AFE1A /* JFBackgroundImageTableView.m */; };
 		30E658941B902D19008AFE1A /* JFSettingTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30E658931B902D19008AFE1A /* JFSettingTableViewController.m */; };
@@ -543,6 +547,15 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		281BCC4E1B97F4960070833B /* JFUserCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFUserCell.h; sourceTree = "<group>"; };
+		281BCC4F1B97F4960070833B /* JFUserCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFUserCell.m; sourceTree = "<group>"; };
+		281BCC771B97F6CB0070833B /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		281BCC791B97FF0D0070833B /* JFFriendSearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFFriendSearchViewController.h; sourceTree = "<group>"; };
+		281BCC7A1B97FF0D0070833B /* JFFriendSearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFFriendSearchViewController.m; sourceTree = "<group>"; };
+		281BCC7C1B97FF550070833B /* JFTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFTableViewController.h; sourceTree = "<group>"; };
+		281BCC7D1B97FF550070833B /* JFTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFTableViewController.m; sourceTree = "<group>"; };
+		281BCC8E1B982AF60070833B /* JFUserInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFUserInfoViewController.h; sourceTree = "<group>"; };
+		281BCC8F1B982AF60070833B /* JFUserInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFUserInfoViewController.m; sourceTree = "<group>"; };
 		3000BAE31B8466AA00C3939E /* UITableView+FDTemplateLayoutCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+FDTemplateLayoutCell.h"; sourceTree = "<group>"; };
 		3000BAE41B8466AA00C3939E /* UITableView+FDTemplateLayoutCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+FDTemplateLayoutCell.m"; sourceTree = "<group>"; };
 		3000BAE61B8467CF00C3939E /* DiscoverTodoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiscoverTodoCell.h; sourceTree = "<group>"; };
@@ -1219,8 +1232,6 @@
 		30DB39EF1B930BB000872E16 /* JFSignUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFSignUpViewController.h; sourceTree = "<group>"; };
 		30DB39F01B930BB000872E16 /* JFSignUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFSignUpViewController.m; sourceTree = "<group>"; };
 		30DB39F21B930DED00872E16 /* JFToDoContainerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFToDoContainerViewController.m; sourceTree = "<group>"; };
-		30DB39F41B930EC400872E16 /* JFAddFriendViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFAddFriendViewController.h; sourceTree = "<group>"; };
-		30DB39F51B930EC400872E16 /* JFAddFriendViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFAddFriendViewController.m; sourceTree = "<group>"; };
 		30DB39F71B930F8A00872E16 /* JFLiteUserCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFLiteUserCell.h; sourceTree = "<group>"; };
 		30DB39F81B930F8A00872E16 /* JFLiteUserCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFLiteUserCell.m; sourceTree = "<group>"; };
 		30E658891B8FFD09008AFE1A /* JFBackgroundImageTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFBackgroundImageTableView.h; sourceTree = "<group>"; };
@@ -1376,6 +1387,7 @@
 		30875F8A1B78E7CA00C50534 = {
 			isa = PBXGroup;
 			children = (
+				281BCC771B97F6CB0070833B /* README.md */,
 				308CC7D51B78EC1800E11188 /* Podfile */,
 				30875F951B78E7CB00C50534 /* ToChat */,
 				30875FB21B78E7CB00C50534 /* ToChatTests */,
@@ -2340,6 +2352,8 @@
 				308CCA191B78EC8900E11188 /* Todo */,
 				308CCA1F1B78EC8900E11188 /* UserInfoViewController.h */,
 				308CCA201B78EC8900E11188 /* UserInfoViewController.m */,
+				281BCC8E1B982AF60070833B /* JFUserInfoViewController.h */,
+				281BCC8F1B982AF60070833B /* JFUserInfoViewController.m */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -2394,8 +2408,6 @@
 			children = (
 				30C028D41B933D3D00A9CAE7 /* JFViewController.h */,
 				30C028D51B933D3D00A9CAE7 /* JFViewController.m */,
-				30DB39F41B930EC400872E16 /* JFAddFriendViewController.h */,
-				30DB39F51B930EC400872E16 /* JFAddFriendViewController.m */,
 				30A72E1D1B83025A009C7CD7 /* Todo_TypeViewController.h */,
 				30A72E1E1B83025A009C7CD7 /* Todo_TypeViewController.m */,
 				308CCA1B1B78EC8900E11188 /* Todo_CalenderViewController.h */,
@@ -2406,6 +2418,10 @@
 				30A72E211B830455009C7CD7 /* JFTodoTypeTableView.m */,
 				30351AC21B8CC19D00FDEBFD /* Todo_AllViewController.h */,
 				30351AC31B8CC19D00FDEBFD /* Todo_AllViewController.m */,
+				281BCC791B97FF0D0070833B /* JFFriendSearchViewController.h */,
+				281BCC7A1B97FF0D0070833B /* JFFriendSearchViewController.m */,
+				281BCC7C1B97FF550070833B /* JFTableViewController.h */,
+				281BCC7D1B97FF550070833B /* JFTableViewController.m */,
 			);
 			path = Todo;
 			sourceTree = "<group>";
@@ -2466,6 +2482,8 @@
 				3000BAE71B8467CF00C3939E /* DiscoverTodoCell.m */,
 				308CCA381B78EC8900E11188 /* UserInfoIconCell.h */,
 				308CCA391B78EC8900E11188 /* UserInfoIconCell.m */,
+				281BCC4E1B97F4960070833B /* JFUserCell.h */,
+				281BCC4F1B97F4960070833B /* JFUserCell.m */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -2633,6 +2651,7 @@
 				TargetAttributes = {
 					30875F921B78E7CA00C50534 = {
 						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = 2NCX2WCTH8;
 					};
 					30875FAE1B78E7CB00C50534 = {
 						CreatedOnToolsVersion = 6.4;
@@ -3072,6 +3091,7 @@
 				302710021B7F760300A412DA /* UIMessageInputView.m in Sources */,
 				30DB39EC1B930B7E00872E16 /* JFLoginViewController.m in Sources */,
 				30E658971B90325F008AFE1A /* JFToChatMainViewController.m in Sources */,
+				281BCC7B1B97FF0D0070833B /* JFFriendSearchViewController.m in Sources */,
 				308CCBF21B78EC8900E11188 /* Todo_RootViewController.m in Sources */,
 				308CCBE01B78EC8900E11188 /* XHPopMenuItemView.m in Sources */,
 				303C16571B7F81CF00FC8828 /* UIPlaceHolderTextView.m in Sources */,
@@ -3083,6 +3103,7 @@
 				303A42B21B81C01900117F71 /* ActionSheetCustomPicker.m in Sources */,
 				303C166E1B7F82D400FC8828 /* QBAssetsCollectionCheckmarkView.m in Sources */,
 				308CCBC61B78EC8900E11188 /* MJPhotoBrowser.m in Sources */,
+				281BCC501B97F4960070833B /* JFUserCell.m in Sources */,
 				308CCBB11B78EC8900E11188 /* JTCalendar.m in Sources */,
 				303C16751B7F82D400FC8828 /* QBImagePickerController.m in Sources */,
 				308CCBCD1B78EC8900E11188 /* NSDate+Helper.m in Sources */,
@@ -3147,16 +3168,18 @@
 				30A72E141B83015C009C7CD7 /* XLBarPagerTabStripViewController.m in Sources */,
 				303C167B1B7F831200FC8828 /* Helper.m in Sources */,
 				308CCBAF1B78EC8900E11188 /* FMDatabaseQueue.m in Sources */,
+				281BCC781B97F6CB0070833B /* README.md in Sources */,
 				308CCBB51B78EC8900E11188 /* JTCalendarDayView.m in Sources */,
 				308CCBDE1B78EC8900E11188 /* XHPopMenu.m in Sources */,
 				308CCBC41B78EC8900E11188 /* MJPhoto.m in Sources */,
+				281BCC7E1B97FF550070833B /* JFTableViewController.m in Sources */,
 				3000BAE51B8466AA00C3939E /* UITableView+FDTemplateLayoutCell.m in Sources */,
+				281BCC901B982AF60070833B /* JFUserInfoViewController.m in Sources */,
 				308CCBA71B78EC8900E11188 /* UILabel+Common.m in Sources */,
 				308CCA501B78EC8900E11188 /* User.m in Sources */,
 				308CCB9D1B78EC8900E11188 /* NSObject+Common.m in Sources */,
 				308CCBC81B78EC8900E11188 /* MJPhotoProgressView.m in Sources */,
 				308CCBA11B78EC8900E11188 /* UIBarButtonItem+Common.m in Sources */,
-				30DB39F61B930EC400872E16 /* JFAddFriendViewController.m in Sources */,
 				308CCBBE1B78EC8900E11188 /* LKDB+Mapping.m in Sources */,
 				30DB39F91B930F8A00872E16 /* JFLiteUserCell.m in Sources */,
 				30A72E161B83015C009C7CD7 /* XLPagerTabStripViewController.m in Sources */,
@@ -3286,8 +3309,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -3309,7 +3332,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				PROVISIONING_PROFILE = "a5269742-7a10-4105-814f-3b3f3f85d03d";
+				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -3331,8 +3354,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -3347,7 +3370,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PROVISIONING_PROFILE = "a5269742-7a10-4105-814f-3b3f3f85d03d";
+				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -3359,7 +3382,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -3367,10 +3390,11 @@
 				);
 				GCC_PREFIX_HEADER = "ToChat/Step_it_up-Prefix.pch";
 				INFOPLIST_FILE = ToChat/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jft0m.ToChat1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "a5269742-7a10-4105-814f-3b3f3f85d03d";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "";
 				USER_HEADER_SEARCH_PATHS = "$(PODS_ROOT)";
 			};
@@ -3382,7 +3406,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -3390,10 +3414,11 @@
 				);
 				GCC_PREFIX_HEADER = "ToChat/Step_it_up-Prefix.pch";
 				INFOPLIST_FILE = ToChat/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jft0m.ToChat1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "a5269742-7a10-4105-814f-3b3f3f85d03d";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "";
 				USER_HEADER_SEARCH_PATHS = "$(PODS_ROOT)";
 			};

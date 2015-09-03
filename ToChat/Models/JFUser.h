@@ -7,7 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "AVOSCloud/AVOSCloud.h"
+
+#import "AVOSCloud/AVUser.h"
+#import "AVOSCloud/AVSubclassing.h"
 
 static NSString *const JFUserKeyAvatar = @"avatar";
 static NSString *const JFUserKeyUserID = @"userID";
@@ -22,12 +24,18 @@ typedef enum{
     GenderFamale
 }GenderType;
 
-@interface JFUser : AVObject<AVSubclassing>
+@interface JFUser : AVUser<AVSubclassing>
 
+@property (nonatomic, assign) int age;
+@property (nonatomic, assign) GenderType gender;
 @property (nonatomic, strong) AVFile *avatar;
 @property (nonatomic, copy)   NSString *userID;
 @property (nonatomic, copy)   NSString *name;
 @property (nonatomic, copy)   NSString *pinyinName;
-@property (nonatomic, assign) int age;
-@property (nonatomic, assign) GenderType gender;
+
+/// 谁关注我
+//@property (nonatomic, strong) AVRelation *followers;
+/// 我关注谁
+//@property (nonatomic, strong) AVRelation *followees;
+
 @end
