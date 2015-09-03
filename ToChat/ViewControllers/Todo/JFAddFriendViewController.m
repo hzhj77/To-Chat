@@ -40,7 +40,7 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     JFLiteUserCell *cell = [tableView dequeueReusableCellWithIdentifier:JF_Lite_User_Cell forIndexPath:indexPath];
     AVUser *user = self.users[indexPath.row];
-    [self ConfigeCell:cell user:user type:LiteUserStyleNotFollow];
+    [self ConfigeCell:cell user:user type:LiteUserStyleBothFollow];
     return cell;
 }
 
@@ -55,14 +55,15 @@
     [cell ConfigCell:user.username avator:avator followType:type];
 }
 - (void)searchUser:(NSString *)name {
-//    [[JFUserManager manager] findUsersByPartname:name withBlock: ^(NSArray *objects, NSError *error) {
-//        if ([self filterError:error]) {
-//            if (objects) {
-//                self.users = objects;
-//                [_tableView reloadData];
-//            }
-//        }
-//    }];
+    [[JFUserManager manager] findUsersByPartname:name withBlock: ^(NSArray *objects, NSError *error) {
+        if ([self filterError:error]) {
+            if (objects) {
+                self.users = objects;
+                NSLog(@"searched %lu objects",(unsigned long)objects.count);
+                [_tableView reloadData];
+            }
+        }
+    }];
 }
 
 #pragma mark - Navigation
@@ -77,6 +78,7 @@
 #pragma mark - UISearchBarDelegate
 - (void)searchBar:(UISearchBar *)searchBar textDidChange:(NSString *)searchText{
     [self searchUser:searchText];
+    
 }
 - (void)searchBarSearchButtonClicked:(UISearchBar *)searchBar{
     
