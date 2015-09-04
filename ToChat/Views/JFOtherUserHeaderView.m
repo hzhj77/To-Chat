@@ -1,16 +1,16 @@
 //
-//  JFEaseUserHeaderView.m
+//  JFOtherUserHeaderView.m
 //  ToChat
 //
-//  Created by jft0m on 15/9/3.
+//  Created by jft0m on 15/9/4.
 //  Copyright © 2015年 JFT0M. All rights reserved.
 //
 
-#import "JFEaseUserHeaderView.h"
+#import "JFOtherUserHeaderView.h"
 
-#define EaseUserHeaderView_Height kScaleFrom_iPhone5_Desgin(135)
+#define EaseUserHeaderView_Height kScaleFrom_iPhone5_Desgin(230)
 
-@interface JFEaseUserHeaderView ()
+@interface JFOtherUserHeaderView ()
 
 /// 用户头像
 @property (strong, nonatomic) UITapImageView *userIconView;
@@ -22,6 +22,8 @@
 @property (strong, nonatomic) UIButton *fansCountBtn;
 /// 关注数量按钮
 @property (strong, nonatomic) UIButton *followsCountBtn;
+/// 关注按钮
+@property (strong, nonatomic) UIButton *followBtn;
 /// 粉丝数量按钮和关注数量按钮之间的分界线
 @property (strong, nonatomic) UIView *splitLine;
 /// 遮罩层
@@ -29,9 +31,11 @@
 
 @property (assign, nonatomic) CGFloat userIconViewWith;
 
+@property (assign, nonatomic) BOOL isMe;
+
 @end
 
-@implementation JFEaseUserHeaderView
+@implementation JFOtherUserHeaderView
 
 -(instancetype)init{
     self = [super init];
@@ -42,9 +46,11 @@
 }
 
 -(void)config:(JFHeaderViewEntity *)entity{
+    
     /**
      *  设置一部分局部数据
      */
+    _isMe = entity.isMe.boolValue;
     
     self.entity = entity;
     int fansCount = entity.fansCount.intValue;
@@ -52,6 +58,8 @@
     
     
     BOOL isMan = entity.isMan.boolValue;
+    BOOL follow = entity.follow.boolValue;
+    BOOL followed = entity.followed.boolValue;
     
     if (entity.userIconViewWith != nil) {
         _userIconViewWith = entity.userIconViewWith.floatValue;
@@ -102,13 +110,29 @@
     //关注数量
     [_followsCountBtn setAttributedTitle:[self getStringWithTitle:@"关注" andValue:[NSString stringWithFormat:@"%d",followsCount]] forState:UIControlStateNormal];
     
+    
+    //关注按钮
+    _followBtn.hidden = NO;
+    NSString *imageName;
+    if (followed) {
+        if (follow) {
+            imageName = @"n_btn_followed_both";
+        }else{
+            imageName = @"n_btn_followed_yes";
+        }
+    }else{
+        imageName = @"n_btn_followed_not";
+    }
+    
+    [_followBtn setImage:[UIImage imageNamed:imageName] forState:UIControlStateNormal];
+    
+    
     //更新界面限制
     [self setNeedsUpdateConstraints];
-    [self updateConstraintsIfNeeded];
-
+    
 }
 
-#pragma mark - init
+#pragma mark - initView
 
 -(void)initView{
     
@@ -125,6 +149,7 @@
     }
     [self setFrame:CGRectMake(0, 0, kScreen_Width, viewHeight)];
     
+    
     if (!_coverView) {
         _coverView = [[UIView alloc] init];
         _coverView.backgroundColor = [[UIColor blackColor] colorWithAlphaComponent:0.4];
@@ -134,7 +159,6 @@
     if (!_userIconView) {
         _userIconView = [[UITapImageView alloc] init];
         _userIconView.backgroundColor = kColorTableBG;
-        [_userIconView doBorderWidth:1.0 color:nil cornerRadius:_userIconViewWith/2];
         [_userIconView setTapBlock:^(id obj) {
             if (weakSelf.userIconClicked) {
                 weakSelf.userIconClicked();
@@ -153,9 +177,10 @@
     
     if (!_userSexIconView) {
         _userSexIconView = [[UITapImageView alloc] init];
+        [_userIconView doBorderWidth:1.0 color:nil cornerRadius:_userIconViewWith/2];
         [self addSubview:_userSexIconView];
     }
-
+    
     if (!_fansCountBtn) {
         _fansCountBtn = [UIButton buttonWithType:UIButtonTypeCustom];
         _fansCountBtn.contentHorizontalAlignment = UIControlContentHorizontalAlignmentRight;
@@ -183,7 +208,18 @@
         _splitLine.backgroundColor = [UIColor colorWithHexString:@"0xcacaca"];
         [self addSubview:_splitLine];
     }
-
+    
+    if (!_followBtn) {
+        _followBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+        [_followBtn bk_addEventHandler:^(id sender) {
+            if (weakSelf.followBtnClicked) {
+                weakSelf.followBtnClicked();
+            }
+        } forControlEvents:UIControlEventTouchUpInside];
+        [self addSubview:_followBtn];
+    }
+    
+    
 }
 -(void)updateConstraints{
     
@@ -222,14 +258,20 @@
         make.size.mas_equalTo(CGSizeMake(0.5, 15));
     }];
     
+    [_followBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.bottom.equalTo(_fansCountBtn.mas_top).offset(-20);
+        make.size.mas_equalTo(CGSizeMake(128, 39));
+        make.centerX.equalTo(self);
+    }];
+    
     [_userLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.bottom.equalTo(_fansCountBtn.mas_top).offset(kScaleFrom_iPhone5_Desgin(-20));
-            make.centerX.equalTo(self.mas_centerX).offset(-userSexIconViewWidth);
-            make.height.mas_equalTo(kScaleFrom_iPhone5_Desgin(20));
+        make.bottom.equalTo(_followBtn.mas_top).offset(kScaleFrom_iPhone5_Desgin(-10));
+        make.centerX.equalTo(self.mas_centerX).offset(-userSexIconViewWidth);
+        make.height.mas_equalTo(kScaleFrom_iPhone5_Desgin(20));
     }];
     
     [super updateConstraints];
-
+    
 }
 
 - (NSMutableAttributedString*)getStringWithTitle:(NSString *)title andValue:(NSString *)value{

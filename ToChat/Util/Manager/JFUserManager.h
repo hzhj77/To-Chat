@@ -35,11 +35,22 @@ typedef void (^JFUserResultBlock  ) (JFUser *user, NSError *error);
 /// 通过用户名搜索用户
 - (void)findUsersByPartname:(NSString *)partName withBlock:(JFArrayResultBlock)block;
 
+/// 获取粉丝的用户
+- (void)getFollower:(JFUser *)user withBlock:(JFArrayResultBlock)block;
+
+/// 获取关注的用户
+- (void)getFollowee:(JFUser *)user withBlock:(JFArrayResultBlock)block;
+
+/// 判断 userA 是否关注了 userB
+- (void)isFollow:(JFUser *)userA userB:(JFUser *)userB withBlock:(JFBoolResultBlock)block;
+
 /// 关注
 - (void)followUser:(JFUser *)user callback:(AVBooleanResultBlock)callback;
 
 /// 取消关注
 - (void)unfollowFriend:(JFUser *)user callback:(AVBooleanResultBlock)callback;
 
+/// 判断是否是当前登录用户
+- (BOOL)isMe:(JFUser *)user;
 
 @end
