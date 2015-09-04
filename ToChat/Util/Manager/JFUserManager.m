@@ -104,27 +104,63 @@ static JFUserManager *userManager;
     [curUser unfollow:user.objectId andCallback:callback];
 }
 
--(BOOL)isFollowerOfMine:(AVUser *)user{
-    __block BOOL isFriend ;
-    AVQuery * query = [self getFollowrUserQuery:user];
-    [query whereKey:@"objectId" notEqualTo:user.objectId];
-    [query findObjectsInBackgroundWithBlock:^(NSArray *objects ,NSError * error ){
-        if(objects){
-            isFriend =  YES;
+- (void)isFollow:(JFUser *)userA userB:(JFUser *)userB withBlock:(JFBoolResultBlock)block{
+    AVQuery * query = [self getFolloweeUserQuery:userA];
+    [query whereKey:@"objectId" notEqualTo:userB.objectId];
+    [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
+        if (objects) {
+            block(YES,error);
         }else{
-            isFriend =  NO;
+            block(NO,error);
         }
     }];
-    return isFriend;
+    
+}
+
+//- (BOOL)isFollowerOfMine:(AVUser *)user{
+//    __block BOOL isFollower ;
+//    AVQuery * query = [self getFollowrUserQuery:user];
+//    [query whereKey:@"objectId" notEqualTo:user.objectId];
+//    [query findObjectsInBackgroundWithBlock:^(NSArray *objects ,NSError * error ){
+//        if(objects){
+//            isFollower =  YES;
+//        }else{
+//            isFollower =  NO;
+//        }
+//    }];
+//    return isFollower;
+//}
+//
+//- (BOOL)isFolloweeOfMine:(AVUser *)user{
+//    __block BOOL isFollowee ;
+//    AVQuery * query = [self getFolloweeUserQuery:user];
+//    [query whereKey:@"objectId" notEqualTo:user.objectId];
+//    [query findObjectsInBackgroundWithBlock:^(NSArray *objects ,NSError * error ){
+//        if(objects){
+//            isFollowee =  YES;
+//        }else{
+//            isFollowee =  NO;
+//        }
+//    }];
+//    return isFollowee;
+//}
+
+
+
+- (void)getFollowee:(JFUser *)user withBlock:(JFArrayResultBlock)block{
+    AVQuery * query = [self getFollowrUserQuery:user];
+    [query findObjectsInBackgroundWithBlock:block];
+}
+- (void)getFollower:(JFUser *)user withBlock:(JFArrayResultBlock)block{
+    AVQuery *query = [self getFolloweeUserQuery:user];
+    [query findObjectsInBackgroundWithBlock:block];
 }
 
 - (AVQuery *)getFollowrUserQuery:(AVUser *)user{
-    AVUser *curUser = [AVUser currentUser];
-    return [curUser followerQuery];
+    return [user followerQuery];
 }
 - (AVQuery *)getFolloweeUserQuery:(AVUser *)user{
-    AVUser *curUser = [AVUser currentUser];
-    return [curUser followeeQuery];
+    return [user followeeQuery];
 }
 
 -(BOOL)filterError:(NSError *)error{
@@ -145,6 +181,14 @@ static JFUserManager *userManager;
 
 -(void)logMessage:(NSString*)msg{
     NSLog(@"%@",msg);
+}
+
+- (BOOL)isMe:(JFUser *)user{
+    if (user.objectId != [self getCurrentUser].objectId) {
+        return NO;
+    }else{
+        return YES;
+    }
 }
 
 

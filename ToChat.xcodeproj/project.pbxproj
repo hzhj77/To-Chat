@@ -12,6 +12,12 @@
 		281BCC7B1B97FF0D0070833B /* JFFriendSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 281BCC7A1B97FF0D0070833B /* JFFriendSearchViewController.m */; };
 		281BCC7E1B97FF550070833B /* JFTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 281BCC7D1B97FF550070833B /* JFTableViewController.m */; };
 		281BCC901B982AF60070833B /* JFUserInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 281BCC8F1B982AF60070833B /* JFUserInfoViewController.m */; };
+		287CF0071B994EF500C59C8C /* JFHeaderViewEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 287CF0061B994EF500C59C8C /* JFHeaderViewEntity.m */; };
+		287CF00A1B9958A000C59C8C /* UserInfoIconCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 287CF0091B9958A000C59C8C /* UserInfoIconCell.m */; };
+		287CF00D1B9967AD00C59C8C /* JFOtherUserInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 287CF00C1B9967AD00C59C8C /* JFOtherUserInfoViewController.m */; };
+		288793F41B989C9F009A4706 /* JFEaseUserHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 288793F31B989C9F009A4706 /* JFEaseUserHeaderView.m */; };
+		28BDBE321B99E8F100F21980 /* JFOtherUserHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 28BDBE311B99E8F100F21980 /* JFOtherUserHeaderView.m */; };
+		28E7F7761B986C460015C20A /* JFRoundTapImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 28E7F7751B986C460015C20A /* JFRoundTapImageView.m */; };
 		3000BAE51B8466AA00C3939E /* UITableView+FDTemplateLayoutCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3000BAE41B8466AA00C3939E /* UITableView+FDTemplateLayoutCell.m */; };
 		3000BAE81B8467CF00C3939E /* DiscoverTodoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3000BAE71B8467CF00C3939E /* DiscoverTodoCell.m */; };
 		3000BAEF1B8469E200C3939E /* DiscoverTodoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3000BAEE1B8469E200C3939E /* DiscoverTodoViewController.m */; };
@@ -481,13 +487,11 @@
 		308CCBFF1B78EC8900E11188 /* TweetCommentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 308CCA331B78EC8900E11188 /* TweetCommentCell.m */; };
 		308CCC001B78EC8900E11188 /* TweetCommentMoreCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 308CCA351B78EC8900E11188 /* TweetCommentMoreCell.m */; };
 		308CCC011B78EC8900E11188 /* TweetTodoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 308CCA371B78EC8900E11188 /* TweetTodoCell.m */; };
-		308CCC021B78EC8900E11188 /* UserInfoIconCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 308CCA391B78EC8900E11188 /* UserInfoIconCell.m */; };
 		308CCC031B78EC8900E11188 /* TodoTypeCCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 308CCA3C1B78EC8900E11188 /* TodoTypeCCell.m */; };
 		308CCC041B78EC8900E11188 /* TweetLikeUserCCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 308CCA3E1B78EC8900E11188 /* TweetLikeUserCCell.m */; };
 		308CCC051B78EC8900E11188 /* TweetMediaItemCCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 308CCA401B78EC8900E11188 /* TweetMediaItemCCell.m */; };
 		308CCC061B78EC8900E11188 /* TweetMediaItemSingleCCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 308CCA421B78EC8900E11188 /* TweetMediaItemSingleCCell.m */; };
 		308CCC071B78EC8900E11188 /* EaseStartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 308CCA441B78EC8900E11188 /* EaseStartView.m */; };
-		308CCC081B78EC8900E11188 /* EaseTodoHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 308CCA461B78EC8900E11188 /* EaseTodoHeaderView.m */; };
 		308CCC091B78EC8900E11188 /* EaseUserHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 308CCA481B78EC8900E11188 /* EaseUserHeaderView.m */; };
 		30A72E141B83015C009C7CD7 /* XLBarPagerTabStripViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30A72E011B83015C009C7CD7 /* XLBarPagerTabStripViewController.m */; };
 		30A72E151B83015C009C7CD7 /* XLButtonBarPagerTabStripViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30A72E031B83015C009C7CD7 /* XLButtonBarPagerTabStripViewController.m */; };
@@ -556,6 +560,18 @@
 		281BCC7D1B97FF550070833B /* JFTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFTableViewController.m; sourceTree = "<group>"; };
 		281BCC8E1B982AF60070833B /* JFUserInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFUserInfoViewController.h; sourceTree = "<group>"; };
 		281BCC8F1B982AF60070833B /* JFUserInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFUserInfoViewController.m; sourceTree = "<group>"; };
+		287CF0051B994EF500C59C8C /* JFHeaderViewEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFHeaderViewEntity.h; sourceTree = "<group>"; };
+		287CF0061B994EF500C59C8C /* JFHeaderViewEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFHeaderViewEntity.m; sourceTree = "<group>"; };
+		287CF0081B9958A000C59C8C /* UserInfoIconCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserInfoIconCell.h; sourceTree = "<group>"; };
+		287CF0091B9958A000C59C8C /* UserInfoIconCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserInfoIconCell.m; sourceTree = "<group>"; };
+		287CF00B1B9967AD00C59C8C /* JFOtherUserInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFOtherUserInfoViewController.h; sourceTree = "<group>"; };
+		287CF00C1B9967AD00C59C8C /* JFOtherUserInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFOtherUserInfoViewController.m; sourceTree = "<group>"; };
+		288793F21B989C9F009A4706 /* JFEaseUserHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFEaseUserHeaderView.h; sourceTree = "<group>"; };
+		288793F31B989C9F009A4706 /* JFEaseUserHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFEaseUserHeaderView.m; sourceTree = "<group>"; };
+		28BDBE301B99E8F100F21980 /* JFOtherUserHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFOtherUserHeaderView.h; sourceTree = "<group>"; };
+		28BDBE311B99E8F100F21980 /* JFOtherUserHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFOtherUserHeaderView.m; sourceTree = "<group>"; };
+		28E7F7741B986C460015C20A /* JFRoundTapImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFRoundTapImageView.h; sourceTree = "<group>"; };
+		28E7F7751B986C460015C20A /* JFRoundTapImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFRoundTapImageView.m; sourceTree = "<group>"; };
 		3000BAE31B8466AA00C3939E /* UITableView+FDTemplateLayoutCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+FDTemplateLayoutCell.h"; sourceTree = "<group>"; };
 		3000BAE41B8466AA00C3939E /* UITableView+FDTemplateLayoutCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+FDTemplateLayoutCell.m"; sourceTree = "<group>"; };
 		3000BAE61B8467CF00C3939E /* DiscoverTodoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiscoverTodoCell.h; sourceTree = "<group>"; };
@@ -1171,8 +1187,6 @@
 		308CCA351B78EC8900E11188 /* TweetCommentMoreCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TweetCommentMoreCell.m; sourceTree = "<group>"; };
 		308CCA361B78EC8900E11188 /* TweetTodoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TweetTodoCell.h; sourceTree = "<group>"; };
 		308CCA371B78EC8900E11188 /* TweetTodoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TweetTodoCell.m; sourceTree = "<group>"; };
-		308CCA381B78EC8900E11188 /* UserInfoIconCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserInfoIconCell.h; sourceTree = "<group>"; };
-		308CCA391B78EC8900E11188 /* UserInfoIconCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserInfoIconCell.m; sourceTree = "<group>"; };
 		308CCA3B1B78EC8900E11188 /* TodoTypeCCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TodoTypeCCell.h; sourceTree = "<group>"; };
 		308CCA3C1B78EC8900E11188 /* TodoTypeCCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TodoTypeCCell.m; sourceTree = "<group>"; };
 		308CCA3D1B78EC8900E11188 /* TweetLikeUserCCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TweetLikeUserCCell.h; sourceTree = "<group>"; };
@@ -1183,8 +1197,6 @@
 		308CCA421B78EC8900E11188 /* TweetMediaItemSingleCCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TweetMediaItemSingleCCell.m; sourceTree = "<group>"; };
 		308CCA431B78EC8900E11188 /* EaseStartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EaseStartView.h; sourceTree = "<group>"; };
 		308CCA441B78EC8900E11188 /* EaseStartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EaseStartView.m; sourceTree = "<group>"; };
-		308CCA451B78EC8900E11188 /* EaseTodoHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EaseTodoHeaderView.h; sourceTree = "<group>"; };
-		308CCA461B78EC8900E11188 /* EaseTodoHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EaseTodoHeaderView.m; sourceTree = "<group>"; };
 		308CCA471B78EC8900E11188 /* EaseUserHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EaseUserHeaderView.h; sourceTree = "<group>"; };
 		308CCA481B78EC8900E11188 /* EaseUserHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EaseUserHeaderView.m; sourceTree = "<group>"; };
 		30A72E001B83015C009C7CD7 /* XLBarPagerTabStripViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLBarPagerTabStripViewController.h; sourceTree = "<group>"; };
@@ -1478,6 +1490,8 @@
 				30A84FB71B8DDF3A00429DF6 /* LoginManager.m */,
 				30A84FB91B8DF0E600429DF6 /* JFUser.h */,
 				30A84FBA1B8DF0E600429DF6 /* JFUser.m */,
+				287CF0051B994EF500C59C8C /* JFHeaderViewEntity.h */,
+				287CF0061B994EF500C59C8C /* JFHeaderViewEntity.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -2064,6 +2078,8 @@
 				302F36FE1B8F4B9900BE0D76 /* JFRoundUIButton.m */,
 				30E658891B8FFD09008AFE1A /* JFBackgroundImageTableView.h */,
 				30E6588A1B8FFD09008AFE1A /* JFBackgroundImageTableView.m */,
+				28E7F7741B986C460015C20A /* JFRoundTapImageView.h */,
+				28E7F7751B986C460015C20A /* JFRoundTapImageView.m */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -2354,6 +2370,8 @@
 				308CCA201B78EC8900E11188 /* UserInfoViewController.m */,
 				281BCC8E1B982AF60070833B /* JFUserInfoViewController.h */,
 				281BCC8F1B982AF60070833B /* JFUserInfoViewController.m */,
+				287CF00B1B9967AD00C59C8C /* JFOtherUserInfoViewController.h */,
+				287CF00C1B9967AD00C59C8C /* JFOtherUserInfoViewController.m */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -2434,12 +2452,14 @@
 				308CCA3A1B78EC8900E11188 /* CollectionCell */,
 				308CCA431B78EC8900E11188 /* EaseStartView.h */,
 				308CCA441B78EC8900E11188 /* EaseStartView.m */,
-				308CCA451B78EC8900E11188 /* EaseTodoHeaderView.h */,
-				308CCA461B78EC8900E11188 /* EaseTodoHeaderView.m */,
 				308CCA471B78EC8900E11188 /* EaseUserHeaderView.h */,
 				308CCA481B78EC8900E11188 /* EaseUserHeaderView.m */,
 				306B62921B79998F00167CB3 /* EaseInputTipsView.h */,
 				306B62931B79998F00167CB3 /* EaseInputTipsView.m */,
+				288793F21B989C9F009A4706 /* JFEaseUserHeaderView.h */,
+				288793F31B989C9F009A4706 /* JFEaseUserHeaderView.m */,
+				28BDBE301B99E8F100F21980 /* JFOtherUserHeaderView.h */,
+				28BDBE311B99E8F100F21980 /* JFOtherUserHeaderView.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -2480,10 +2500,10 @@
 				308CCA371B78EC8900E11188 /* TweetTodoCell.m */,
 				3000BAE61B8467CF00C3939E /* DiscoverTodoCell.h */,
 				3000BAE71B8467CF00C3939E /* DiscoverTodoCell.m */,
-				308CCA381B78EC8900E11188 /* UserInfoIconCell.h */,
-				308CCA391B78EC8900E11188 /* UserInfoIconCell.m */,
 				281BCC4E1B97F4960070833B /* JFUserCell.h */,
 				281BCC4F1B97F4960070833B /* JFUserCell.m */,
+				287CF0081B9958A000C59C8C /* UserInfoIconCell.h */,
+				287CF0091B9958A000C59C8C /* UserInfoIconCell.m */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -3089,11 +3109,13 @@
 				308CCBEF1B78EC8900E11188 /* Group_RootViewController.m in Sources */,
 				308CCBF61B78EC8900E11188 /* UserInfoViewController.m in Sources */,
 				302710021B7F760300A412DA /* UIMessageInputView.m in Sources */,
+				287CF00A1B9958A000C59C8C /* UserInfoIconCell.m in Sources */,
 				30DB39EC1B930B7E00872E16 /* JFLoginViewController.m in Sources */,
 				30E658971B90325F008AFE1A /* JFToChatMainViewController.m in Sources */,
 				281BCC7B1B97FF0D0070833B /* JFFriendSearchViewController.m in Sources */,
 				308CCBF21B78EC8900E11188 /* Todo_RootViewController.m in Sources */,
 				308CCBE01B78EC8900E11188 /* XHPopMenuItemView.m in Sources */,
+				287CF0071B994EF500C59C8C /* JFHeaderViewEntity.m in Sources */,
 				303C16571B7F81CF00FC8828 /* UIPlaceHolderTextView.m in Sources */,
 				302710031B7F760300A412DA /* UIMessageInputView_Add.m in Sources */,
 				308CCBF01B78EC8900E11188 /* Me_RootViewController.m in Sources */,
@@ -3140,6 +3162,7 @@
 				308CCBC31B78EC8900E11188 /* MBProgressHUD+Add.m in Sources */,
 				30A72E1B1B83015C009C7CD7 /* XLButtonBarView.m in Sources */,
 				30875F9F1B78E7CB00C50534 /* ToChat.xcdatamodeld in Sources */,
+				28BDBE321B99E8F100F21980 /* JFOtherUserHeaderView.m in Sources */,
 				308CCC061B78EC8900E11188 /* TweetMediaItemSingleCCell.m in Sources */,
 				302F36FF1B8F4B9900BE0D76 /* JFRoundUIButton.m in Sources */,
 				308CCBA61B78EC8900E11188 /* UIImageView+Common.m in Sources */,
@@ -3162,6 +3185,7 @@
 				308CCB9A1B78EC8900E11188 /* UITTTAttributedLabel.m in Sources */,
 				30A72E1A1B83015C009C7CD7 /* XLBarView.m in Sources */,
 				308CCB991B78EC8900E11188 /* UITapImageView.m in Sources */,
+				28E7F7761B986C460015C20A /* JFRoundTapImageView.m in Sources */,
 				308CCBB01B78EC8900E11188 /* FMResultSet.m in Sources */,
 				308CCBFE1B78EC8900E11188 /* TweetCell.m in Sources */,
 				303A42B61B81C01900117F71 /* ActionSheetStringPicker.m in Sources */,
@@ -3233,7 +3257,6 @@
 				303C16521B7F808800FC8828 /* AGEmojiPageView.m in Sources */,
 				303A42B31B81C01900117F71 /* ActionSheetDatePicker.m in Sources */,
 				308CCBBA1B78EC8900E11188 /* JTCalendarWeekView.m in Sources */,
-				308CCC021B78EC8900E11188 /* UserInfoIconCell.m in Sources */,
 				308CCBE61B78EC8900E11188 /* TweetViewController.m in Sources */,
 				303C16721B7F82D400FC8828 /* QBAssetsCollectionViewCell.m in Sources */,
 				308CCBA51B78EC8900E11188 /* UIImage+Common.m in Sources */,
@@ -3245,6 +3268,7 @@
 				30DB39EE1B930B7E00872E16 /* RegisterViewController.m in Sources */,
 				308CCBA31B78EC8900E11188 /* UIButton+User.m in Sources */,
 				301AFF511B7B10C600D0EA11 /* MomentCell.m in Sources */,
+				288793F41B989C9F009A4706 /* JFEaseUserHeaderView.m in Sources */,
 				308CCBFB1B78EC8900E11188 /* ScheduleFootCell.m in Sources */,
 				303A429B1B81BFAE00117F71 /* JFTodoCreateSelectionCell.m in Sources */,
 				30DB39E11B92F8F200872E16 /* JFContainer_Me_RootViewController.m in Sources */,
@@ -3257,7 +3281,7 @@
 				308CCC091B78EC8900E11188 /* EaseUserHeaderView.m in Sources */,
 				308CCBBD1B78EC8900E11188 /* LKAlarmMamager.m in Sources */,
 				303C16701B7F82D400FC8828 /* QBAssetsCollectionOverlayView.m in Sources */,
-				308CCC081B78EC8900E11188 /* EaseTodoHeaderView.m in Sources */,
+				287CF00D1B9967AD00C59C8C /* JFOtherUserInfoViewController.m in Sources */,
 				308CCBF91B78EC8900E11188 /* MeGroupCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

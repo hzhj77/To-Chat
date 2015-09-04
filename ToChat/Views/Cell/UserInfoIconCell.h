@@ -1,9 +1,9 @@
 //
-//  UserInfoIconCell.h
-//  Coding_iOS
+//  UserInfoIconCel.h
+//  ToChat
 //
-//  Created by Ease on 15/3/18.
-//  Copyright (c) 2015年 Coding. All rights reserved.
+//  Created by jft0m on 15/9/4.
+//  Copyright © 2015年 JFT0M. All rights reserved.
 //
 
 #define kCellIdentifier_UserInfoIconCell @"UserInfoIconCell"

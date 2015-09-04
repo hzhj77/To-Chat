@@ -7,11 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "JFUser.h"
-#import "JFUserManager.h"
 
-@interface JFUserInfoViewController : UIViewController
-
--(void)configUserInfo:(JFUser *)user;
+@interface JFUserInfoViewController : UITableViewController
 
 @end

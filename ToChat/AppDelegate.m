@@ -16,7 +16,6 @@
 #import "IntroductionViewController.h"
 #import "BaseViewController.h"
 
-#import "AVOSCloud/AVOSCloud.h"
 #import "JFUserManager.h"
 
 

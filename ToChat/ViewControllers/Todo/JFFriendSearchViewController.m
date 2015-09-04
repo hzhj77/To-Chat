@@ -9,11 +9,12 @@
 #import "JFUserManager.h"
 #import "JFLiteUserCell.h"
 #import "JFFriendSearchViewController.h"
-#import "UserInfoViewController.h"
+#import "JFOtherUserInfoViewController.h"
 
 @interface JFFriendSearchViewController ()
 
-@property (strong,nonatomic) NSArray *users;
+@property (strong ,nonatomic) NSArray *users;
+@property (strong ,nonatomic) JFUser *selectedUser;
 
 @end
 
@@ -66,16 +67,18 @@
         }
     }];
 }
+#pragma mark - Table view delegate
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    self.selectedUser = self.users[indexPath.row];
+    [self performSegueWithIdentifier:@"showOtherUserInfo" sender:self];
+}
 
 #pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-    UserInfoViewController *userInfo = [segue destinationViewController];
-    userInfo.isRoot = false;
-    //userInfo.curUser =
+    JFOtherUserInfoViewController *userInfo = [segue destinationViewController];
+    [userInfo config:self.selectedUser];
 }
 
 
