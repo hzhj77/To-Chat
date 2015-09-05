@@ -127,7 +127,7 @@
     };
     
     [self.tableView addParallaxWithView:_headerView andHeight:CGRectGetHeight(_headerView.frame)];
-    
+    self.tableView.tableFooterView = [self footerV];
 }
 
 #pragma mark - table view 
@@ -174,6 +174,16 @@
         }
     }];
 }
+
+#pragma mark footerV
+- (UIView *)footerV{
+    UIView *footerV = [[UIView alloc] initWithFrame:CGRectMake(0, 0, kScreen_Width, 72)];
+    
+    UIButton *footerBtn = [UIButton buttonWithStyle:StrapSuccessStyle andTitle:@"发消息" andFrame:CGRectMake(kPaddingLeftWidth, (CGRectGetHeight(footerV.frame)-44)/2 , kScreen_Width - 2*kPaddingLeftWidth, 44) target:self action:@selector(messageBtnClicked)];
+    [footerV addSubview:footerBtn];
+    return footerV;
+}
+
 #pragma mark 如果没有数据
 - (JFHeaderViewEntity *)noEntity{
     

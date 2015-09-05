@@ -19,7 +19,7 @@
 @property (strong ,nonatomic) UIImage *bgImage ;
 /// 用户头像小图
 @property (strong ,nonatomic) UIImage *IconImage ;
-
+@property (strong ,nonatomic) NSString *signature;
 /// 谁关注我
 //@property (nonatomic, strong) AVRelation *followers;
 /// 我关注谁

@@ -13,6 +13,9 @@
 #import "JFHeaderViewEntity.h"
 #import "JFUserManager.h"
 
+#import "JFFolloweesViewController.h"
+#import "JFFollowersViewController.h"
+
 @interface JFUserInfoViewController ()
 
 @property (strong, nonatomic) JFEaseUserHeaderView *headerView;
@@ -160,10 +163,22 @@
 #pragma mark Btn Clicked
 
 - (void)fansCountBtnClicked{
+    [self performSegueWithIdentifier:@"showFollowees" sender:self];
     NSLog(@"fansCountBtnClicked\n");
 }
 
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    if ([segue.identifier  isEqual: @"showFollowees"]) {
+        JFFolloweesViewController *followeesVC = [segue destinationViewController];
+        followeesVC.user = _user;
+    }else{
+        JFFollowersViewController *followersVC = [segue destinationViewController];
+        followersVC.user = _user;
+    }
+}
+
 - (void)followsCountBtnClicked{
+    [self performSegueWithIdentifier:@"showFollowers" sender:self];
     NSLog(@"followsCountBtnClicked\n");
 }
 

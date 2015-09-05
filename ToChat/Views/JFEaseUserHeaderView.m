@@ -8,7 +8,7 @@
 
 #import "JFEaseUserHeaderView.h"
 
-#define EaseUserHeaderView_Height kScaleFrom_iPhone5_Desgin(135)
+#define EaseUserHeaderView_Height kScaleFrom_iPhone5_Desgin(185)
 
 @interface JFEaseUserHeaderView ()
 

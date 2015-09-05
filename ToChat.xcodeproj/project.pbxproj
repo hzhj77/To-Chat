@@ -12,10 +12,14 @@
 		281BCC7B1B97FF0D0070833B /* JFFriendSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 281BCC7A1B97FF0D0070833B /* JFFriendSearchViewController.m */; };
 		281BCC7E1B97FF550070833B /* JFTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 281BCC7D1B97FF550070833B /* JFTableViewController.m */; };
 		281BCC901B982AF60070833B /* JFUserInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 281BCC8F1B982AF60070833B /* JFUserInfoViewController.m */; };
+		2840EABC1B9AD7F40083D61B /* JFIMService.m in Sources */ = {isa = PBXBuildFile; fileRef = 2840EABB1B9AD7F40083D61B /* JFIMService.m */; };
 		287CF0071B994EF500C59C8C /* JFHeaderViewEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 287CF0061B994EF500C59C8C /* JFHeaderViewEntity.m */; };
 		287CF00A1B9958A000C59C8C /* UserInfoIconCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 287CF0091B9958A000C59C8C /* UserInfoIconCell.m */; };
 		287CF00D1B9967AD00C59C8C /* JFOtherUserInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 287CF00C1B9967AD00C59C8C /* JFOtherUserInfoViewController.m */; };
 		288793F41B989C9F009A4706 /* JFEaseUserHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 288793F31B989C9F009A4706 /* JFEaseUserHeaderView.m */; };
+		28B172041B9AA3EB004926BC /* JFFolloweesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28B172031B9AA3EB004926BC /* JFFolloweesViewController.m */; };
+		28B172071B9AA401004926BC /* JFFollowersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28B172061B9AA401004926BC /* JFFollowersViewController.m */; };
+		28B1720A1B9AA70C004926BC /* JFUserEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 28B172091B9AA70C004926BC /* JFUserEntity.m */; };
 		28BDBE321B99E8F100F21980 /* JFOtherUserHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 28BDBE311B99E8F100F21980 /* JFOtherUserHeaderView.m */; };
 		28E7F7761B986C460015C20A /* JFRoundTapImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 28E7F7751B986C460015C20A /* JFRoundTapImageView.m */; };
 		3000BAE51B8466AA00C3939E /* UITableView+FDTemplateLayoutCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3000BAE41B8466AA00C3939E /* UITableView+FDTemplateLayoutCell.m */; };
@@ -509,7 +513,6 @@
 		30C028D11B9337A100A9CAE7 /* JFUserManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 30C028D01B9337A100A9CAE7 /* JFUserManager.m */; };
 		30C028D61B933D3D00A9CAE7 /* JFViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30C028D51B933D3D00A9CAE7 /* JFViewController.m */; };
 		30DB39B41B92EA6E00872E16 /* UINavigationController+FDFullscreenPopGesture.m in Sources */ = {isa = PBXBuildFile; fileRef = 30DB39B31B92EA6E00872E16 /* UINavigationController+FDFullscreenPopGesture.m */; };
-		30DB39E11B92F8F200872E16 /* JFContainer_Me_RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30DB39E01B92F8F200872E16 /* JFContainer_Me_RootViewController.m */; };
 		30DB39EB1B930B7E00872E16 /* IntroductionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30DB39E41B930B7E00872E16 /* IntroductionViewController.m */; };
 		30DB39EC1B930B7E00872E16 /* JFLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30DB39E61B930B7E00872E16 /* JFLoginViewController.m */; };
 		30DB39ED1B930B7E00872E16 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30DB39E81B930B7E00872E16 /* LoginViewController.m */; };
@@ -560,6 +563,8 @@
 		281BCC7D1B97FF550070833B /* JFTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFTableViewController.m; sourceTree = "<group>"; };
 		281BCC8E1B982AF60070833B /* JFUserInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFUserInfoViewController.h; sourceTree = "<group>"; };
 		281BCC8F1B982AF60070833B /* JFUserInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFUserInfoViewController.m; sourceTree = "<group>"; };
+		2840EABA1B9AD7F40083D61B /* JFIMService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFIMService.h; sourceTree = "<group>"; };
+		2840EABB1B9AD7F40083D61B /* JFIMService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFIMService.m; sourceTree = "<group>"; };
 		287CF0051B994EF500C59C8C /* JFHeaderViewEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFHeaderViewEntity.h; sourceTree = "<group>"; };
 		287CF0061B994EF500C59C8C /* JFHeaderViewEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFHeaderViewEntity.m; sourceTree = "<group>"; };
 		287CF0081B9958A000C59C8C /* UserInfoIconCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserInfoIconCell.h; sourceTree = "<group>"; };
@@ -568,6 +573,12 @@
 		287CF00C1B9967AD00C59C8C /* JFOtherUserInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFOtherUserInfoViewController.m; sourceTree = "<group>"; };
 		288793F21B989C9F009A4706 /* JFEaseUserHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFEaseUserHeaderView.h; sourceTree = "<group>"; };
 		288793F31B989C9F009A4706 /* JFEaseUserHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFEaseUserHeaderView.m; sourceTree = "<group>"; };
+		28B172021B9AA3EB004926BC /* JFFolloweesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFFolloweesViewController.h; sourceTree = "<group>"; };
+		28B172031B9AA3EB004926BC /* JFFolloweesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFFolloweesViewController.m; sourceTree = "<group>"; };
+		28B172051B9AA401004926BC /* JFFollowersViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFFollowersViewController.h; sourceTree = "<group>"; };
+		28B172061B9AA401004926BC /* JFFollowersViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFFollowersViewController.m; sourceTree = "<group>"; };
+		28B172081B9AA70C004926BC /* JFUserEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFUserEntity.h; sourceTree = "<group>"; };
+		28B172091B9AA70C004926BC /* JFUserEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFUserEntity.m; sourceTree = "<group>"; };
 		28BDBE301B99E8F100F21980 /* JFOtherUserHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFOtherUserHeaderView.h; sourceTree = "<group>"; };
 		28BDBE311B99E8F100F21980 /* JFOtherUserHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFOtherUserHeaderView.m; sourceTree = "<group>"; };
 		28E7F7741B986C460015C20A /* JFRoundTapImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFRoundTapImageView.h; sourceTree = "<group>"; };
@@ -1231,8 +1242,6 @@
 		30C028D51B933D3D00A9CAE7 /* JFViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFViewController.m; sourceTree = "<group>"; };
 		30DB39B21B92EA6E00872E16 /* UINavigationController+FDFullscreenPopGesture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+FDFullscreenPopGesture.h"; sourceTree = "<group>"; };
 		30DB39B31B92EA6E00872E16 /* UINavigationController+FDFullscreenPopGesture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+FDFullscreenPopGesture.m"; sourceTree = "<group>"; };
-		30DB39DF1B92F8F200872E16 /* JFContainer_Me_RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFContainer_Me_RootViewController.h; sourceTree = "<group>"; };
-		30DB39E01B92F8F200872E16 /* JFContainer_Me_RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFContainer_Me_RootViewController.m; sourceTree = "<group>"; };
 		30DB39E31B930B7E00872E16 /* IntroductionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IntroductionViewController.h; sourceTree = "<group>"; };
 		30DB39E41B930B7E00872E16 /* IntroductionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IntroductionViewController.m; sourceTree = "<group>"; };
 		30DB39E51B930B7E00872E16 /* JFLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFLoginViewController.h; sourceTree = "<group>"; };
@@ -1325,8 +1334,6 @@
 			children = (
 				30E658921B902D19008AFE1A /* JFSettingTableViewController.h */,
 				30E658931B902D19008AFE1A /* JFSettingTableViewController.m */,
-				30DB39DF1B92F8F200872E16 /* JFContainer_Me_RootViewController.h */,
-				30DB39E01B92F8F200872E16 /* JFContainer_Me_RootViewController.m */,
 			);
 			path = Me;
 			sourceTree = "<group>";
@@ -1492,6 +1499,8 @@
 				30A84FBA1B8DF0E600429DF6 /* JFUser.m */,
 				287CF0051B994EF500C59C8C /* JFHeaderViewEntity.h */,
 				287CF0061B994EF500C59C8C /* JFHeaderViewEntity.m */,
+				28B172081B9AA70C004926BC /* JFUserEntity.h */,
+				28B172091B9AA70C004926BC /* JFUserEntity.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -2087,6 +2096,8 @@
 		308CC9591B78EC8800E11188 /* Manager */ = {
 			isa = PBXGroup;
 			children = (
+				2840EABA1B9AD7F40083D61B /* JFIMService.h */,
+				2840EABB1B9AD7F40083D61B /* JFIMService.m */,
 				30C028CF1B9337A100A9CAE7 /* JFUserManager.h */,
 				30C028D01B9337A100A9CAE7 /* JFUserManager.m */,
 				308CC95A1B78EC8800E11188 /* ImageSizeManager.h */,
@@ -2372,6 +2383,10 @@
 				281BCC8F1B982AF60070833B /* JFUserInfoViewController.m */,
 				287CF00B1B9967AD00C59C8C /* JFOtherUserInfoViewController.h */,
 				287CF00C1B9967AD00C59C8C /* JFOtherUserInfoViewController.m */,
+				28B172021B9AA3EB004926BC /* JFFolloweesViewController.h */,
+				28B172031B9AA3EB004926BC /* JFFolloweesViewController.m */,
+				28B172051B9AA401004926BC /* JFFollowersViewController.h */,
+				28B172061B9AA401004926BC /* JFFollowersViewController.m */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -3102,6 +3117,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				30A84FB81B8DDF3A00429DF6 /* LoginManager.m in Sources */,
+				2840EABC1B9AD7F40083D61B /* JFIMService.m in Sources */,
 				308CCBBF1B78EC8900E11188 /* LKDBHelper.m in Sources */,
 				308CCBCF1B78EC8900E11188 /* NSString+Emojize.m in Sources */,
 				308CCA4E1B78EC8900E11188 /* Tweet.m in Sources */,
@@ -3111,6 +3127,7 @@
 				302710021B7F760300A412DA /* UIMessageInputView.m in Sources */,
 				287CF00A1B9958A000C59C8C /* UserInfoIconCell.m in Sources */,
 				30DB39EC1B930B7E00872E16 /* JFLoginViewController.m in Sources */,
+				28B172071B9AA401004926BC /* JFFollowersViewController.m in Sources */,
 				30E658971B90325F008AFE1A /* JFToChatMainViewController.m in Sources */,
 				281BCC7B1B97FF0D0070833B /* JFFriendSearchViewController.m in Sources */,
 				308CCBF21B78EC8900E11188 /* Todo_RootViewController.m in Sources */,
@@ -3136,6 +3153,7 @@
 				308CCBA91B78EC8900E11188 /* UIView+Common.m in Sources */,
 				308CCBBB1B78EC8900E11188 /* JTCircleView.m in Sources */,
 				308CCBFA1B78EC8900E11188 /* ScheduleCell.m in Sources */,
+				28B172041B9AA3EB004926BC /* JFFolloweesViewController.m in Sources */,
 				308CCBC21B78EC8900E11188 /* NSObject+LKModel.m in Sources */,
 				301AFF541B7B237200D0EA11 /* DynamicMomment_RootViewController.m in Sources */,
 				308CCBF81B78EC8900E11188 /* DiscoverCell.m in Sources */,
@@ -3271,7 +3289,6 @@
 				288793F41B989C9F009A4706 /* JFEaseUserHeaderView.m in Sources */,
 				308CCBFB1B78EC8900E11188 /* ScheduleFootCell.m in Sources */,
 				303A429B1B81BFAE00117F71 /* JFTodoCreateSelectionCell.m in Sources */,
-				30DB39E11B92F8F200872E16 /* JFContainer_Me_RootViewController.m in Sources */,
 				308CCBCA1B78EC8900E11188 /* MJPhotoView.m in Sources */,
 				308CCA4A1B78EC8900E11188 /* HtmlMedia.m in Sources */,
 				308CCBB81B78EC8900E11188 /* JTCalendarMonthView.m in Sources */,
@@ -3281,6 +3298,7 @@
 				308CCC091B78EC8900E11188 /* EaseUserHeaderView.m in Sources */,
 				308CCBBD1B78EC8900E11188 /* LKAlarmMamager.m in Sources */,
 				303C16701B7F82D400FC8828 /* QBAssetsCollectionOverlayView.m in Sources */,
+				28B1720A1B9AA70C004926BC /* JFUserEntity.m in Sources */,
 				287CF00D1B9967AD00C59C8C /* JFOtherUserInfoViewController.m in Sources */,
 				308CCBF91B78EC8900E11188 /* MeGroupCell.m in Sources */,
 			);
