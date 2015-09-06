@@ -8,6 +8,6 @@
 
 #import "BaseViewController.h"
 
-@interface Group_RootViewController : BaseViewController
+@interface Group_RootViewController : UIViewController
 
 @end

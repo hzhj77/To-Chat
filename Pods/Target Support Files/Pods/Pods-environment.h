@@ -61,19 +61,19 @@
 // Please contact the author.
 // Version: 3.1.3.4.
 
+// AVOSCloudCrashReporting
+#define COCOAPODS_POD_AVAILABLE_AVOSCloudCrashReporting
+// This library does not follow semantic-versioning,
+// so we were not able to define version macros.
+// Please contact the author.
+// Version: 3.1.3.4.
+
 // AVOSCloudIM
 #define COCOAPODS_POD_AVAILABLE_AVOSCloudIM
 // This library does not follow semantic-versioning,
 // so we were not able to define version macros.
 // Please contact the author.
 // Version: 3.1.3.4.
-
-// AVOSCloudSNS
-#define COCOAPODS_POD_AVAILABLE_AVOSCloudSNS
-// This library does not follow semantic-versioning,
-// so we were not able to define version macros.
-// Please contact the author.
-// Version: 3.1.2.9.
 
 // BlocksKit
 #define COCOAPODS_POD_AVAILABLE_BlocksKit
@@ -152,6 +152,12 @@
 #define COCOAPODS_VERSION_MAJOR_JSBadgeView 1
 #define COCOAPODS_VERSION_MINOR_JSBadgeView 4
 #define COCOAPODS_VERSION_PATCH_JSBadgeView 1
+
+// JSQSystemSoundPlayer
+#define COCOAPODS_POD_AVAILABLE_JSQSystemSoundPlayer
+#define COCOAPODS_VERSION_MAJOR_JSQSystemSoundPlayer 4
+#define COCOAPODS_VERSION_MINOR_JSQSystemSoundPlayer 1
+#define COCOAPODS_VERSION_PATCH_JSQSystemSoundPlayer 0
 
 // JazzHands
 #define COCOAPODS_POD_AVAILABLE_JazzHands

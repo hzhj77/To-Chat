@@ -208,7 +208,8 @@
 }
 
 - (void)messageBtnClicked{
-    NSLog(@"messageBtnClicked");
+    //NSLog(@"messageBtnClicked");
+    [self performSegueWithIdentifier:@"goChatting" sender:self];
 }
 
 - (void)didReceiveMemoryWarning {

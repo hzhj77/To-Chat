@@ -1,5 +1,5 @@
 platform :ios, '7.0'
-use_frameworks!
+#use_frameworks!
 #Framework
 pod 'SVPullToRefresh', '~> 0.4.1'
 pod 'JDStatusBarNotification', '~> 1.5.2'
@@ -13,7 +13,8 @@ pod 'APParallaxHeader'
 pod 'iVersion', '~> 1.11.4'
 pod 'SSKeychain', '~> 1.2.3'
 pod 'BlocksKit', '~> 2.2.5'
-
+#声音播放
+pod 'JSQSystemSoundPlayer'
 #刷新头
 pod 'ODRefreshControl', '~> 1.2'
 #布局
@@ -35,8 +36,13 @@ pod 'RDVTabBarController', '~> 1.1.9'
 pod 'JazzHands', '~> 2.0.0'
 #push
 #leancloud云存储
-pod 'AVOSCloud'
-pod 'AVOSCloudIM'
+pod 'AVOSCloud', '~> 3.1.3.4'
 
-pod 'AVOSCloudSNS'
-pod 'LeanChatLib'
+# 如果使用实时通信功能，可以添加：
+pod 'AVOSCloudIM', '~> 3.1.3.4'
+
+# 如果使用崩溃收集功能，可以添加：
+pod 'AVOSCloudCrashReporting', '~> 3.1.3.4'
+
+pod 'LeanChatLib', '~> 0.2.4'
+

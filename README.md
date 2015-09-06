@@ -1,6 +1,6 @@
 # To-Chat
 开发环境现在为 Xcode Version 7.0 beta 5 (7A176x) ; iOS 7.0 + ;
-cocoapods 版本： 0.36.3 
+cocoapods 版本： 0.37.0
 
 在 iOS 9 下运行会出现界面问题，原因不明。
 
@@ -58,7 +58,7 @@ cocoapods 版本： 0.36.3
 
 - 导航栏隐藏：在Info.plist中添加"UIViewControllerBasedStatusBarAppearance = false" 使得允许自定义Status Bar 的样式 和隐藏
 
-- [leanCloud](https://leancloud.cn/)  对 cocoapod 高版本支持有问题。暂时使用了 leanCloud 的静态库（如果在 Podfile 需要使用 use_framework! 则需要使用他的动态库 https://leancloud.cn/docs/start.html ）
+- [leanCloud](https://leancloud.cn/) 现在使用了 leanCloud 的动态库（如果在 Podfile 需要使用 use_framework! 则需要使用他的[动态库](https://leancloud.cn/docs/start.html) ）
 - UITableView：采用了[阳神](http://blog.sunnyxx.com)的[UITableView-FDTemplateLayoutCell](https://github.com/forkingdog/UITableView-FDTemplateLayoutCell)  项目 
 [点击查看原理](http://blog.sunnyxx.com/2015/05/17/cell-height-calculation/)
 

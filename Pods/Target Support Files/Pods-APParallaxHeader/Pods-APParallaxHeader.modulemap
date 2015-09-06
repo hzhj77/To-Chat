@@ -1,6 +1,0 @@
-framework module APParallaxHeader {
-  umbrella header "Pods-APParallaxHeader-umbrella.h"
-
-  export *
-  module * { export * }
-}

@@ -26,7 +26,9 @@
 @end
 
 @implementation JFUserInfoViewController
-
+- (void)viewDidAppear:(BOOL)animated{
+    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent animated:YES];
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
     
@@ -229,6 +231,8 @@
 - (void)updateJFHeaderView{
     [_headerView config:self.entity];
 }
+
+
 #pragma mark -
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
