@@ -12,14 +12,17 @@
 
 @interface JFUser : AVUser<AVSubclassing>
 
-@property (assign ,nonatomic) NSNumber *isMan;
-@property (strong ,nonatomic) NSString *username;
+@property (assign, nonatomic) NSNumber *isMan;
+
+@property (copy, nonatomic) NSString *userId;
+@property (copy, nonatomic) NSString *username;
 /// 头像的url
-@property (strong ,nonatomic) NSURL *avatar;
-@property (strong ,nonatomic) UIImage *bgImage ;
+@property (copy, nonatomic) NSString *avatar;
+@property (copy, nonatomic) NSString *signature;
+
+@property (strong, nonatomic) UIImage *bgImage ;
 /// 用户头像小图
-@property (strong ,nonatomic) UIImage *IconImage ;
-@property (strong ,nonatomic) NSString *signature;
+@property (strong, nonatomic) UIImage *IconImage ;
 /// 谁关注我
 //@property (nonatomic, strong) AVRelation *followers;
 /// 我关注谁

@@ -8,6 +8,9 @@
 
 #import "JFMessageViewController.h"
 
+///初始化页面需要加载的聊天数据的数量
+static NSInteger kPageSize = 15;
+
 @interface JFMessageViewController ()
 
 @end
@@ -21,15 +24,11 @@
     /**
      *  You MUST set your senderId and display name
      */
-    self.senderId = kJFDemoAvatarIdJon;
-    self.senderDisplayName = kJFDemoAvatarDisplayNameJon;
+    self.senderId = self.demoData.senderId;
+    self.senderDisplayName = self.demoData.senderDisplayName;
     
     self.inputToolbar.contentView.textView.pasteDelegate = self;
-    
-    /**
-     *  Load up our fake data for the demo
-     */
-    self.demoData = [[JFDemoModelData alloc] init];
+   
     
     /**
      *  显示更多的标题头
@@ -40,24 +39,14 @@
      *  OPT-IN: allow cells to be deleted
      */
     [JSQMessagesCollectionViewCell registerMenuAction:@selector(delete:)];
+    self.collectionView.collectionViewLayout.messageBubbleFont = [UIFont systemFontOfSize:15];
     
-    /**
-     *  Customize your toolbar buttons
-     *
-     *  self.inputToolbar.contentView.leftBarButtonItem = custom button or nil to remove
-     *  self.inputToolbar.contentView.rightBarButtonItem = custom button or nil to remove
-     */
+    [self loadMessagesWhenInit];
     
-    /**
-     *  Set a maximum height for the input toolbar
-     *
-     *  self.inputToolbar.maximumHeight = 150;
-     */
-
 }
 #pragma mark - JSQMessagesViewController method overrides
 
-/// 发送按钮
+/// 发送按钮点击回调
 - (void)didPressSendButton:(UIButton *)button
            withMessageText:(NSString *)text
                   senderId:(NSString *)senderId
@@ -77,8 +66,10 @@
                                              senderDisplayName:senderDisplayName
                                                           date:date
                                                           text:text];
-    
+    //视觉上的发送
     [self.demoData.messages addObject:message];
+    //真实的发送
+    [self didSendText:text];
     
     [self finishSendingMessageAnimated:YES];
 }
@@ -102,21 +93,21 @@
     
     switch (buttonIndex) {
         case 0:
-            [self.demoData addPhotoMediaMessage];
+            //[self.demoData addPhotoMediaMessage];
             break;
             
         case 1:
         {
-            __weak UICollectionView *weakView = self.collectionView;
-            
-            [self.demoData addLocationMediaMessageCompletion:^{
-                [weakView reloadData];
-            }];
+//            __weak UICollectionView *weakView = self.collectionView;
+//            
+//            [self.demoData addLocationMediaMessageCompletion:^{
+//                [weakView reloadData];
+//            }];
         }
             break;
             
         case 2:
-            [self.demoData addVideoMediaMessage];
+//            [self.demoData addVideoMediaMessage];
             break;
     }
     
@@ -164,26 +155,6 @@
 /// 用户头像
 - (id<JSQMessageAvatarImageDataSource>)collectionView:(JSQMessagesCollectionView *)collectionView avatarImageDataForItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    /**
-     *  Return `nil` here if you do not want avatars.
-     *  If you do return `nil`, be sure to do the following in `viewDidLoad`:
-     *
-     *  self.collectionView.collectionViewLayout.incomingAvatarViewSize = CGSizeZero;
-     *  self.collectionView.collectionViewLayout.outgoingAvatarViewSize = CGSizeZero;
-     *
-     *  It is possible to have only outgoing avatars or only incoming avatars, too.
-     */
-    
-    /**
-     *  Return your previously created avatar image data objects.
-     *
-     *  Note: these the avatars will be sized according to these values:
-     *
-     *  self.collectionView.collectionViewLayout.incomingAvatarViewSize
-     *  self.collectionView.collectionViewLayout.outgoingAvatarViewSize
-     *
-     *  Override the defaults in `viewDidLoad`
-     */
     JSQMessage *message = [self.demoData.messages objectAtIndex:indexPath.item];
     
     return [self.demoData.avatars objectForKey:message.senderId];
@@ -191,12 +162,6 @@
 /// 时间戳
 - (NSAttributedString *)collectionView:(JSQMessagesCollectionView *)collectionView attributedTextForCellTopLabelAtIndexPath:(NSIndexPath *)indexPath
 {
-    /**
-     *  This logic should be consistent with what you return from `heightForCellTopLabelAtIndexPath:`
-     *  The other label text delegate methods should follow a similar pattern.
-     *
-     *  Show a timestamp for every 3rd message
-     */
     if (indexPath.item % 3 == 0) {
         JSQMessage *message = [self.demoData.messages objectAtIndex:indexPath.item];
         return [[JSQMessagesTimestampFormatter sharedFormatter] attributedTimestampForDate:message.date];
@@ -248,20 +213,6 @@
      *  Override point for customizing cells
      */
     JSQMessagesCollectionViewCell *cell = (JSQMessagesCollectionViewCell *)[super collectionView:collectionView cellForItemAtIndexPath:indexPath];
-    
-    /**
-     *  Configure almost *anything* on the cell
-     *
-     *  Text colors, label text, label colors, etc.
-     *
-     *
-     *  DO NOT set `cell.textView.font` !
-     *  Instead, you need to set `self.collectionView.collectionViewLayout.messageBubbleFont` to the font you want in `viewDidLoad`
-     *
-     *
-     *  DO NOT manipulate cell layout information!
-     *  Instead, override the properties you want on `self.collectionView.collectionViewLayout` from `viewDidLoad`
-     */
     
     JSQMessage *msg = [self.demoData.messages objectAtIndex:indexPath.item];
     
@@ -389,10 +340,100 @@
     return YES;
 }
 
+#pragma mark - proprety
+
+- (JFUser *)outgoingUser{
+    return [[JFUserManager manager] getCurrentUser];
+}
+- (void)setIncomingUser:(JFUser *)incomingUser{
+    NSAssert(incomingUser != nil,@"incomingUser 不能为 nil ");
+    _incomingUser = incomingUser;
+    self.demoData.senderId = incomingUser.userId;
+    self.demoData.senderDisplayName = incomingUser.username;
+    [self.demoData.users addObject:incomingUser];
+    [[CDChatManager manager] fetchConvWithOtherId:incomingUser.userId callback: ^(AVIMConversation *conversation, NSError *error) {
+        if (error) {
+            NSLog(@"%@",error);
+        }else{
+            self.conv = conversation;
+            NSLog(@"fetchConvWithOtherId success");
+        }
+    
+    }];
+}
+
+- (JFDemoModelData *)demoData{
+    if (!_demoData) {
+        _demoData = [[JFDemoModelData alloc] init];
+    }
+    return _demoData;
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+}
+
+- (void)didSendText:(NSString *)text {
+    AVIMTextMessage *msg = [AVIMTextMessage messageWithText:[CDEmotionUtils plainStringFromEmojiString:text] attributes:nil];
+    [msg.attributes setValue:self.senderDisplayName forKey:@"username"];
+    
+    [self sendMsg:msg originFilePath:nil];
+
+}
+- (void)sendMsg:(AVIMTypedMessage *)msg originFilePath:(NSString *)path {
+    [[CDChatManager manager] sendMessage:msg conversation:self.conv callback:^(BOOL succeeded, NSError *error) {
+        if (error) {
+            NSLog(@"发送消息失败%@",error);
+        } else {
+            NSLog(@"发送消息成功");
+            if (path) {
+                if (msg.mediaType == kAVIMMessageMediaTypeAudio) {
+                    // 移动文件，好根据 messageId 找到本地文件缓存
+                    NSString *newPath = [[CDChatManager manager] getPathByObjectId:msg.messageId];
+                    NSError *error1;
+                    [[NSFileManager defaultManager] moveItemAtPath:path toPath:newPath error:&error1];
+                    DLog(@"%@", newPath);
+                }
+            }
+        }
+    }];
+}
+#pragma mark - message
+// 过滤消息，避免非法的消息导致 Crash
+- (NSMutableArray *)filterMessages:(NSArray *)messages {
+    NSMutableArray *typedMessages = [NSMutableArray array];
+    for (AVIMTypedMessage *message in messages) {
+        if ([message isKindOfClass:[AVIMTypedMessage class]]) {
+            [typedMessages addObject:message];
+        }
+    }
+    return typedMessages;
+}
+
+- (void)loadMessagesWhenInit {
+    WEAKSELF
+    [self.conv queryMessagesWithLimit:kPageSize callback:^(NSArray *objects, NSError *error) {
+        NSLog(@"%@",error);
+        for (AVIMTypedMessage *message in objects) {
+            [weakSelf.demoData.messages addObject:[message toJSQMessagesWithSenderId:message.clientId andDisplayName:[message.attributes valueForKey:@"username"] andDate:[NSDate dateWithTimeIntervalSince1970:message.sendTimestamp]]];
+        }
+    }];
+}
+
+#pragma mark - AVIMClientDelegate
+
+// 接收消息时触发的代理
+- (void)conversation:(AVIMConversation *)conversation didReceiveTypedMessage:(AVIMTypedMessage *)message {
+    // 判断收到消息的对话是否为当前对话
+    if ([conversation.conversationId isEqualToString:self.conv.conversationId]) {
+        // 把收到的消息添加到消息记录列表中
+//        [self addMessage:message];
+#warning 这个地方是模拟用的
+        [self.demoData.messages addObject:[[JSQMessage alloc] initWithSenderId:self.incomingUser.userId
+                           senderDisplayName:self.incomingUser.username
+                                        date:[NSDate date]
+                                        text:@"Now with media messages!"]];
+    }
 }
 
 @end

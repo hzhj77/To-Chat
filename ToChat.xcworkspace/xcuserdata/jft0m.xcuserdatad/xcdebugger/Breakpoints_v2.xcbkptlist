@@ -168,11 +168,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ToChat/ViewControllers/JFOtherUserInfoViewController.m"
-            timestampString = "463079833.659425"
+            timestampString = "463251569.874549"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "53"
-            endingLineNumber = "53"
+            startingLineNumber = "54"
+            endingLineNumber = "54"
             landmarkName = "-setUser:"
             landmarkType = "5">
          </BreakpointContent>
@@ -206,6 +206,70 @@
             startingLineNumber = "83"
             endingLineNumber = "83"
             landmarkName = "-tableView:didSelectRowAtIndexPath:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ToChat/ViewControllers/JFMessageViewController.m"
+            timestampString = "463253626.550028"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "384"
+            endingLineNumber = "384"
+            landmarkName = "-sendMsg:originFilePath:"
+            landmarkType = "5">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[JFMessageViewController sendMsg:originFilePath:]"
+                  moduleName = "ToChat"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jft0m/Desktop/To-Chat/ToChat/ViewControllers/JFMessageViewController.m"
+                  timestampString = "463252286.411024"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "427"
+                  endingLineNumber = "427"
+                  offsetFromSymbolStart = "96">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__50-[JFMessageViewController sendMsg:originFilePath:]_block_invoke"
+                  moduleName = "ToChat"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jft0m/Desktop/To-Chat/ToChat/ViewControllers/JFMessageViewController.m"
+                  timestampString = "463252286.41123"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "427"
+                  endingLineNumber = "427"
+                  offsetFromSymbolStart = "48">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ToChat/ViewControllers/JFMessageViewController.m"
+            timestampString = "463253173.055231"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "70"
+            endingLineNumber = "70"
+            landmarkName = "-didPressSendButton:withMessageText:senderId:senderDisplayName:date:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

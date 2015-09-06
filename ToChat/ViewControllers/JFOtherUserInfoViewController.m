@@ -12,6 +12,7 @@
 #import "JFOtherUserHeaderView.h"
 #import "JFHeaderViewEntity.h"
 #import "JFUserManager.h"
+#import "JFMessageViewController.h"
 
 
 @interface JFOtherUserInfoViewController ()
@@ -211,7 +212,10 @@
     //NSLog(@"messageBtnClicked");
     [self performSegueWithIdentifier:@"goChatting" sender:self];
 }
-
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    JFMessageViewController *chattingVC = [segue destinationViewController];
+    chattingVC.incomingUser = self.user;
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
 }

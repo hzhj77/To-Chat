@@ -35,6 +35,9 @@ typedef void (^JFUserResultBlock  ) (JFUser *user, NSError *error);
 /// 通过用户名搜索用户
 - (void)findUsersByPartname:(NSString *)partName withBlock:(JFArrayResultBlock)block;
 
+/// 通过用户 Id 搜索用户
+- (void)findUsersByIds:(NSArray *)userIds callback:(JFArrayResultBlock)callback;
+
 /// 获取粉丝的用户
 - (void)getFollower:(JFUser *)user withBlock:(JFArrayResultBlock)block;
 
@@ -52,5 +55,6 @@ typedef void (^JFUserResultBlock  ) (JFUser *user, NSError *error);
 
 /// 判断是否是当前登录用户
 - (BOOL)isMe:(JFUser *)user;
+
 
 @end

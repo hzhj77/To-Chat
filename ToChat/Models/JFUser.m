@@ -15,6 +15,9 @@
 + (NSString *)parseClassName {
     return @"_User";
 }
+- (NSString *)userId{
+    return self.objectId;
+}
 
 
 @end

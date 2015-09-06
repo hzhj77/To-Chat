@@ -116,12 +116,6 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="账号" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="7fl-tP-mB5">
-                                <rect key="frame" x="-25" y="-30" width="97" height="30"/>
-                                <animations/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kdr-bG-ecU" customClass="JFRoundUIButton">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <animations/>
@@ -150,6 +144,12 @@
                                     <action selector="dismissClicked:" destination="Rna-vi-7vc" eventType="touchUpInside" id="pK0-6i-das"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="账号" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="7fl-tP-mB5">
+                                <rect key="frame" x="-25" y="-30" width="97" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -190,9 +190,9 @@
                                 <exclude reference="bhJ-oU-OCJ"/>
                                 <exclude reference="avQ-HV-VOU"/>
                                 <exclude reference="Ufb-oo-niU"/>
-                                <exclude reference="7fl-tP-mB5"/>
                                 <exclude reference="kdr-bG-ecU"/>
                                 <exclude reference="jG6-xo-v4w"/>
+                                <exclude reference="7fl-tP-mB5"/>
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="513-qn-fT9"/>
@@ -227,9 +227,9 @@
                                 <include reference="bhJ-oU-OCJ"/>
                                 <include reference="avQ-HV-VOU"/>
                                 <include reference="Ufb-oo-niU"/>
-                                <include reference="7fl-tP-mB5"/>
                                 <include reference="kdr-bG-ecU"/>
                                 <include reference="jG6-xo-v4w"/>
+                                <include reference="7fl-tP-mB5"/>
                             </mask>
                             <mask key="constraints">
                                 <include reference="513-qn-fT9"/>

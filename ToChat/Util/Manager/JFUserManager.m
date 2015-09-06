@@ -94,6 +94,18 @@ static JFUserManager *userManager;
     [q findObjectsInBackgroundWithBlock:block];
 }
 
+- (void)findUsersByIds:(NSArray *)userIds callback:(AVArrayResultBlock)callback {
+    if ([userIds count] > 0) {
+        AVQuery *q = [AVUser query];
+        [q setCachePolicy:kAVCachePolicyNetworkElseCache];
+        [q whereKey:@"objectId" containedIn:userIds];
+        [q findObjectsInBackgroundWithBlock:callback];
+    }
+    else {
+        callback([[NSArray alloc] init], nil);
+    }
+}
+
 - (void)followUser:(AVUser *)user callback:(AVBooleanResultBlock)callback {
     AVUser *curUser = [AVUser currentUser];
     [curUser follow:user.objectId andCallback:callback];

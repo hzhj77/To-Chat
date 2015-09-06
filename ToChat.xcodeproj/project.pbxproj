@@ -12,7 +12,9 @@
 		281BCC7B1B97FF0D0070833B /* JFFriendSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 281BCC7A1B97FF0D0070833B /* JFFriendSearchViewController.m */; };
 		281BCC7E1B97FF550070833B /* JFTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 281BCC7D1B97FF550070833B /* JFTableViewController.m */; };
 		281BCC901B982AF60070833B /* JFUserInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 281BCC8F1B982AF60070833B /* JFUserInfoViewController.m */; };
-		2840EABC1B9AD7F40083D61B /* JFIMService.m in Sources */ = {isa = PBXBuildFile; fileRef = 2840EABB1B9AD7F40083D61B /* JFIMService.m */; };
+		2830DD721B9C8A890066014D /* JFIMService.m in Sources */ = {isa = PBXBuildFile; fileRef = 2830DD711B9C8A890066014D /* JFIMService.m */; };
+		2830DD751B9C8E400066014D /* JFCacheManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2830DD741B9C8E400066014D /* JFCacheManager.m */; };
+		2830DD781B9CA22E0066014D /* AVIMTypedMessage+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = 2830DD771B9CA22E0066014D /* AVIMTypedMessage+Common.m */; };
 		2851B30C1B9BF9B100ED4C65 /* JSQMessagesAssets.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2851B2AD1B9BF9B100ED4C65 /* JSQMessagesAssets.bundle */; };
 		2851B30D1B9BF9B100ED4C65 /* JSQSystemSoundPlayer+JSQMessages.m in Sources */ = {isa = PBXBuildFile; fileRef = 2851B2B01B9BF9B100ED4C65 /* JSQSystemSoundPlayer+JSQMessages.m */; };
 		2851B30E1B9BF9B100ED4C65 /* NSBundle+JSQMessages.m in Sources */ = {isa = PBXBuildFile; fileRef = 2851B2B21B9BF9B100ED4C65 /* NSBundle+JSQMessages.m */; };
@@ -603,8 +605,12 @@
 		281BCC7D1B97FF550070833B /* JFTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFTableViewController.m; sourceTree = "<group>"; };
 		281BCC8E1B982AF60070833B /* JFUserInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFUserInfoViewController.h; sourceTree = "<group>"; };
 		281BCC8F1B982AF60070833B /* JFUserInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFUserInfoViewController.m; sourceTree = "<group>"; };
-		2840EABA1B9AD7F40083D61B /* JFIMService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFIMService.h; sourceTree = "<group>"; };
-		2840EABB1B9AD7F40083D61B /* JFIMService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFIMService.m; sourceTree = "<group>"; };
+		2830DD701B9C8A890066014D /* JFIMService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFIMService.h; sourceTree = "<group>"; };
+		2830DD711B9C8A890066014D /* JFIMService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFIMService.m; sourceTree = "<group>"; };
+		2830DD731B9C8E400066014D /* JFCacheManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFCacheManager.h; sourceTree = "<group>"; };
+		2830DD741B9C8E400066014D /* JFCacheManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFCacheManager.m; sourceTree = "<group>"; };
+		2830DD761B9CA22E0066014D /* AVIMTypedMessage+Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AVIMTypedMessage+Common.h"; sourceTree = "<group>"; };
+		2830DD771B9CA22E0066014D /* AVIMTypedMessage+Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AVIMTypedMessage+Common.m"; sourceTree = "<group>"; };
 		2851B2AD1B9BF9B100ED4C65 /* JSQMessagesAssets.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = JSQMessagesAssets.bundle; sourceTree = "<group>"; };
 		2851B2AF1B9BF9B100ED4C65 /* JSQSystemSoundPlayer+JSQMessages.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "JSQSystemSoundPlayer+JSQMessages.h"; sourceTree = "<group>"; };
 		2851B2B01B9BF9B100ED4C65 /* JSQSystemSoundPlayer+JSQMessages.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "JSQSystemSoundPlayer+JSQMessages.m"; sourceTree = "<group>"; };
@@ -2371,12 +2377,14 @@
 		308CC9591B78EC8800E11188 /* Manager */ = {
 			isa = PBXGroup;
 			children = (
-				2840EABA1B9AD7F40083D61B /* JFIMService.h */,
-				2840EABB1B9AD7F40083D61B /* JFIMService.m */,
 				30C028CF1B9337A100A9CAE7 /* JFUserManager.h */,
 				30C028D01B9337A100A9CAE7 /* JFUserManager.m */,
 				308CC95A1B78EC8800E11188 /* ImageSizeManager.h */,
 				308CC95B1B78EC8800E11188 /* ImageSizeManager.m */,
+				2830DD701B9C8A890066014D /* JFIMService.h */,
+				2830DD711B9C8A890066014D /* JFIMService.m */,
+				2830DD731B9C8E400066014D /* JFCacheManager.h */,
+				2830DD741B9C8E400066014D /* JFCacheManager.m */,
 			);
 			path = Manager;
 			sourceTree = "<group>";
@@ -2416,6 +2424,8 @@
 				308CC9781B78EC8800E11188 /* UIView+Common.m */,
 				308CC9791B78EC8800E11188 /* UIViewController+Swizzle.h */,
 				308CC97A1B78EC8800E11188 /* UIViewController+Swizzle.m */,
+				2830DD761B9CA22E0066014D /* AVIMTypedMessage+Common.h */,
+				2830DD771B9CA22E0066014D /* AVIMTypedMessage+Common.m */,
 			);
 			path = OC_Category;
 			sourceTree = "<group>";
@@ -3351,7 +3361,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				30A84FB81B8DDF3A00429DF6 /* LoginManager.m in Sources */,
-				2840EABC1B9AD7F40083D61B /* JFIMService.m in Sources */,
 				308CCBBF1B78EC8900E11188 /* LKDBHelper.m in Sources */,
 				2851B33A1B9BF9C200ED4C65 /* JFDemoModelData.m in Sources */,
 				308CCBCF1B78EC8900E11188 /* NSString+Emojize.m in Sources */,
@@ -3418,6 +3427,7 @@
 				2851B3331B9BF9B100ED4C65 /* JSQMessagesMediaPlaceholderView.m in Sources */,
 				30A72E1F1B83025A009C7CD7 /* Todo_TypeViewController.m in Sources */,
 				302710051B7F760300A412DA /* UIMessageInputView_Media.m in Sources */,
+				2830DD781B9CA22E0066014D /* AVIMTypedMessage+Common.m in Sources */,
 				303C16711B7F82D400FC8828 /* QBAssetsCollectionVideoIndicatorView.m in Sources */,
 				308CCBA41B78EC8900E11188 /* UIColor+expanded.m in Sources */,
 				308CCBD01B78EC8900E11188 /* ObjcRuntime.m in Sources */,
@@ -3425,6 +3435,7 @@
 				30A72E1B1B83015C009C7CD7 /* XLButtonBarView.m in Sources */,
 				30875F9F1B78E7CB00C50534 /* ToChat.xcdatamodeld in Sources */,
 				28BDBE321B99E8F100F21980 /* JFOtherUserHeaderView.m in Sources */,
+				2830DD751B9C8E400066014D /* JFCacheManager.m in Sources */,
 				308CCC061B78EC8900E11188 /* TweetMediaItemSingleCCell.m in Sources */,
 				302F36FF1B8F4B9900BE0D76 /* JFRoundUIButton.m in Sources */,
 				308CCBA61B78EC8900E11188 /* UIImageView+Common.m in Sources */,
@@ -3568,6 +3579,7 @@
 				303C16701B7F82D400FC8828 /* QBAssetsCollectionOverlayView.m in Sources */,
 				28B1720A1B9AA70C004926BC /* JFUserEntity.m in Sources */,
 				287CF00D1B9967AD00C59C8C /* JFOtherUserInfoViewController.m in Sources */,
+				2830DD721B9C8A890066014D /* JFIMService.m in Sources */,
 				308CCBF91B78EC8900E11188 /* MeGroupCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

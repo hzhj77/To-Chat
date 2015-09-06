@@ -8,29 +8,23 @@
 
 #import <Foundation/Foundation.h>
 #import "JSQMessages.h"
-
-static NSString * const kJFDemoAvatarDisplayNameWoz = @"Steve Wozniak";
-static NSString * const kJFDemoAvatarDisplayNameJon = @"Mike Jone";
-
-static NSString * const kJFDemoAvatarIdWoz = @"654321";
-static NSString * const kJFDemoAvatarIdJon = @"123456";
+#import "JFUserManager.h"
 
 @interface JFDemoModelData : NSObject
 
+@property (strong, nonatomic) JFUserManager *manager;
+
 @property (strong, nonatomic) NSMutableArray *messages;
 
-@property (strong, nonatomic) NSDictionary *avatars;
+@property (strong, nonatomic) NSMutableDictionary *avatars;
 
 @property (strong, nonatomic) JSQMessagesBubbleImage *outgoingBubbleImageData;
 
 @property (strong, nonatomic) JSQMessagesBubbleImage *incomingBubbleImageData;
 
-@property (strong, nonatomic) NSDictionary *users;
+@property (strong, nonatomic) NSMutableArray *users;
 
-- (void)addPhotoMediaMessage;
-
-- (void)addLocationMediaMessageCompletion:(JSQLocationMediaItemCompletionBlock)completion;
-
-- (void)addVideoMediaMessage;
+@property (copy, nonatomic) NSString *senderId;
+@property (copy, nonatomic) NSString *senderDisplayName;
 
 @end
