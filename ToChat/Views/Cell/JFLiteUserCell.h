@@ -12,6 +12,7 @@
 #import "JFRoundImageView.h"
 #import "JFRoundUIButton.h"
 typedef NS_ENUM(NSInteger, LiteUserStyle) {
+    LiteUserStyleNoStyle        = -2,//Hiden follow button
     LiteUserStyleNotFollow      = -1,
     LiteUserStyleHaveFollow     = 0,
     LiteUserStyleBothFollow     = 1

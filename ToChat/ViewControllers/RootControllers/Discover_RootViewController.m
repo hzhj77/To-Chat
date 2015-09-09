@@ -69,19 +69,6 @@
 
 }
 
-#pragma mark - TabBar
-
-- (void)tabBarItemClicked{
-    [super tabBarItemClicked];
-    if (_myTableView.contentOffset.y > 0) {
-        [_myTableView setContentOffset:CGPointZero animated:YES];
-    }else if (!self.refreshControl.refreshing){
-        [self.refreshControl beginRefreshing];
-        [self.myTableView setContentOffset:CGPointMake(0, -44)];
-        [self refresh];
-    }
-}
-
 #pragma mark - UITableViewDataSource
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{

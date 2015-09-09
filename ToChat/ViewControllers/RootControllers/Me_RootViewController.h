@@ -6,13 +6,6 @@
 //  Copyright © 2015年 JFT0M. All rights reserved.
 //
 
-
-/*
-**   UserInfoViewController 显示的可以是别人的信息，所以这里继承UserInfoViewController
-*/
-
-#import "UserInfoViewController.h"
-
-@interface Me_RootViewController : UserInfoViewController
+@interface Me_RootViewController : UIViewController
 
 @end

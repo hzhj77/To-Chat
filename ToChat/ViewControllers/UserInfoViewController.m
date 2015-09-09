@@ -61,6 +61,8 @@
     _headerView.followBtnClicked = ^(){
         [weakSelf followBtnClicked];
     };
+    
+    
     [_myTableView addParallaxWithView:_headerView andHeight:CGRectGetHeight(_headerView.frame)];
     _myTableView.tableFooterView = [self footerV];
     

@@ -9,10 +9,15 @@
 #import "JFUser.h"
 
 @implementation JFUser
-@dynamic avatar, userID,name ,pinyinName ,age ,gender;
+
+@dynamic isMan ,username ,avatar ,bgImage ,IconImage;
 
 + (NSString *)parseClassName {
-    return @"JFUser";
+    return @"_User";
 }
+- (NSString *)userId{
+    return self.objectId;
+}
+
 
 @end

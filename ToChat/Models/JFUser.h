@@ -7,27 +7,25 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "AVOSCloud/AVOSCloud.h"
 
-static NSString *const JFUserKeyAvatar = @"avatar";
-static NSString *const JFUserKeyUserID = @"userID";
-static NSString *const JFUserKeyName = @"name";
-static NSString *const JFUserKeyPingyinName = @"pingyinName";
-static NSString *const JFUserKeyAge = @"age";
-static NSString *const JFUserKeyGender = @"gender";
+#import <AVOSCloud/AVOSCloud.h>
 
-typedef enum{
-    GenderUnkonwn=0,
-    GenderMale=1,
-    GenderFamale
-}GenderType;
+@interface JFUser : AVUser<AVSubclassing>
 
-@interface JFUser : AVObject<AVSubclassing>
+@property (assign, nonatomic) NSNumber *isMan;
 
-@property (nonatomic, strong) AVFile *avatar;
-@property (nonatomic, copy)   NSString *userID;
-@property (nonatomic, copy)   NSString *name;
-@property (nonatomic, copy)   NSString *pinyinName;
-@property (nonatomic, assign) int age;
-@property (nonatomic, assign) GenderType gender;
+@property (copy, nonatomic) NSString *userId;
+@property (copy, nonatomic) NSString *username;
+/// 头像的url
+@property (copy, nonatomic) NSString *avatar;
+@property (copy, nonatomic) NSString *signature;
+
+@property (strong, nonatomic) UIImage *bgImage ;
+/// 用户头像小图
+@property (strong, nonatomic) UIImage *IconImage ;
+/// 谁关注我
+//@property (nonatomic, strong) AVRelation *followers;
+/// 我关注谁
+//@property (nonatomic, strong) AVRelation *followees;
+
 @end

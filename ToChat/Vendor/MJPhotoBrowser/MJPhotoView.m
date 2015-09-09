@@ -104,6 +104,8 @@
         } completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, BOOL finished, NSURL *imageURL) {
             ESStrongSelf;
             ESStrong_(_imageView);
+            NSLog(@"%@",error);
+            NSLog(@"%@",imageURL);
             __imageView.image = image;
             [_self photoDidFinishLoadWithImage:image];
         }];

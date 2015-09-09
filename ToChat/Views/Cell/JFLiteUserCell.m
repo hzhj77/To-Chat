@@ -10,8 +10,9 @@
 
 @implementation JFLiteUserCell
 
-- (void)awakeFromNib {
-}
+//- (void)awakeFromNib {
+//    
+//}
 
 -(void)ConfigCell:(NSString *)userName avator:(UIImage *)avator followType:(LiteUserStyle)followType{
     
@@ -23,9 +24,12 @@
     }else{
         self.avatar.image = [UIImage imageNamed:@"ToChat"];
     }
-    
-    
+    NSLog(@"%@",self.userName);
+    NSLog(@"%@",self.avatar);
     switch (followType) {
+        case LiteUserStyleNoStyle:
+            self.FollowButton.hidden = YES;
+            break;
         case LiteUserStyleNotFollow:
             [self.FollowButton setTitle:@"关注" forState:UIControlStateNormal];
             self.FollowButton.backgroundColor = [UIColor colorWithHexString:@"0x33CC00"];

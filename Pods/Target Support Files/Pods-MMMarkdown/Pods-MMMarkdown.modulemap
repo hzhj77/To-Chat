@@ -1,6 +1,0 @@
-framework module MMMarkdown {
-  umbrella header "Pods-MMMarkdown-umbrella.h"
-
-  export *
-  module * { export * }
-}

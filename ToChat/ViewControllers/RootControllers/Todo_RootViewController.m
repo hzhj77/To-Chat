@@ -158,5 +158,8 @@
 -(void)changeUpMenuViewDiraction:(CGPoint)newPoint{
     
 }
+- (void)viewDidAppear:(BOOL)animated{
+    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent animated:YES];
+}
 
 @end
