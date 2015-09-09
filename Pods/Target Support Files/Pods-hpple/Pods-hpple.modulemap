@@ -1,6 +1,0 @@
-framework module hpple {
-  umbrella header "Pods-hpple-umbrella.h"
-
-  export *
-  module * { export * }
-}

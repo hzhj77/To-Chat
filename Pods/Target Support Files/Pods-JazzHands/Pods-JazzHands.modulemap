@@ -1,6 +1,0 @@
-framework module JazzHands {
-  umbrella header "Pods-JazzHands-umbrella.h"
-
-  export *
-  module * { export * }
-}

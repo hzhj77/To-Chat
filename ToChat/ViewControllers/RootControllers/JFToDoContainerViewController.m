@@ -82,7 +82,7 @@
 
 -(void)enterAddFriendController{
     UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"ToDo" bundle:nil];
-    UIViewController * view = [storyboard instantiateViewControllerWithIdentifier:@"JFAddFriendViewController"];
+    UIViewController * view = [storyboard instantiateViewControllerWithIdentifier:@"JFFriendSearchViewController"];
     [self.navigationController pushViewController:view animated:YES];
 }
 

@@ -1,6 +1,0 @@
-framework module iVersion {
-  umbrella header "Pods-iVersion-umbrella.h"
-
-  export *
-  module * { export * }
-}

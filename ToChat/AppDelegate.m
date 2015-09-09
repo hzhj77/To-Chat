@@ -16,9 +16,8 @@
 #import "IntroductionViewController.h"
 #import "BaseViewController.h"
 
-#import "LoginManager.h"
-#import "JFUser.h"
-
+#import "JFUserManager.h"
+#import "LeanChatLib.h"
 
 @interface AppDelegate ()
 
@@ -93,6 +92,7 @@
 //    [[UIApplication sharedApplication] setStatusBarHidden:NO withAnimation:UIStatusBarAnimationNone];
 //    [[UIApplication sharedApplication]setStatusBarStyle:UIStatusBarStyleLightContent];
     
+    /// [AVUser currentUser] 将判断（从本地获取）用户是否已经登录
     if ([AVUser currentUser]) {
         [self setupTabViewController];
     }else{
@@ -109,6 +109,10 @@
 //        [self completionStartAnimationWithOptions:launchOptions];
 //        [[UIApplication sharedApplication]setStatusBarStyle:UIStatusBarStyleDefault];
 //    }];
+    
+    [[CDChatManager manager] openWithClientId:[AVUser currentUser].objectId callback: ^(BOOL succeeded, NSError *error) {
+        NSLog(@"%@",error);
+    }];
     
     return YES;
 }

@@ -18,6 +18,6 @@
 #import "RKSwipeBetweenViewControllers.h"
 #import "DynamicTodoViewController.h"
 
-@interface Discover_RootViewController : BaseViewController
+@interface Discover_RootViewController : UIViewController
 
 @end

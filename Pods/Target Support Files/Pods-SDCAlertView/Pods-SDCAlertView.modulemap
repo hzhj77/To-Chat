@@ -1,6 +1,0 @@
-framework module SDCAlertView {
-  umbrella header "Pods-SDCAlertView-umbrella.h"
-
-  export *
-  module * { export * }
-}
