@@ -41,7 +41,7 @@ static NSInteger kPageSize = 15;
     [JSQMessagesCollectionViewCell registerMenuAction:@selector(delete:)];
     self.collectionView.collectionViewLayout.messageBubbleFont = [UIFont systemFontOfSize:15];
     
-    [self loadMessagesWhenInit];
+    
     
 }
 #pragma mark - JSQMessagesViewController method overrides
@@ -353,10 +353,12 @@ static NSInteger kPageSize = 15;
     [self.demoData.users addObject:incomingUser];
     [[CDChatManager manager] fetchConvWithOtherId:incomingUser.userId callback: ^(AVIMConversation *conversation, NSError *error) {
         if (error) {
-            NSLog(@"%@",error);
+            NSLog(@"查找会话实例失败 %@",error);
         }else{
             self.conv = conversation;
-            NSLog(@"fetchConvWithOtherId success");
+            NSLog(@"查找会话实例成功");
+            //查询成功后加载会话
+            [self loadMessagesWhenInit];
         }
     
     }];
@@ -413,9 +415,15 @@ static NSInteger kPageSize = 15;
 - (void)loadMessagesWhenInit {
     WEAKSELF
     [self.conv queryMessagesWithLimit:kPageSize callback:^(NSArray *objects, NSError *error) {
-        NSLog(@"%@",error);
-        for (AVIMTypedMessage *message in objects) {
-            [weakSelf.demoData.messages addObject:[message toJSQMessagesWithSenderId:message.clientId andDisplayName:[message.attributes valueForKey:@"username"] andDate:[NSDate dateWithTimeIntervalSince1970:message.sendTimestamp]]];
+        if(error){
+           NSLog(@"查询会话失败：%@",error);
+        }else{
+            NSLog(@"查询会话成功： objects :%@",objects);
+            for (AVIMTypedMessage *message in objects) {
+                [weakSelf.demoData.messages addObject:[message toJSQMessagesWithSenderId:message.clientId andDisplayName:[message.attributes valueForKey:@"username"] andDate:[NSDate dateWithTimeIntervalSince1970:message.sendTimestamp]]];
+                [weakSelf finishSendingMessageAnimated:YES];
+            }
+            
         }
     }];
 }

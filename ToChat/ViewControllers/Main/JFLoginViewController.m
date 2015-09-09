@@ -32,9 +32,13 @@
     [[JFUserManager manager]signInWithUsernameInBackground:my_user_name Andpassword:my_password withBlock:^(JFUser *user, NSError *error) {
         if (user != nil) {
 //            [self presentViewController:[[UIStoryboard storyboardWithName:@"ToChatMain" bundle:nil]instantiateInitialViewController] animated:NO completion:nil];
+            //隐藏键盘
+            [self.view endEditing:YES];
+            //页面跳转
             [[UIApplication sharedApplication].delegate.window setRootViewController:[[UIStoryboard storyboardWithName:@"ToChatMain" bundle:nil]instantiateInitialViewController]];
+            
         }else{
-            NSLog(@"登陆失败");
+            NSLog(@"登陆错误:%@",error);
         }
     }];
 }

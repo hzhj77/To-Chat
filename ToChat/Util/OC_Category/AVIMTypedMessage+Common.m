@@ -11,6 +11,9 @@
 @implementation AVIMTypedMessage (Common)
 
 - (JSQMessage *)toJSQMessagesWithSenderId:(NSString *)SenderId andDisplayName:(NSString *)displayName andDate:(NSDate *)date{
+    if(!displayName){
+        displayName = @"用户名没有设置";
+    }
     return [[JSQMessage alloc] initWithSenderId:SenderId
                        senderDisplayName:displayName
                                     date:date

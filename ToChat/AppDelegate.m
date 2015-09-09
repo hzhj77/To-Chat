@@ -43,8 +43,7 @@
 #pragma mark - application
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
-    /* 重要! 注册子类 App生命周期内 只需要执行一次即可*/
-    [JFUser registerSubclass];
+    
     
     //设置AVOSCloud
     [AVOSCloud setApplicationId:AVOSCloudAppID
@@ -81,6 +80,8 @@
     [AVLogger setLoggerLevelMask:AVLoggerLevelAll];
 #endif
 
+    /* 重要! 注册子类 App生命周期内 只需要执行一次即可*/
+    [JFUser registerSubclass];
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
@@ -109,10 +110,12 @@
 //        [self completionStartAnimationWithOptions:launchOptions];
 //        [[UIApplication sharedApplication]setStatusBarStyle:UIStatusBarStyleDefault];
 //    }];
+    if ([[JFUserManager manager] getCurrentUser]) {
+        [[CDChatManager manager] openWithClientId:[[JFUserManager manager] getCurrentUser].objectId callback: ^(BOOL succeeded, NSError *error) {
+            NSLog(@"%@",error);
+        }];
+    }
     
-    [[CDChatManager manager] openWithClientId:[AVUser currentUser].objectId callback: ^(BOOL succeeded, NSError *error) {
-        NSLog(@"%@",error);
-    }];
     
     return YES;
 }
