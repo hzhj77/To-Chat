@@ -11,14 +11,17 @@
 #import "MeGroupCell.h"
 #import "RDVTabBarController.h"
 #import "SVPullToRefresh.h"
-
+#import "GroupContentViewController.h"
+#import "GroupMessageViewController.h"
 
 @interface Group_RootViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic, strong) UITableView *myTableView;
 @property (nonatomic, strong) ODRefreshControl *refreshControl;
 @end
 
-@implementation Group_RootViewController
+@implementation Group_RootViewController{
+    UIImageView* toMsgButton;//左上角跳到群组消息按钮
+}
 
 
 
@@ -47,6 +50,23 @@
     });
     _refreshControl = [[ODRefreshControl alloc] initInScrollView:self.myTableView];
     [_refreshControl addTarget:self action:@selector(refresh) forControlEvents:UIControlEventValueChanged];
+    
+    [self.navigationController.navigationBar setBarTintColor:[UIColor colorWithRed:25.0/255 green:176.0/255 blue:221.0/255 alpha:0]];
+
+    toMsgButton = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, 40, 30)];
+    toMsgButton.image = [UIImage imageNamed:@"found_plan"];
+    toMsgButton.backgroundColor = [UIColor redColor];
+    toMsgButton.userInteractionEnabled = YES;
+    [toMsgButton addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(toMsgCtl)]];
+    UIBarButtonItem* toMsgItem = [[UIBarButtonItem alloc]initWithCustomView:toMsgButton];
+//    self.navigationItem.leftBarButtonItems = @[toMsgItem];
+    //self.navigationItem.leftBarButtonItem = toMsgItem;
+    self.navigationController.navigationItem.leftBarButtonItem = toMsgItem;
+//    self.title = @"ccc";
+}
+
+-(void)toMsgCtl{
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -115,6 +135,15 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    if (indexPath.section == 0) {
+        GroupMessageViewController* groupMsg = [[GroupMessageViewController alloc]init];
+        groupMsg.hidesBottomBarWhenPushed = YES;
+        [self.navigationController pushViewController:groupMsg animated:YES];
+    }else if (indexPath.section == 1){
+        GroupContentViewController * groupContent = [[GroupContentViewController alloc]init];
+        groupContent.hidesBottomBarWhenPushed = YES;
+        [self.navigationController pushViewController:groupContent animated:YES];
+    }
 }
 
 

@@ -570,6 +570,14 @@
 		30E658D51B909257008AFE1A /* JFUITabBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 30E658D41B909257008AFE1A /* JFUITabBarItem.m */; };
 		30E658DA1B909A2A008AFE1A /* ToDo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30E658D91B909A2A008AFE1A /* ToDo.storyboard */; };
 		30E658DC1B909B62008AFE1A /* Discover.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30E658DB1B909B62008AFE1A /* Discover.storyboard */; };
+		AB2D9F2F1BA302E6008E1503 /* GroupMemberCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AB2D9F2D1BA302E6008E1503 /* GroupMemberCell.m */; };
+		AB2D9F331BA305ED008E1503 /* GroupContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB2D9F321BA305ED008E1503 /* GroupContentViewController.m */; };
+		AB2D9F361BA3072C008E1503 /* DVSwitch.m in Sources */ = {isa = PBXBuildFile; fileRef = AB2D9F351BA3072C008E1503 /* DVSwitch.m */; };
+		AB2D9F3C1BA30A2C008E1503 /* UIView+RGSize.m in Sources */ = {isa = PBXBuildFile; fileRef = AB2D9F3B1BA30A2C008E1503 /* UIView+RGSize.m */; };
+		AB2D9F411BA3BC3A008E1503 /* GroupMessageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AB2D9F3F1BA3BC3A008E1503 /* GroupMessageCell.m */; };
+		AB2D9F421BA3BC3A008E1503 /* GroupMessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB2D9F401BA3BC3A008E1503 /* GroupMessageCell.xib */; };
+		AB2D9F451BA3BF9E008E1503 /* GroupMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB2D9F441BA3BF9E008E1503 /* GroupMessageViewController.m */; };
+		AB2D9F481BA45EEB008E1503 /* GroupNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB2D9F471BA45EEB008E1503 /* GroupNavigationController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -1397,6 +1405,22 @@
 		30E658D91B909A2A008AFE1A /* ToDo.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ToDo.storyboard; sourceTree = "<group>"; };
 		30E658DB1B909B62008AFE1A /* Discover.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Discover.storyboard; sourceTree = "<group>"; };
 		85D9888B17E94E7F2832D035 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		AB2D9F2C1BA302E6008E1503 /* GroupMemberCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GroupMemberCell.h; sourceTree = "<group>"; };
+		AB2D9F2D1BA302E6008E1503 /* GroupMemberCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GroupMemberCell.m; sourceTree = "<group>"; };
+		AB2D9F311BA305ED008E1503 /* GroupContentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GroupContentViewController.h; sourceTree = "<group>"; };
+		AB2D9F321BA305ED008E1503 /* GroupContentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GroupContentViewController.m; sourceTree = "<group>"; };
+		AB2D9F341BA3072C008E1503 /* DVSwitch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVSwitch.h; sourceTree = "<group>"; };
+		AB2D9F351BA3072C008E1503 /* DVSwitch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DVSwitch.m; sourceTree = "<group>"; };
+		AB2D9F391BA30A2C008E1503 /* Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
+		AB2D9F3A1BA30A2C008E1503 /* UIView+RGSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+RGSize.h"; sourceTree = "<group>"; };
+		AB2D9F3B1BA30A2C008E1503 /* UIView+RGSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+RGSize.m"; sourceTree = "<group>"; };
+		AB2D9F3E1BA3BC3A008E1503 /* GroupMessageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GroupMessageCell.h; sourceTree = "<group>"; };
+		AB2D9F3F1BA3BC3A008E1503 /* GroupMessageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GroupMessageCell.m; sourceTree = "<group>"; };
+		AB2D9F401BA3BC3A008E1503 /* GroupMessageCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GroupMessageCell.xib; sourceTree = "<group>"; };
+		AB2D9F431BA3BF9E008E1503 /* GroupMessageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GroupMessageViewController.h; sourceTree = "<group>"; };
+		AB2D9F441BA3BF9E008E1503 /* GroupMessageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GroupMessageViewController.m; sourceTree = "<group>"; };
+		AB2D9F461BA45EEB008E1503 /* GroupNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GroupNavigationController.h; sourceTree = "<group>"; };
+		AB2D9F471BA45EEB008E1503 /* GroupNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GroupNavigationController.m; sourceTree = "<group>"; };
 		F266A674F1CC57F71F5F6237 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -2348,6 +2372,9 @@
 		308CC9501B78EC8800E11188 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				AB2D9F391BA30A2C008E1503 /* Header.h */,
+				AB2D9F3A1BA30A2C008E1503 /* UIView+RGSize.h */,
+				AB2D9F3B1BA30A2C008E1503 /* UIView+RGSize.m */,
 				303C16791B7F831200FC8828 /* Helper.h */,
 				303C167A1B7F831200FC8828 /* Helper.m */,
 				303C16551B7F81CF00FC8828 /* UIPlaceHolderTextView.h */,
@@ -2623,6 +2650,7 @@
 		308CC9F51B78EC8900E11188 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				AB2D9F291BA30046008E1503 /* Group */,
 				30DB39E21B930B7E00872E16 /* Main */,
 				302907E71B79CEE600B0D96B /* Me */,
 				308CC9F61B78EC8900E11188 /* Discover */,
@@ -2735,6 +2763,8 @@
 		308CCA221B78EC8900E11188 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
+				AB2D9F3D1BA3BBFF008E1503 /* GroupMessageCell */,
+				AB2D9F2B1BA302A0008E1503 /* GroupMemberCell */,
 				30DB39F71B930F8A00872E16 /* JFLiteUserCell.h */,
 				30DB39F81B930F8A00872E16 /* JFLiteUserCell.m */,
 				303A42991B81BFAE00117F71 /* JFTodoCreateSelectionCell.h */,
@@ -2779,6 +2809,8 @@
 		308CCA3A1B78EC8900E11188 /* CollectionCell */ = {
 			isa = PBXGroup;
 			children = (
+				AB2D9F341BA3072C008E1503 /* DVSwitch.h */,
+				AB2D9F351BA3072C008E1503 /* DVSwitch.m */,
 				308CCA3B1B78EC8900E11188 /* TodoTypeCCell.h */,
 				308CCA3C1B78EC8900E11188 /* TodoTypeCCell.m */,
 				308CCA3D1B78EC8900E11188 /* TweetLikeUserCCell.h */,
@@ -2883,6 +2915,38 @@
 				85D9888B17E94E7F2832D035 /* Pods.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		AB2D9F291BA30046008E1503 /* Group */ = {
+			isa = PBXGroup;
+			children = (
+				AB2D9F311BA305ED008E1503 /* GroupContentViewController.h */,
+				AB2D9F321BA305ED008E1503 /* GroupContentViewController.m */,
+				AB2D9F431BA3BF9E008E1503 /* GroupMessageViewController.h */,
+				AB2D9F441BA3BF9E008E1503 /* GroupMessageViewController.m */,
+				AB2D9F461BA45EEB008E1503 /* GroupNavigationController.h */,
+				AB2D9F471BA45EEB008E1503 /* GroupNavigationController.m */,
+			);
+			path = Group;
+			sourceTree = "<group>";
+		};
+		AB2D9F2B1BA302A0008E1503 /* GroupMemberCell */ = {
+			isa = PBXGroup;
+			children = (
+				AB2D9F2C1BA302E6008E1503 /* GroupMemberCell.h */,
+				AB2D9F2D1BA302E6008E1503 /* GroupMemberCell.m */,
+			);
+			path = GroupMemberCell;
+			sourceTree = "<group>";
+		};
+		AB2D9F3D1BA3BBFF008E1503 /* GroupMessageCell */ = {
+			isa = PBXGroup;
+			children = (
+				AB2D9F3E1BA3BC3A008E1503 /* GroupMessageCell.h */,
+				AB2D9F3F1BA3BC3A008E1503 /* GroupMessageCell.m */,
+				AB2D9F401BA3BC3A008E1503 /* GroupMessageCell.xib */,
+			);
+			path = GroupMessageCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -3110,6 +3174,7 @@
 				308CCB5C1B78EC8900E11188 /* taskPriority0@2x.png in Resources */,
 				308CCB0D1B78EC8900E11188 /* messageSystem@2x.png in Resources */,
 				308CCA991B78EC8900E11188 /* coding_emoji_29@2x.png in Resources */,
+				AB2D9F421BA3BC3A008E1503 /* GroupMessageCell.xib in Resources */,
 				308CCAA91B78EC8900E11188 /* file_changeType_DELETE@2x.png in Resources */,
 				308CCB3B1B78EC8900E11188 /* placeholder_monkey_round_54@2x.png in Resources */,
 				308CCB4F1B78EC8900E11188 /* privatemessage_selected@2x.png in Resources */,
@@ -3435,6 +3500,7 @@
 				30A72E1B1B83015C009C7CD7 /* XLButtonBarView.m in Sources */,
 				30875F9F1B78E7CB00C50534 /* ToChat.xcdatamodeld in Sources */,
 				28BDBE321B99E8F100F21980 /* JFOtherUserHeaderView.m in Sources */,
+				AB2D9F3C1BA30A2C008E1503 /* UIView+RGSize.m in Sources */,
 				2830DD751B9C8E400066014D /* JFCacheManager.m in Sources */,
 				308CCC061B78EC8900E11188 /* TweetMediaItemSingleCCell.m in Sources */,
 				302F36FF1B8F4B9900BE0D76 /* JFRoundUIButton.m in Sources */,
@@ -3460,6 +3526,7 @@
 				30DB39EB1B930B7E00872E16 /* IntroductionViewController.m in Sources */,
 				303A42B71B81C01900117F71 /* DistancePickerView.m in Sources */,
 				308CCBB31B78EC8900E11188 /* JTCalendarContentView.m in Sources */,
+				AB2D9F331BA305ED008E1503 /* GroupContentViewController.m in Sources */,
 				308CCB9A1B78EC8900E11188 /* UITTTAttributedLabel.m in Sources */,
 				30A72E1A1B83015C009C7CD7 /* XLBarView.m in Sources */,
 				308CCB991B78EC8900E11188 /* UITapImageView.m in Sources */,
@@ -3491,9 +3558,11 @@
 				30A72E161B83015C009C7CD7 /* XLPagerTabStripViewController.m in Sources */,
 				308CCBED1B78EC8900E11188 /* Discover_RootViewController.m in Sources */,
 				303C166F1B7F82D400FC8828 /* QBAssetsCollectionFooterView.m in Sources */,
+				AB2D9F2F1BA302E6008E1503 /* GroupMemberCell.m in Sources */,
 				303C16731B7F82D400FC8828 /* QBAssetsCollectionViewController.m in Sources */,
 				303A42B51B81C01900117F71 /* ActionSheetLocalePicker.m in Sources */,
 				2851B33D1B9BF9FA00ED4C65 /* JFMessageViewController.m in Sources */,
+				AB2D9F411BA3BC3A008E1503 /* GroupMessageCell.m in Sources */,
 				302710041B7F760300A412DA /* UIMessageInputView_CCell.m in Sources */,
 				308CCBC01B78EC8900E11188 /* LKDBUtils.m in Sources */,
 				30288A1B1B8E9A3000946E0B /* JFRoundImageView.m in Sources */,
@@ -3503,6 +3572,7 @@
 				308CCB9C1B78EC8900E11188 /* NSDate+Common.m in Sources */,
 				302C50E61B8014FF001F72DC /* UIActionSheet+Common.m in Sources */,
 				308CCBE21B78EC8900E11188 /* YLImageView.m in Sources */,
+				AB2D9F361BA3072C008E1503 /* DVSwitch.m in Sources */,
 				303A42B81B81C01900117F71 /* SWActionSheet.m in Sources */,
 				308CCBE51B78EC8900E11188 /* LikersViewController.m in Sources */,
 				308CCBE71B78EC8900E11188 /* TweetDetailViewController.m in Sources */,
@@ -3565,6 +3635,7 @@
 				308CCBFB1B78EC8900E11188 /* ScheduleFootCell.m in Sources */,
 				303A429B1B81BFAE00117F71 /* JFTodoCreateSelectionCell.m in Sources */,
 				308CCBCA1B78EC8900E11188 /* MJPhotoView.m in Sources */,
+				AB2D9F451BA3BF9E008E1503 /* GroupMessageViewController.m in Sources */,
 				308CCA4A1B78EC8900E11188 /* HtmlMedia.m in Sources */,
 				308CCBB81B78EC8900E11188 /* JTCalendarMonthView.m in Sources */,
 				303A42B11B81C01900117F71 /* AbstractActionSheetPicker.m in Sources */,
@@ -3573,6 +3644,7 @@
 				2851B3181B9BF9B100ED4C65 /* JSQMessagesBubbleImageFactory.m in Sources */,
 				308CCC091B78EC8900E11188 /* EaseUserHeaderView.m in Sources */,
 				2851B3131B9BF9B100ED4C65 /* UIView+JSQMessages.m in Sources */,
+				AB2D9F481BA45EEB008E1503 /* GroupNavigationController.m in Sources */,
 				2851B31E1B9BF9B100ED4C65 /* JSQMessagesCollectionViewFlowLayoutInvalidationContext.m in Sources */,
 				2851B30F1B9BF9B100ED4C65 /* NSString+JSQMessages.m in Sources */,
 				308CCBBD1B78EC8900E11188 /* LKAlarmMamager.m in Sources */,
