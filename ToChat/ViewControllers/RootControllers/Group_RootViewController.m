@@ -11,14 +11,17 @@
 #import "MeGroupCell.h"
 #import "RDVTabBarController.h"
 #import "SVPullToRefresh.h"
-
+#import "GroupContentViewController.h"
+#import "GroupMessageViewController.h"
 
 @interface Group_RootViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic, strong) UITableView *myTableView;
 @property (nonatomic, strong) ODRefreshControl *refreshControl;
 @end
 
-@implementation Group_RootViewController
+@implementation Group_RootViewController{
+
+}
 
 
 
@@ -47,7 +50,14 @@
     });
     _refreshControl = [[ODRefreshControl alloc] initInScrollView:self.myTableView];
     [_refreshControl addTarget:self action:@selector(refresh) forControlEvents:UIControlEventValueChanged];
+    //注册navigation跳转通知
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(jumpToGroupMsg:) name:@"jumpToGroupMsg" object:nil];
 }
+
+-(void)jumpToGroupMsg:(NSNotification*)noti{
+    GroupMessageViewController* groupMsg = [[GroupMessageViewController alloc]init];
+    groupMsg.hidesBottomBarWhenPushed = YES;
+    [self.navigationController pushViewController:groupMsg animated:YES];}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -115,6 +125,13 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    if (indexPath.section == 0) {
+        
+    }else if (indexPath.section == 1){
+        GroupContentViewController * groupContent = [[GroupContentViewController alloc]init];
+        groupContent.hidesBottomBarWhenPushed = YES;
+        [self.navigationController pushViewController:groupContent animated:YES];
+    }
 }
 
 
