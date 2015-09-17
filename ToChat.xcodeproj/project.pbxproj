@@ -578,6 +578,7 @@
 		AB2D9F421BA3BC3A008E1503 /* GroupMessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB2D9F401BA3BC3A008E1503 /* GroupMessageCell.xib */; };
 		AB2D9F451BA3BF9E008E1503 /* GroupMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB2D9F441BA3BF9E008E1503 /* GroupMessageViewController.m */; };
 		AB2D9F481BA45EEB008E1503 /* GroupNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB2D9F471BA45EEB008E1503 /* GroupNavigationController.m */; };
+		AB735F821BA6FE3F00D12FB1 /* CreateGroupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB735F811BA6FE3F00D12FB1 /* CreateGroupViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -1421,6 +1422,8 @@
 		AB2D9F441BA3BF9E008E1503 /* GroupMessageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GroupMessageViewController.m; sourceTree = "<group>"; };
 		AB2D9F461BA45EEB008E1503 /* GroupNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GroupNavigationController.h; sourceTree = "<group>"; };
 		AB2D9F471BA45EEB008E1503 /* GroupNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GroupNavigationController.m; sourceTree = "<group>"; };
+		AB735F801BA6FE3F00D12FB1 /* CreateGroupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreateGroupViewController.h; sourceTree = "<group>"; };
+		AB735F811BA6FE3F00D12FB1 /* CreateGroupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreateGroupViewController.m; sourceTree = "<group>"; };
 		F266A674F1CC57F71F5F6237 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -2926,6 +2929,8 @@
 				AB2D9F441BA3BF9E008E1503 /* GroupMessageViewController.m */,
 				AB2D9F461BA45EEB008E1503 /* GroupNavigationController.h */,
 				AB2D9F471BA45EEB008E1503 /* GroupNavigationController.m */,
+				AB735F801BA6FE3F00D12FB1 /* CreateGroupViewController.h */,
+				AB735F811BA6FE3F00D12FB1 /* CreateGroupViewController.m */,
 			);
 			path = Group;
 			sourceTree = "<group>";
@@ -3516,6 +3521,7 @@
 				308CCC011B78EC8900E11188 /* TweetTodoCell.m in Sources */,
 				2851B3271B9BF9B100ED4C65 /* JSQMessagesCellTextView.m in Sources */,
 				2851B32C1B9BF9B100ED4C65 /* JSQMessagesCollectionViewCellOutgoing.m in Sources */,
+				AB735F821BA6FE3F00D12FB1 /* CreateGroupViewController.m in Sources */,
 				3000BAEF1B8469E200C3939E /* DiscoverTodoViewController.m in Sources */,
 				30E658941B902D19008AFE1A /* JFSettingTableViewController.m in Sources */,
 				308CCBC11B78EC8900E11188 /* NSObject+LKDBHelper.m in Sources */,

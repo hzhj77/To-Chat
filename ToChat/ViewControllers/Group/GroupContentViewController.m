@@ -10,9 +10,10 @@
 #import "DVSwitch.h"
 #import "Header.h"
 #import "GroupMemberCell.h"
+#import "XHPopMenu.h"
 
 @interface GroupContentViewController ()<UITableViewDataSource, UITableViewDelegate>
-
+@property (nonatomic, strong) XHPopMenu *popMenu;
 @end
 
 @implementation GroupContentViewController{
@@ -64,7 +65,88 @@
 //    scheduleTableView.backgroundColor = [UIColor greenColor];
     [self.view addSubview:scheduleTableView];
     
+    
+    UIImageView* moreButton = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, 40, 30)];
+    moreButton.image = [UIImage imageNamed:@"moreBtn_Nav"];
+    moreButton.userInteractionEnabled = YES;
+    [moreButton addGestureRecognizer:[[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(showMore)]];
+    UIBarButtonItem* moreItem = [[UIBarButtonItem alloc]initWithCustomView:moreButton];
+    self.navigationItem.rightBarButtonItem = moreItem;
 }
+
+-(void)showMore{
+    [self.popMenu showMenuOnView:self.navigationController.view atPoint:CGPointZero];
+    self.popMenu.width += 150;
+}
+#pragma mark config popMenu
+- (XHPopMenu *)popMenu {
+    if (!_popMenu) {
+        NSMutableArray *popMenuItems = [[NSMutableArray alloc] initWithCapacity:8];
+        for (int i = 0; i < 8; i ++) {
+            NSString *imageName;
+            NSString *title;
+            switch (i) {
+                case 0: {
+                    imageName = @"contacts_add_newmessage";
+                    title = @"发表日程";
+                    break;
+                }
+                case 1: {
+                    imageName = @"contacts_add_friend";
+                    title = @"修改群资料";
+                    break;
+                }
+                case 2: {
+                    imageName = @"contacts_add_newmessage";
+                    title = @"管理成员";
+                    break;
+                }
+                case 3: {
+                    imageName = @"contacts_add_friend";
+                    title = @"设为星标";
+                    break;
+                }
+                case 4: {
+                    imageName = @"contacts_add_newmessage";
+                    title = @"通知设置";
+                    break;
+                }
+                case 5: {
+                    imageName = @"contacts_add_friend";
+                    title = @"设置群隐私";
+                    break;
+                }
+                case 6: {
+                    imageName = @"contacts_add_newmessage";
+                    title = @"分享改群";
+                    break;
+                }
+                case 7: {
+                    imageName = @"contacts_add_friend";
+                    title = @"解散该群";
+                    break;
+                }
+                default:
+                    break;
+            }
+            XHPopMenuItem *popMenuItem = [[XHPopMenuItem alloc] initWithImage:[UIImage imageNamed:imageName] title:title];
+            [popMenuItems addObject:popMenuItem];
+        }
+        
+        WEAKSELF
+        _popMenu = [[XHPopMenu alloc] initWithMenus:popMenuItems];
+        _popMenu.popMenuDidSlectedCompled = ^(NSInteger index, XHPopMenuItem *popMenuItems) {
+            if (index == 0) {
+                printf("创建群组\n");
+                //[weakSelf enterQRCodeController];
+            }else if (index == 1) {
+                printf("搜索群组\n");
+            }
+        };
+    }
+    return _popMenu;
+}
+
 
 -(void)viewWillDisappear:(BOOL)animated{
     memberTableView.right = kScreen_Width;

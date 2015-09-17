@@ -19,14 +19,22 @@
     [super viewDidLoad];
 
     UIImageView* toMsgButton = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, 40, 30)];
-    toMsgButton.image = [UIImage imageNamed:@"ToChat"];
+    toMsgButton.image = [UIImage imageNamed:@"privatemessage_normal"];
     toMsgButton.userInteractionEnabled = YES;
     [toMsgButton addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(toMsgCtl)]];
+    
+    //群消息小红点
+    UIImageView* alertView = [[UIImageView alloc]initWithFrame:CGRectMake(27, 3, 10, 10)];
+    alertView.backgroundColor = [UIColor redColor];
+    alertView.layer.masksToBounds = YES;
+    alertView.layer.cornerRadius = 5;
+    [toMsgButton addSubview:alertView];
+    
     UIBarButtonItem* toMsgItem = [[UIBarButtonItem alloc]initWithCustomView:toMsgButton];
     self.navigationItem.leftBarButtonItem = toMsgItem;
     
     UIImageView* moreButton = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, 40, 30)];
-    moreButton.image = [UIImage imageNamed:@"ToChat"];
+    moreButton.image = [UIImage imageNamed:@"moreBtn_Nav"];
     moreButton.userInteractionEnabled = YES;
     [moreButton addGestureRecognizer:[[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(showMore)]];
     UIBarButtonItem* moreItem = [[UIBarButtonItem alloc]initWithCustomView:moreButton];
