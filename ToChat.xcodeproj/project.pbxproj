@@ -579,6 +579,12 @@
 		AB2D9F451BA3BF9E008E1503 /* GroupMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB2D9F441BA3BF9E008E1503 /* GroupMessageViewController.m */; };
 		AB2D9F481BA45EEB008E1503 /* GroupNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB2D9F471BA45EEB008E1503 /* GroupNavigationController.m */; };
 		AB735F821BA6FE3F00D12FB1 /* CreateGroupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB735F811BA6FE3F00D12FB1 /* CreateGroupViewController.m */; };
+		ABD678891BCB9B2200777E2F /* TagsTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ABD678871BCB9B2200777E2F /* TagsTableCell.m */; };
+		ABD6788A1BCB9B2200777E2F /* TagsTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ABD678881BCB9B2200777E2F /* TagsTableCell.xib */; };
+		ABD678941BCB9B4E00777E2F /* HexColors.m in Sources */ = {isa = PBXBuildFile; fileRef = ABD6788D1BCB9B4E00777E2F /* HexColors.m */; };
+		ABD678951BCB9B4E00777E2F /* SKTagView.m in Sources */ = {isa = PBXBuildFile; fileRef = ABD6788F1BCB9B4E00777E2F /* SKTagView.m */; };
+		ABD678961BCB9B4E00777E2F /* SKTag.m in Sources */ = {isa = PBXBuildFile; fileRef = ABD678901BCB9B4E00777E2F /* SKTag.m */; };
+		ABD678971BCB9B4E00777E2F /* SKTagButton.m in Sources */ = {isa = PBXBuildFile; fileRef = ABD678921BCB9B4E00777E2F /* SKTagButton.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -1424,6 +1430,17 @@
 		AB2D9F471BA45EEB008E1503 /* GroupNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GroupNavigationController.m; sourceTree = "<group>"; };
 		AB735F801BA6FE3F00D12FB1 /* CreateGroupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreateGroupViewController.h; sourceTree = "<group>"; };
 		AB735F811BA6FE3F00D12FB1 /* CreateGroupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreateGroupViewController.m; sourceTree = "<group>"; };
+		ABD678861BCB9B2200777E2F /* TagsTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TagsTableCell.h; sourceTree = "<group>"; };
+		ABD678871BCB9B2200777E2F /* TagsTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TagsTableCell.m; sourceTree = "<group>"; };
+		ABD678881BCB9B2200777E2F /* TagsTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TagsTableCell.xib; sourceTree = "<group>"; };
+		ABD6788C1BCB9B4E00777E2F /* HexColors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HexColors.h; sourceTree = "<group>"; };
+		ABD6788D1BCB9B4E00777E2F /* HexColors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HexColors.m; sourceTree = "<group>"; };
+		ABD6788E1BCB9B4E00777E2F /* SKTagView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKTagView.h; sourceTree = "<group>"; };
+		ABD6788F1BCB9B4E00777E2F /* SKTagView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKTagView.m; sourceTree = "<group>"; };
+		ABD678901BCB9B4E00777E2F /* SKTag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKTag.m; sourceTree = "<group>"; };
+		ABD678911BCB9B4E00777E2F /* SKTag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKTag.h; sourceTree = "<group>"; };
+		ABD678921BCB9B4E00777E2F /* SKTagButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKTagButton.m; sourceTree = "<group>"; };
+		ABD678931BCB9B4E00777E2F /* SKTagButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKTagButton.h; sourceTree = "<group>"; };
 		F266A674F1CC57F71F5F6237 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -2746,6 +2763,7 @@
 		308CCA211B78EC8900E11188 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				ABD6788B1BCB9B4100777E2F /* SKTagView */,
 				30270FF91B7F760300A412DA /* UIMessageInputView */,
 				308CCA221B78EC8900E11188 /* Cell */,
 				308CCA3A1B78EC8900E11188 /* CollectionCell */,
@@ -2931,6 +2949,9 @@
 				AB2D9F471BA45EEB008E1503 /* GroupNavigationController.m */,
 				AB735F801BA6FE3F00D12FB1 /* CreateGroupViewController.h */,
 				AB735F811BA6FE3F00D12FB1 /* CreateGroupViewController.m */,
+				ABD678861BCB9B2200777E2F /* TagsTableCell.h */,
+				ABD678871BCB9B2200777E2F /* TagsTableCell.m */,
+				ABD678881BCB9B2200777E2F /* TagsTableCell.xib */,
 			);
 			path = Group;
 			sourceTree = "<group>";
@@ -2952,6 +2973,21 @@
 				AB2D9F401BA3BC3A008E1503 /* GroupMessageCell.xib */,
 			);
 			path = GroupMessageCell;
+			sourceTree = "<group>";
+		};
+		ABD6788B1BCB9B4100777E2F /* SKTagView */ = {
+			isa = PBXGroup;
+			children = (
+				ABD6788C1BCB9B4E00777E2F /* HexColors.h */,
+				ABD6788D1BCB9B4E00777E2F /* HexColors.m */,
+				ABD6788E1BCB9B4E00777E2F /* SKTagView.h */,
+				ABD6788F1BCB9B4E00777E2F /* SKTagView.m */,
+				ABD678901BCB9B4E00777E2F /* SKTag.m */,
+				ABD678911BCB9B4E00777E2F /* SKTag.h */,
+				ABD678921BCB9B4E00777E2F /* SKTagButton.m */,
+				ABD678931BCB9B4E00777E2F /* SKTagButton.h */,
+			);
+			path = SKTagView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -3109,6 +3145,7 @@
 				308CCB881B78EC8900E11188 /* topic_comment_icon@2x.png in Resources */,
 				308CCB061B78EC8900E11188 /* logo_coding_top@2x.png in Resources */,
 				308CCB8F1B78EC8900E11188 /* n_btn_followed_yes@2x.png in Resources */,
+				ABD6788A1BCB9B2200777E2F /* TagsTableCell.xib in Resources */,
 				2851B32B1B9BF9B100ED4C65 /* JSQMessagesCollectionViewCellIncoming.xib in Resources */,
 				308CCB4E1B78EC8900E11188 /* privatemessage_normal@2x.png in Resources */,
 				308CCADB1B78EC8900E11188 /* intro_icon_1@2x.png in Resources */,
@@ -3466,6 +3503,7 @@
 				303C16511B7F808800FC8828 /* AGEmojiKeyBoardView.m in Sources */,
 				306B62981B799B8700167CB3 /* Input_OnlyText_Cell.m in Sources */,
 				2851B3191B9BF9B100ED4C65 /* JSQMessagesMediaViewBubbleImageMasker.m in Sources */,
+				ABD678941BCB9B4E00777E2F /* HexColors.m in Sources */,
 				2851B3261B9BF9B100ED4C65 /* JSQVideoMediaItem.m in Sources */,
 				30A72E171B83015C009C7CD7 /* XLSegmentedPagerTabStripViewController.m in Sources */,
 				308CCBAA1B78EC8900E11188 /* UIViewController+Swizzle.m in Sources */,
@@ -3554,6 +3592,7 @@
 				281BCC901B982AF60070833B /* JFUserInfoViewController.m in Sources */,
 				2851B31F1B9BF9B100ED4C65 /* JSQMessagesCollectionViewLayoutAttributes.m in Sources */,
 				308CCBA71B78EC8900E11188 /* UILabel+Common.m in Sources */,
+				ABD678961BCB9B4E00777E2F /* SKTag.m in Sources */,
 				308CCA501B78EC8900E11188 /* User.m in Sources */,
 				308CCB9D1B78EC8900E11188 /* NSObject+Common.m in Sources */,
 				2851B31D1B9BF9B100ED4C65 /* JSQMessagesCollectionViewFlowLayout.m in Sources */,
@@ -3608,6 +3647,7 @@
 				308CCBF11B78EC8900E11188 /* RootTabViewController.m in Sources */,
 				30C028D11B9337A100A9CAE7 /* JFUserManager.m in Sources */,
 				3000BAE81B8467CF00C3939E /* DiscoverTodoCell.m in Sources */,
+				ABD678971BCB9B4E00777E2F /* SKTagButton.m in Sources */,
 				308CCBB41B78EC8900E11188 /* JTCalendarDataCache.m in Sources */,
 				308CCA4F1B78EC8900E11188 /* Tweets.m in Sources */,
 				308CCBFC1B78EC8900E11188 /* ScheduleHeadCell.m in Sources */,
@@ -3648,6 +3688,7 @@
 				308CCBB71B78EC8900E11188 /* JTCalendarMenuView.m in Sources */,
 				308CCBC71B78EC8900E11188 /* MJPhotoLoadingView.m in Sources */,
 				2851B3181B9BF9B100ED4C65 /* JSQMessagesBubbleImageFactory.m in Sources */,
+				ABD678951BCB9B4E00777E2F /* SKTagView.m in Sources */,
 				308CCC091B78EC8900E11188 /* EaseUserHeaderView.m in Sources */,
 				2851B3131B9BF9B100ED4C65 /* UIView+JSQMessages.m in Sources */,
 				AB2D9F481BA45EEB008E1503 /* GroupNavigationController.m in Sources */,
@@ -3657,6 +3698,7 @@
 				303C16701B7F82D400FC8828 /* QBAssetsCollectionOverlayView.m in Sources */,
 				28B1720A1B9AA70C004926BC /* JFUserEntity.m in Sources */,
 				287CF00D1B9967AD00C59C8C /* JFOtherUserInfoViewController.m in Sources */,
+				ABD678891BCB9B2200777E2F /* TagsTableCell.m in Sources */,
 				2830DD721B9C8A890066014D /* JFIMService.m in Sources */,
 				308CCBF91B78EC8900E11188 /* MeGroupCell.m in Sources */,
 			);

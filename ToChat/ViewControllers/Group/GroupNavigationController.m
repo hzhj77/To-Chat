@@ -8,6 +8,7 @@
 
 #import "GroupNavigationController.h"
 #import "XHPopMenu.h"
+#import "CreateGroupViewController.h"
 
 @interface GroupNavigationController ()
 @property (nonatomic, strong) XHPopMenu *popMenu;
@@ -17,7 +18,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
+    
     UIImageView* toMsgButton = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, 40, 30)];
     toMsgButton.image = [UIImage imageNamed:@"privatemessage_normal"];
     toMsgButton.userInteractionEnabled = YES;
@@ -79,6 +80,9 @@
             if (index == 0) {
                 printf("创建群组\n");
                 //[weakSelf enterQRCodeController];
+                CreateGroupViewController* create = [[CreateGroupViewController alloc]init];
+                create.hidesBottomBarWhenPushed = YES;
+                [self.navigationController pushViewController:create animated:YES];
             }else if (index == 1) {
                 printf("搜索群组\n");
             }
@@ -94,13 +98,13 @@
 }
 
 /*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
+ #pragma mark - Navigation
+ 
+ // In a storyboard-based application, you will often want to do a little preparation before navigation
+ - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+ // Get the new view controller using [segue destinationViewController].
+ // Pass the selected object to the new view controller.
+ }
+ */
 
 @end
